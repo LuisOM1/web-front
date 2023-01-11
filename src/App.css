@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --color-rojo-logo: rgba(255, 0, 0, 0.832); 
+  --color-negro-logo: black;
+  --color-amarillo-primary: rgba(255, 255, 0, 0.623);
+  --color-blanco-primary: white;
+  
+}
+
+body {
+  font-family: 'poppins', sans-serif;
+}
