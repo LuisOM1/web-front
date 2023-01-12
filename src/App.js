@@ -6,6 +6,7 @@ import Nosotros from './components/Nosotros';
 import Precios from './components/Precios';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
+import Ventajas from './components/Ventajas';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       < Header />
       < Slider />
       < Nosotros />
+      < Ventajas />
       < Precios/>
       < Contact />
       

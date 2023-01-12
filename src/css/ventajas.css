@@ -1,0 +1,94 @@
+
+
+.ventajas{
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .ventajas_container{
+        height: 680px;
+        width: 100%;
+        margin-left: 140px;
+        margin-right: 140px;
+    }
+
+        .ventajas_title{
+            text-align: center;
+        }
+
+            .ventajas_title h2{
+                font-weight: 700;
+                font-size: 24px;
+                color: #0e2b3d;
+            }
+
+        .ventajas_cards{
+            margin-top: 20px;
+            width: 100%;
+            height: 600px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+
+        }
+
+            .cardv{
+                width: 24%;
+                height: 200px;
+                border: 2px solid #dcdcdc;
+                background: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+
+                .cardv_center{
+                    margin-left: 15px;
+                    margin-right: 15px;
+                }
+
+                    .cardv_icono{
+                        height: 100px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                        .cardv_icono_circle{
+                            width: 70px;
+                            height:70px;
+                            line-height: 70px;
+                            border-radius: 50%;
+                            background-color: var(--color-rojo-logo);
+                            text-align: center;
+                            border: 3px solid #dcdcdc;
+                        }
+
+                            .fa-pencil-ruler, .fa-file-chart-line, .fa-phone-laptop, .fa-clock, .fa-shield-check, .fa-tachometer-slow, .fa-toggle-on, .fa-map, .fa-bell-on, .fa-mobile-alt, .fa-user-headset, .fa-lock-alt{
+                                font-size: 20px;
+                                color: white;
+                            }
+
+                    .cardv_text{
+                        text-align: center;
+                        height: 80px;
+                    }
+
+                        .cardv_text h3{
+                            font-size: 13px;
+                            text-transform: uppercase;
+                            color: #0e2b3d;
+                            font-weight: 700;
+                            margin-bottom: 8px;
+                        }
+
+                        .cardv_text p{
+                            font-size: 10px;
+                            color: #0e2b3d;
+                        }
+
+
+
