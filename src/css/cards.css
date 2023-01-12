@@ -13,6 +13,10 @@
     
   }
 
+    .precios_cards:hover{
+      border: 1px solid var(--color-rojo-logo);
+    }
+
       .precios_card_head h5 {
         text-transform: uppercase;
         font-weight: 600;
@@ -46,7 +50,7 @@
         }
 
           .precios_card_items ul li{
-            font-size: 10px;
+            font-size: 12px;
             margin-bottom: 8px;
           }
 
@@ -65,8 +69,8 @@
         .precios_card_boton button{
           border-radius: 8px;
           padding: 8px 25px;
-          background-color: rgba(255, 0, 0, 0.832);
-          border: 2px solid rgba(255, 0, 0, 0.832);
+          background-color: var(--color-rojo-logo);
+          border: 2px solid var(--color-rojo-logo);
           color: #fff;
           font-weight: bold;
           cursor: pointer;

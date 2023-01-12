@@ -2,7 +2,7 @@
 
 .precios {
     width: 100%;
-    height: 750px;
+    height: 780px;
     text-align: center;
     background-color: #f4f7fc;
     
@@ -85,17 +85,11 @@
       gap: 23px;
     }
     
-    /*
-    .precios_contents :hover{
-      border: 1px solid rgba(255, 0, 0, 0.832);
-    }  */
-    
-  
       .precios_notas{
         margin-top: 30px;
         color: var(--color-rojo-logo);
         font-size: 13px;
-        font-weight: 600;
+        font-weight: 550;
       }
   
 
@@ -112,7 +106,7 @@
 /* Seccion Precios responsive */
 @media screen and (max-width: 1200px ){
   .precios {
-    height: 1200px;
+    height: 1230px;
   }
 
     .precios_contents{
@@ -129,7 +123,7 @@
 
 @media screen and (max-width: 600px ){
   .precios {
-    height: 2100px;
+    height: 2200px;
   }
   .precios_head_title {
     margin-bottom: 15px;
