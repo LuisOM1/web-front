@@ -6,7 +6,7 @@ import '../css/ventajas.css';
 
 //Componente funcional Cardsv
 function Cardsv ({icono,titulo,parrafo}){
-    
+    const icono_style = { fontSize: '23px', color: 'white'};
      
       return (  
         
@@ -14,7 +14,7 @@ function Cardsv ({icono,titulo,parrafo}){
             <div className="cardv_center" >
                 <div className="cardv_icono">
                     <div className='cardv_icono_circle'>
-                        <i className={icono}></i>
+                        <i className={icono} style={icono_style}></i>
                     </div>
                 </div>
                 <div className="cardv_text">

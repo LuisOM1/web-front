@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/nosotros.css';
 import  img_real from  '../img/img_real.jpg';
-import  img_seguridad from  '../img/img_seguridad.jpg';
+import  img_nosotros from  '../img/img_nosotros.jpg';
 
 
 
@@ -14,7 +14,7 @@ class Nosotros extends React.Component {
                         <div className="column-left-nos">
                         <div className="div-imgs">
                             <img id="img-nos1"  src={img_real} alt="" /> 
-                            <img id="img-nos2" src={img_seguridad} alt="" />
+                            <img id="img-nos2" src={img_nosotros} alt="" />
                         </div>
                         </div>
                     
