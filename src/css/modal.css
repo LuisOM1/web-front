@@ -1,8 +1,16 @@
 
 .modal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  min-height: 100vh;
 }
 
   .modal_container{
@@ -10,10 +18,10 @@
     padding: 32px 16px;
     border-radius: 16px;
     box-shadow: 1px 4px 20px -2px rgb(0 0 0 / 20%);
+    background-color: #fff;
   }
 
-
-    .col-lg-12{
+    .modal_container .col-lg-12{
       padding-right: 15px;
       padding-left: 15px;
     }
@@ -25,30 +33,30 @@
         font-size: 1.75rem;
       }
 
-        .form-group{
+        .modal_container .form-group{
           margin-bottom: 1rem;
         }
 
-        .form-group input{
-          display: block;
-          width: 100%;
-          height: calc(1.5em + 0.75rem + 2px);
-          padding: 0.375rem 0.75rem;
-          font-size: 1rem;
-          font-weight: 400;
-          line-height: 1.5;
-          color: #495057;
-          background-color: #fff;
-          background-clip: padding-box;
-          border: 1px solid #ced4da;
-          border-radius: 0.25rem;
-        }
+          .modal_container .form-group input{
+            display: block;
+            width: 100%;
+            height: calc(1.5em + 0.75rem + 2px);
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+          }
 
-        .modal_container button{
-          background-color: #334fba;
-          color: #fff;
-          border-radius: 5px;
-          padding: 12px 16px;
-          cursor: pointer;
-          border: none;
-      }
+          .btncontactar{
+            background-color: #334fba;
+            color: #fff;
+            border-radius: 5px;
+            padding: 12px 16px;
+            cursor: pointer;
+            border: none;
+          }

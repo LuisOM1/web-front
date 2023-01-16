@@ -34,6 +34,7 @@
 
                 .div-imgs #img-nos1{
                     width: 30%;
+                    height: 210px;
                     border-radius: 15px;
                     margin-top: 40px;
                     position: absolute;
@@ -42,10 +43,11 @@
 
                 .div-imgs #img-nos2{
                     width: 30%;
+                    height: 210px;
                     border-radius: 15px;
                     margin-top: 200px;
                     margin-left: 90px;
-                    border: solid 4px white;
+                    border: solid 3px white;
                     position: absolute;
                     z-index: 100;
                     
@@ -57,7 +59,7 @@
             float: right;
             width: 50%;
             height: 500px;
-            
+
 
         }
 
@@ -140,10 +142,15 @@
                 
 
 /* Seccion Nosotros responsive */
-@media screen and (max-width: 1100px ){
-    .text-nosotros{
-        width: 90%;
+@media screen and (max-width: 1070px ){
+    .divborder{
+        width: 80%;
+        margin-left: 0px;
+        margin-right: 0px;
     }
+        .text-nosotros{
+            width: 90%;
+        }
 }
 
 @media screen and (max-width: 1000px ){
@@ -153,8 +160,6 @@
   
       .divborder{
           height: 700px;
-          margin-right: 0px;
-          margin-left: 0px;
       }
   
           .column-left-nos, .column-right-nos{
@@ -175,6 +180,7 @@
               }
                   .div-imgs #img-nos1{
                       width: 45%;
+                      height: auto;
                       margin-top: 0px;
                       z-index: none;
                   }
@@ -193,9 +199,9 @@
   }
   
   
-    @media screen and (max-width: 800px ){
+    @media screen and (max-width: 820px ){
       .column-left-nos{
-          height: 300px;
+          height: 330px;
       }
           .div-imgs{
               height: 280px;
@@ -214,31 +220,39 @@
    }
   
   
-   @media screen and (max-width: 650px ){
+   @media screen and (max-width: 700px ){
       .div-imgs #img-nos1{
-          width: 70%;
-      }
+        width: 70%;
+        }
+      .text-nosotros{
+        width: 100%;
+        margin-top: 20px;
+        }
    }
   
    @media screen and (max-width: 480px ){
-      .column-left-nos{
-          height: 250px;
-      }
-          .div-imgs{
-              height: 230px;
-          }
-      
-      .column-right-nos{
-          height: 450px;
-      }
-          .text-nosotros{
-              height: 430px;
-          }
+        .divborder{
+            width: 90%;
+        }
+            .column-left-nos{
+                height: 250px;
+            }
+                .div-imgs{
+                    height: 230px;
+                }
+            
+            .column-right-nos{
+                height: 450px;
+            }
+                .text-nosotros{
+                    height: 430px;
+                    margin-top: 0px;
+                }
    }
   
    @media screen and (max-width: 370px ){
       .section-nosotros{
-          height: 1000px;
+        height: 1000px;
       }
   
         .divborder{

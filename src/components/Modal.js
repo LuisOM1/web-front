@@ -33,7 +33,7 @@ class Modalcontacta extends React.Component {
                       </div>
                     </div>
                     <div class="col-lg-12">
-                      <button type="submit" name="submit">Contactar</button>
+                      <button className="btncontactar" type="submit" name="submit">Contactar</button>
                     </div>
                   </form>
                 </div>
