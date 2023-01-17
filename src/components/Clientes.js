@@ -15,10 +15,8 @@ function Clientes (){
         <div className='clientes'>
             <div className='clientes_container'>
                 <div className='clientes_title'>
-                    <h2>Nuestros clientes nos respaldan.</h2>
+                    <h2>Nuestros clientes nos respaldan</h2>
                 </div>
-                
-                
                 <div className='clientes_sponsors'>      
                     <ul>
                         <li><img src={cosmos} alt=" " ></img></li>
@@ -30,7 +28,6 @@ function Clientes (){
 
                 </div>
             </div>
-
         </div>
   
       );

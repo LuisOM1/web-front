@@ -2,7 +2,7 @@
 
 
 .clientes{
-    height: 350px;
+    height: 360px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,11 +10,15 @@
 }
 
     .clientes_container{
-        height: 200px;
+        height: 160px;
         margin-left: 140px;
         margin-right: 140px;
         overflow: hidden;
     }
+
+        .clientes_title {
+            height: 60px;
+        }
 
             .clientes_title h2{
                 text-align: center;
@@ -22,14 +26,13 @@
 
 
         .clientes_sponsors{
-            margin-top: 30px;
+            height: 100px;
         }
             
             .clientes_sponsors ul{
                 display: flex;
                 padding: 0;
-                width: 150%;
-                animation: cambio 2s infinite alternate;
+                width: 100%;
             }
 
                 .clientes_sponsors li{
@@ -41,24 +44,95 @@
 
                     .clientes_sponsors img{
                         max-width: 100%;
-                        width: 100%;
+                        width: auto;
+                        height: 90px;
                         text-align: center;
                         border-radius: 5px;
                         border: 1px solid #aec2c9;
                         background-color: #ffffffc7;
                     }
 
-    
+
 @keyframes cambio {
     0% {margin-left: 0;}
-    30% {margin-left: 0;}
+    10% {margin-left: 0;}
 
-    35% {margin-left: -30%;}
-    65% {margin-left: -30%;}
+    15% {margin-left: -20%;}
+    25% {margin-left: -20%;}
 
-    70% {margin-left: -48%;}
-    100% {margin-left: -48%;}
+    30% {margin-left: -40%;}
+    40% {margin-left: -40%;}
+
+    45% {margin-left: -60%;}
+    55% {margin-left: -60%;}
+
+    60% {margin-left: -80%;}
+    70% {margin-left: -80%;}
+
+    75% {margin-left: -100%;}
+    85% {margin-left: -100%;}
+
+    90% {margin-left: -120%;}
+    100%{margin-left: -120%;}
+
+}      
+
+/* Seccion clientes responsive */ 
+@media screen and (max-width: 1000px ){
+    .clientes_container{
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 80%;
+    }
+
+        .clientes_sponsors ul{
+            width: 140%;
+            animation: cambio 10s infinite alternate;
+        }
 
 }
 
+@media screen and (max-width: 700px ){
+    .clientes_container{
+        width: 90%;
+    }
+        .clientes_sponsors ul{
+            width: 150%;
+        }
 
+}
+
+@media screen and (max-width: 550px ){
+        .clientes_sponsors ul{
+            width: 220%;
+        }
+
+}
+
+@media screen and (max-width: 430px ){
+    .clientes_container{
+        height: 200px;
+    }
+
+        .clientes_title{
+            height: 80px;
+        }
+        .clientes_sponsors ul{
+            width: 270%;
+        }
+
+}
+
+@media screen and (max-width: 330px ){
+    .clientes_container{
+        height: 220px;
+    }
+
+        .clientes_title{
+            height: 100px;
+        }
+        .clientes_sponsors ul{
+            width: 400%;
+        }
+
+}
