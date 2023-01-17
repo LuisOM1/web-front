@@ -41,9 +41,9 @@ class Nosotros extends React.Component {
                             </li>
                             </ul>
                             <div className="button-info-nos">
-                            <a href="nosotros.html" className="theme-btn btn-style-three">¿Quieres saber mas de nosotros?
+                                <a href="nosotros.html" className="theme-btn btn-style-three">¿Quieres saber mas de nosotros?
                                 <span className="icon fas fa-angle-double-right"></span>
-                            </a>
+                                </a>
                             </div>
                         </div>
                         </div>

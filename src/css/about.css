@@ -1,0 +1,61 @@
+
+
+.about{
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .about_container{
+        margin-left: 140px;
+        margin-right: 140px;
+        width: 100%;
+        height: 600px;
+    }
+
+        .about_text{
+            width: 54%;
+            float: left;
+        }
+
+            .about_sub_title {
+                font-size: 20px;
+                font-weight: 700;
+                color: var(--color-rojo-logo);
+                
+            }
+
+            .about_text h2, .about_text h3 {
+                margin-bottom: 10px;
+            }
+
+            .about_text p {
+                font-size: 14px;
+                text-align: justify;
+                line-height: 1.5;
+                margin-bottom: 15px;
+            }
+
+
+
+            .about_mision{
+                width: 45%;
+                float: left;
+            }
+
+            .about_vision{
+                width: 45%;
+                float: right;
+            }
+
+
+
+        .about_img{
+            width: 40%;
+            float: right;
+        }
+
+            .about_img img{
+                width: 100%;
+            }
