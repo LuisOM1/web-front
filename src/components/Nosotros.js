@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/nosotros.css';
 import  img_real from  '../img/img_real.jpg';
 import  img_nosotros from  '../img/img_nosotros.jpg';
+import { Link } from 'react-router-dom';
 
 
 
@@ -40,11 +41,15 @@ class Nosotros extends React.Component {
                                 Te brindamos un servicio diferenciado.
                             </li>
                             </ul>
+
+                            <Link to={`/about`} > 
                             <div className="button-info-nos">
-                                <a href="nosotros.html" className="theme-btn btn-style-three">¿Quieres saber mas de nosotros?
+                                <Link to={`/about`} >¿Quieres saber mas de nosotros?
                                 <span className="icon fas fa-angle-double-right"></span>
-                                </a>
+                                </Link>
                             </div>
+                            </Link>
+                            
                         </div>
                         </div>
                     </div>

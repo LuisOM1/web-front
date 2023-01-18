@@ -34,7 +34,7 @@ function About (){
                     </div>
                     <div className='about_vision'>
                       <h3>Vision</h3>
-                      <p>Ser líderes en soluciones tecnológicasInnovadoras , para el transporte 
+                      <p>Ser líderes en soluciones tecnológicas Innovadoras , para el transporte 
                         vehicular Seguridad Electronica logrando ser reconocidos a nivel nacional 
                         por la capacidad creativa e innovadora en tecnologías de información y 
                         comunicación enfocadas en la administración Satelital y m2m.
