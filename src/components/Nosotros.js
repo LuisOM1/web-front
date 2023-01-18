@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 //Componente de clase Nosotros
 class Nosotros extends React.Component {
-   
+
     render(){
       return    <div className="section-nosotros">
                     <div className="divborder">
