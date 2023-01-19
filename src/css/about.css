@@ -2,9 +2,11 @@
 
 .about{
     height: 1300px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: gray;
 }
 
     .about_container{
@@ -12,16 +14,20 @@
         margin-right: 140px;
         width: 100%;
         height: 1200px;
+        background-color: blueviolet;
       
     }
 
         .about_container_1{
             height: 550px ;
+            background-color: beige;
         }
 
             .about_text{
                 width: 54%;
+                height: 550px;
                 float: left;
+                background-color: blue;
             }
 
                 .about_sub_title {
@@ -49,12 +55,15 @@
 
                 .about_mision, .about_vision{
                     width: 48%;
-                    float: left;
                     box-shadow: 1px 4px 20px -2px rgb(0 0 0 / 10%);
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     border-radius: 12px;
+                }
+
+                .about_mision{
+                    float: left;
                 }
 
                 .about_vision{
@@ -74,12 +83,10 @@
 
                 .about_img img{
                     width: 100%;
+                    height: 450px;
                 }
 
         
-
-
-
         .about_container_2{
             height: 150px;
             background-color: rgba(211, 211, 211, 0.342);
@@ -123,5 +130,3 @@
                 width: 100%;
                 text-align: center;
             }
-            
-                        

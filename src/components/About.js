@@ -3,7 +3,7 @@ import '../css/about.css';
 import Header from './Header';
 import Footer from './Footer';
 import  img_about from  '../img/img_about.jpg';
-
+import GoTop from './GoTop';
 
 //Componente funcional About
 function About (){
@@ -116,6 +116,7 @@ function About (){
               </div>
             </div>
             < Footer />
+			< GoTop />
         </div>
        
       );
