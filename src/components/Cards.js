@@ -11,8 +11,7 @@ class Cards extends React.Component {
     }
    
     render(){
-      return    <div className='precios_cards'>
-  
+      return    <div>
                   <div className='precios_card_head'>
                     <h5>{this.state.nivel}</h5>
                   </div>
@@ -38,9 +37,8 @@ class Cards extends React.Component {
                   <div className='precios_card_boton' >
                     <button>Seleccionar</button>
                   </div>
-                  
                 </div>
-
+                
   
     }
   

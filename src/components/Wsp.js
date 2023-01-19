@@ -11,7 +11,7 @@ class Wsp extends React.Component {
       return    <div>
                 <div>
                     <a href="https://wa.me/51970951302?" className="btn-wsp" target="_blank" >
-                        <i class="fab fa-whatsapp icono" ></i>
+                        <i className='fab fa-whatsapp icono'></i>
                     </a>
                 </div>
                 </div>

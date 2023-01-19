@@ -28,25 +28,24 @@ class Nosotros extends React.Component {
                             recomiendan.
                             </div>
                             <ul className="list-nosotros">
-                            <li>
-                                <i className="fa fa-check-circle" aria-hidden="true"></i>
-                                Somos líderes en el rastreo satelital.
-                            </li>
-                            <li>
-                                <i className="fa fa-check-circle " aria-hidden="true"></i>
-                                Tenemos precios según tu necesidad.
-                            </li>
-                            <li>
-                                <i className="fa fa-check-circle" aria-hidden="true"></i>
-                                Te brindamos un servicio diferenciado.
-                            </li>
+                                <li>
+                                    <i className="fa fa-check-circle" aria-hidden="true"></i>
+                                    Somos líderes en el rastreo satelital.
+                                </li>
+                                <li>
+                                    <i className="fa fa-check-circle " aria-hidden="true"></i>
+                                    Tenemos precios según tu necesidad.
+                                </li>
+                                <li>
+                                    <i className="fa fa-check-circle" aria-hidden="true"></i>
+                                    Te brindamos un servicio diferenciado.
+                                </li>
                             </ul>
 
                             <Link to={`/about`} > 
                             <div className="button-info-nos">
-                                <Link to={`/about`} >¿Quieres saber mas de nosotros?
+                                ¿Quieres saber mas de nosotros?
                                 <span className="icon fas fa-angle-double-right"></span>
-                                </Link>
                             </div>
                             </Link>
                             

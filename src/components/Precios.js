@@ -1,6 +1,7 @@
 import React, {useState}from 'react';
 import Cards from './Cards';
 import '../css/precios.css';
+import '../css/cards.css';
 
 
 function Precios(){
@@ -67,7 +68,9 @@ function Precios(){
                 <div  className={activetab == 1 ? "contenttab  active-contenttab" : "contenttab"}>
                   <div className='precios_contents'>
                     {  cards_mensual.map(card => (
-                        <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} />
+                        <div className='precios_cards' key={card.id}>
+                          <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} />
+                        </div>
                         ))
                     } 
                   </div>
@@ -75,7 +78,9 @@ function Precios(){
                 <div className={activetab == 2 ? "contenttab  active-contenttab" : "contenttab"}>
                   <div className='precios_contents'>
                     {  cards_3m.map(card => (
-                        <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} />
+                        <div className='precios_cards' key={card.id}>
+                          <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} />
+                        </div>
                         ))
                     } 
                   </div>
@@ -83,7 +88,9 @@ function Precios(){
                 <div className={activetab == 3 ? "contenttab  active-contenttab" : "contenttab"}>
                   <div className='precios_contents'>
                     {  cards_6m.map(card => (
-                        <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} />
+                        <div className='precios_cards' key={card.id}>
+                          <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} />
+                        </div>
                         ))
                     } 
                   </div>
@@ -91,7 +98,9 @@ function Precios(){
                 <div className={activetab == 4 ? "contenttab  active-contenttab" : "contenttab"}>
                   <div className='precios_contents'>
                     {  cards_12m.map(card => (
-                        <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} />
+                        <div className='precios_cards' key={card.id}>
+                          <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} />
+                        </div>
                         ))
                     } 
                   </div>

@@ -107,38 +107,39 @@
                         margin-right: 5px;
                     }
 
-                .button-info-nos{
-                    border: none!important;
-                    cursor: pointer;
-                    font-size: 14px;
-                    padding: 10px 10px;
-                    border-radius: 10px;
-                    font-weight: 600;
-                    margin-top: 10px;
-                    width: 100%;
-                    background:  var(--color-rojo-logo);
-                    text-align: center;
-                }
 
-                .button-info-nos a{
+                .text-nosotros a{
                     text-decoration: none;
                     color: #fff;
                     
                 }
+                
+                    .button-info-nos{
+                        border: none!important;
+                        cursor: pointer;
+                        font-size: 14px;
+                        padding: 10px 10px;
+                        border-radius: 10px;
+                        font-weight: 600;
+                        margin-top: 10px;
+                        width: 100%;
+                        background:  var(--color-rojo-logo);
+                        text-align: center;
+                    }
 
-                .button-info-nos span{
-                    font-size: 14px;
-                    box-sizing: border-box;
-                    display: inline-block;
-                    text-rendering: auto;
-                    width: 34px;
-                    height: 34px;
-                    color: #ffffff;
-                    line-height: 34px;
-                    text-align: center;
-                    border-radius: 50px;
-                    background-color: var(--color-negro-logo);
-                }
+                    .button-info-nos span{
+                        font-size: 14px;
+                        box-sizing: border-box;
+                        display: inline-block;
+                        text-rendering: auto;
+                        width: 34px;
+                        height: 34px;
+                        color: #ffffff;
+                        line-height: 34px;
+                        text-align: center;
+                        border-radius: 50px;
+                        background-color: var(--color-negro-logo);
+                    }
                 
 
 /* Seccion Nosotros responsive */

@@ -10,7 +10,6 @@ function Cardsv ({icono,titulo,parrafo}){
      
       return (  
         
-        <div className="cardv">
             <div className="cardv_center" >
                 <div className="cardv_icono">
                     <div className='cardv_icono_circle'>
@@ -22,7 +21,6 @@ function Cardsv ({icono,titulo,parrafo}){
                     <p>{parrafo}</p>
                 </div>
             </div>
-        </div>
   
       );
   

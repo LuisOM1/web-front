@@ -31,13 +31,13 @@ class Slider extends React.Component {
                             </div>
                             
                             <div role="form" className="wpcf7" id="guardarform" lang="es-PE" dir="ltr">
-                                <form action="/#guardarform" method="post" className="" novalidate="novalidate" data-status="init">
+                                <form action="/#guardarform" method="post" className=""  data-status="init">
                         
                                 <div className="resto-form">
                                     <div className="col">
                                         <div className="form-group">
                                             <span className="input-control-wrap">
-                                                <input type="text" name="nombre" value="" size="40" className="input-form-control" 
+                                                <input type="text" name="nombre" size="40" className="input-form-control" 
                                                 id="nombre" aria-required="true" aria-invalid="false" placeholder="Nombre*" />
                                             </span>
                                         </div>
@@ -45,7 +45,7 @@ class Slider extends React.Component {
                                     <div className="col">
                                         <div className="form-group">
                                             <span className="input-control-wrap">
-                                                <input type="text" name="ruc" value="" size="40" className="input-form-control" 
+                                                <input type="text" name="ruc" size="40" className="input-form-control" 
                                                 id="ruc" aria-required="true" aria-invalid="false" placeholder="RUC*" />
                                             </span>
                                         </div>
@@ -53,7 +53,7 @@ class Slider extends React.Component {
                                     <div className="col">
                                         <div className="form-group">
                                             <span className="input-control-wrap">
-                                                <input type="text" name="telefono" value="" size="40" className="input-form-control"
+                                                <input type="text" name="telefono" size="40" className="input-form-control"
                                                 id="telefono" aria-required="true" aria-invalid="false" placeholder="Teléfono*" />
                                             </span>
                                         </div>

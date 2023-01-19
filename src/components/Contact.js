@@ -27,12 +27,12 @@ return (
             <p>Escribenos y te contactaremos lo mas pronto posible</p>
           </div>
           
-          <form action=" " method="post" className=" " novalidate="novalidate" data-status="init">
+          <form action=" " method="post" className=" " data-status="init">
             <div className="contacto_form_fila">
               <div className="col-1-1">
                 <div className="contacto_form-group"> 
                   <span className="span_name">
-                    <input type="text" name="name" value="" size="40" className=" " id="name" 
+                    <input type="text" name="name" size="40" className=" " id="name" 
                     aria-required="true" aria-invalid="false" placeholder="Nombre*" />
                   </span><br/> 
                   <span className="alert-error"></span>
@@ -42,7 +42,7 @@ return (
               <div className="col-1-2">
                 <div className="contacto_form-group"> 
                   <span className="span_email">
-                    <input type="email" name="email" value="" size="40" className=" " id="email" 
+                    <input type="email" name="email" size="40" className=" " id="email" 
                     aria-required="true" aria-invalid="false" placeholder="Email*" />
                   </span>
                   <span className="alert-error"></span>
@@ -54,7 +54,7 @@ return (
               <div className="col-2">
                 <div className="contacto_form-group"> 
                   <span className="span_tel">
-                    <input type="tel" name="tel" value="" size="40" className=" " id="phone" 
+                    <input type="tel" name="tel" size="40" className=" " id="phone" 
                     aria-required="true" aria-invalid="false" placeholder="Teléfono*" />
                   </span>
                   <span className="alert-error"></span>

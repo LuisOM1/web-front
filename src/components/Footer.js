@@ -17,37 +17,37 @@ class Footer extends React.Component {
                         <div className="footer_links">    
                             <div className="footer_list">
                                 <div className="link">
-                                    <a itemprop="url" className="link_content" target="_self" href=" ">
+                                    <a className="link_content" target="_self" href=" ">
                                         Seguridad
                                     </a>
                                 </div>
                             
                                 <div className="link">
-                                    <a itemprop="url" className="link_content " target="_self" href=" ">
+                                    <a className="link_content " target="_self" href=" ">
                                         Aviso Legal
                                     </a>
                                 </div>
                             
                                 <div className="link">
-                                    <a itemprop="url" href=" " className="link_content " target="_blank" title="Cláusulas Generales de Contratación" >
+                                    <a href=" " className="link_content " target="_blank" title="Cláusulas Generales de Contratación" >
                                         Cláusulas Generales de Contratación
                                     </a>
                                 </div>
                             
                                 <div className="link">
-                                    <a itemprop="url" className="link_content" target="_self" href=" ">
+                                    <a className="link_content" target="_self" href=" ">
                                         Mapa del Sitio
                                     </a>
                                 </div>
                             
                                 <div className="link">
-                                    <a itemprop="url" className="link_content" target="_self" href=" ">
+                                    <a className="link_content" target="_self" href=" ">
                                         Libro de Reclamaciones
                                     </a>
                                 </div>
                             
                                 <div className="link">
-                                    <a itemprop="url" href="tel:015950000" className="link_content" target="_self">
+                                    <a href="tel:015950000" className="link_content" target="_self">
                                         Llámanos (01) 595-0000
                                     </a>
                                 </div>

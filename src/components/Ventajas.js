@@ -30,7 +30,9 @@ function Ventajas (){
 
                         <div className='ventajas_cards'>
                             {  cardsv.map(card => (
+                                <div className='cardv' key={card.id}>
                                 <Cardsv icono={card.icono} titulo={card.titulo} parrafo={card.parrafo} />
+                                </div>
                                 ))
                             } 
                         </div>
