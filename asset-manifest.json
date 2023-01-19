@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/web-front/static/css/main.60175723.css",
-    "main.js": "/web-front/static/js/main.cf248b3d.js",
+    "main.css": "/web-front/static/css/main.d63c2962.css",
+    "main.js": "/web-front/static/js/main.e2a370f8.js",
     "static/js/787.618f3a8b.chunk.js": "/web-front/static/js/787.618f3a8b.chunk.js",
     "static/media/fondo.jpg": "/web-front/static/media/fondo.cbb56644f3193a6fb1ac.jpg",
     "static/media/img_ventajas.jpg": "/web-front/static/media/img_ventajas.85d8ef119ae10e131819.jpg",
@@ -10,12 +10,12 @@
     "static/media/img_about.jpg": "/web-front/static/media/img_about.e0f9d401ab8f0f7e60b9.jpg",
     "static/media/logo.png": "/web-front/static/media/logo.bf97ac7ef14fca5310f6.png",
     "index.html": "/web-front/index.html",
-    "main.60175723.css.map": "/web-front/static/css/main.60175723.css.map",
-    "main.cf248b3d.js.map": "/web-front/static/js/main.cf248b3d.js.map",
+    "main.d63c2962.css.map": "/web-front/static/css/main.d63c2962.css.map",
+    "main.e2a370f8.js.map": "/web-front/static/js/main.e2a370f8.js.map",
     "787.618f3a8b.chunk.js.map": "/web-front/static/js/787.618f3a8b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.60175723.css",
-    "static/js/main.cf248b3d.js"
+    "static/css/main.d63c2962.css",
+    "static/js/main.e2a370f8.js"
   ]
 }
