@@ -6,7 +6,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: gray;
 }
 
     .about_container{
@@ -14,20 +13,16 @@
         margin-right: 140px;
         width: 100%;
         height: 1200px;
-        background-color: blueviolet;
-      
     }
 
         .about_container_1{
             height: 550px ;
-            background-color: beige;
         }
 
             .about_text{
                 width: 54%;
                 height: 550px;
                 float: left;
-                background-color: blue;
             }
 
                 .about_sub_title {
@@ -130,3 +125,63 @@
                 width: 100%;
                 text-align: center;
             }
+
+
+/* Seccion About Responsive */
+@media screen and (max-width: 1150px ){
+    .about, .about_container{
+        height: auto;
+    }
+        .about_container_1{
+            height: 950px ;
+            margin-top: 30px;
+        }
+
+            .about_text, .about_img{
+                width: 100%;
+                float: none;
+            }
+            .about_text {
+                height: 370px;
+                margin-bottom: 1rem;
+            }
+
+            .about_img{
+                text-align: center;
+            }
+
+                .about_img img{
+                    width: auto;
+                }
+}
+
+
+@media screen and (max-width: 940px ){
+    .about_container{
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px ){
+    .about_container{
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 710px ){
+    .about_text {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 630px ){
+    .about_video iframe{
+        width: 90%;
+    }
+}
+
+
+
