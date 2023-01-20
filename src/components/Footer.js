@@ -59,15 +59,15 @@ class Footer extends React.Component {
                         <div className="footer_social">
                     
                             <div className="footer_sociallinks">
-                                <a href="https://www.facebook.com/SKIESGPS" target="_blank" aria-label="Facebook" title="Facebook">
+                                <a href="https://www.facebook.com/SKIESGPS" target="_blank" aria-label="Facebook" title="Facebook" rel="noreferrer">
                                     <i aria-hidden="true" title="Facebook" className="fab fa-facebook-f"></i>
                                 </a>
                     
-                                <a href="https://www.instagram.com/gps_skies" target="_blank"  aria-label="Twitter" title="Twitter">
+                                <a href="https://www.instagram.com/gps_skies" target="_blank"  aria-label="Twitter" title="Twitter" rel="noreferrer">
                                     <i aria-hidden="true" title="Twitter" className="fab fa-instagram"></i>
                                 </a>
                     
-                                <a href="https://twitter.com/gps_skies" target="_blank"  aria-label="Instagram" title="Instagram">
+                                <a href="https://twitter.com/gps_skies" target="_blank"  aria-label="Instagram" title="Instagram" rel="noreferrer">
                                     <i aria-hidden="true" title="Instagram" className="fab fa-twitter"></i>
                                 </a>
                             </div>

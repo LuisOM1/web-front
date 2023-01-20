@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../css/header.css';
 import  logo from  '../img/logo.png';
-
 
 
 
@@ -30,17 +30,17 @@ class Header extends React.Component {
                         <li> <i className="far fa-clock"></i> Atención: 9:00 AM – 7:00 PM
                         </li>
                         <li> 
-                            <a href="https://www.facebook.com/SKIESGPS" target="_blank" className=" icon icon--facebook"> 
+                            <a href="https://www.facebook.com/SKIESGPS" target="_blank" className=" icon icon--facebook" rel="noreferrer"> 
                                 <i className="fab fa-facebook-f"></i> 
                             </a>
                         </li>
                         <li> 
-                            <a href="https://www.instagram.com/gps_skies" target="_blank" className="icon icon--instagram"> 
+                            <a href="https://www.instagram.com/gps_skies" target="_blank" className="icon icon--instagram" rel="noreferrer"> 
                                 <i className="fab fa-instagram"></i> 
                             </a>
                         </li>
                         <li> 
-                            <a href="https://twitter.com/gps_skies" target="_blank" className="icon icon--twitter">
+                            <a href="https://twitter.com/gps_skies" target="_blank" className="icon icon--twitter" rel="noreferrer">
                             <i className="fab fa-twitter"></i> 
                             </a>
                         </li>
@@ -62,7 +62,7 @@ class Header extends React.Component {
                         </a>
                         <ul>
                             <li>
-                            <a href="#"> INICIO </a>
+                            <Link to={`/web-front`}> INICIO </Link>
                             </li>
                             <li>
                             <a href="#"> NOSOTROS</a>

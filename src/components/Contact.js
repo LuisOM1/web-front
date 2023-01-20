@@ -132,7 +132,7 @@ return (
           </div>
   
           <div id="content2" className={activetab == 2 ? "content content-active" : "content"}>
-            <iframe src={urlmap} loading="lazy"></iframe>
+            <iframe src={urlmap} title="mapGpsSkies" loading="lazy"></iframe>
           </div>
         </div>
       </div>

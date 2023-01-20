@@ -7,7 +7,7 @@ import Footer from './Footer';
 import Contact from './Contact';
 import Ventajas from './Ventajas';
 import Clientes from './Clientes';
-
+import GoTop from './GoTop';
 
 function Inicio() {
   return (
@@ -22,6 +22,7 @@ function Inicio() {
       < Clientes />
       
       < Footer/>
+      < GoTop />
     </div>
   );
 }
