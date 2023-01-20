@@ -3,9 +3,6 @@
 .about{
     height: 1300px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
     .about_container{
@@ -29,24 +26,17 @@
                     font-size: 20px;
                     font-weight: 700;
                     color: var(--color-rojo-logo);
-                    
                 }
-
                 .about_text h2, .about_text h3 {
                     margin-bottom: 10px;
-                }
-                .about_text h3{
                     font-weight: 700;
                 }
-
                 .about_text p {
                     font-size: 14px;
                     text-align: justify;
                     line-height: 1.5;
                     margin-bottom: 15px;
                 }
-
-
 
                 .about_mision, .about_vision{
                     width: 48%;
@@ -60,7 +50,6 @@
                 .about_mision{
                     float: left;
                 }
-
                 .about_vision{
                     float: right;
                 }
@@ -71,8 +60,10 @@
                         margin-top: 10px;
                     }
 
+
             .about_img{
                 width: 40%;
+                height: auto;
                 float: right;
             }
 
@@ -82,13 +73,16 @@
                 }
 
         
-        .about_container_2{
-            height: 150px;
-            background-color: rgba(211, 211, 211, 0.342);
+        .about, .about_container_2, .about_container_3{
             display: flex;
             align-items: center;
             justify-content: center;
         }
+        .about_container_2{
+            height: 150px;
+            background-color: rgba(211, 211, 211, 0.342);
+        }
+
             .about_funfact{
                 display: flex;
                 height: 120px;
@@ -108,16 +102,13 @@
                             font-size: 45px;
                             color:  var(--color-rojo-logo);
                         }
-
                         .counter{
                             font-size: 30px;
                         }
             
+
         .about_container_3{
             height: 500px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
 
             .about_video{
@@ -149,7 +140,6 @@
             .about_img{
                 text-align: center;
             }
-
                 .about_img img{
                     width: auto;
                 }
@@ -170,7 +160,6 @@
     }
 }
 
-
 @media screen and (max-width: 710px ){
     .about_text {
         height: 450px;
@@ -180,6 +169,95 @@
 @media screen and (max-width: 630px ){
     .about_video iframe{
         width: 90%;
+    }
+}
+
+@media screen and (max-width: 530px ){
+    .about_container_1{
+        height: 1100px;
+    }
+
+        .about_text{
+            height: 550px;
+            margin-bottom: 0;
+        }
+            .about_mision, .about_vision{
+                width: 100%;
+                float: none;
+            }
+
+            .about_img img{
+                width: 90%;
+            }
+
+
+            .about_funfact .fa-users, .about_funfact .fa-tools, .about_funfact .fa-trophy,.about_funfact .fa-medal{
+                font-size: 35px;
+            }
+            .counter{
+                font-size: 20px;
+            }
+        
+
+
+    .about_container_3{
+        height: 300px;
+    }
+
+        .about_video{
+            height: auto;
+        }
+            .about_video iframe{
+                width: auto;
+                height: auto;
+            }
+
+}
+
+
+@media screen and (max-width: 400px ){
+    .about_container_1{
+        height: 1200px;
+    }
+
+        .about_text{
+            height: auto;
+        }
+
+        .about_img{
+            margin-top: 20px;
+        }
+
+            .about_img img{
+                width: 100%;
+            }
+
+
+    .about_container_2{
+        height: auto;
+    }
+        .about_funfact{
+            display: block;
+            height: auto;
+        }
+            .about_funfact_block{
+                width: 100%;
+                height: auto;
+                margin-bottom: 1rem;
+            }
+                .counter p{
+                    font-size: 10px;
+                }
+    
+            .about_video iframe{
+                width: 100%;
+            }
+
+}
+
+@media screen and (max-width: 300px ){
+    .about_container_1{
+        height: auto;
     }
 }
 
