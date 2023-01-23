@@ -1,11 +1,13 @@
 
+body.active-modal{
+  overflow-y: hidden;
+}
 
 .precios_cards{
     width: 23.1%;
     background: #fff;
     padding: 24px;
     position: relative;
-    z-index: 1;
     box-shadow: 1px 4px 20px -2px rgb(0 0 0 / 10%);
     border-radius: 16px;
     transition: all .35s ease-in-out;
