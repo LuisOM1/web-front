@@ -5,13 +5,17 @@ import Footer from './Footer';
 import  img_about from  '../img/img_about.jpg';
 import GoTop from './GoTop';
 import CountUp from './CountUp';
+import Wsp from './Wsp';
+import SliderNav from './SliderNav';
 
 //Componente funcional About
 function About (){
 
       return (  
         <div>
+			< Wsp />
             < Header />
+			< SliderNav titleSliderNav="Nosotros"/>
             < div className='about'>
             	<div className='about_container'>
 					<div className='about_container_1'>

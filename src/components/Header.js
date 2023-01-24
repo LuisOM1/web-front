@@ -52,33 +52,34 @@ class Header extends React.Component {
 
                 <header>
                     <div id="head-inferior">
-                        <a href="#" id="logo">
-                        <img src={logo} alt="" />
-                        </a>
+                        <Link to={`/web-front`} id="logo">
+                            <img src={logo} alt="" />
+                        </Link>
 
                         <nav>
-                        <a href="#" id="menu-icon">
-                            <i className="fa fa-bars"></i>
-                        </a>
-                        <ul>
-                            <li>
-                            <Link to={`/web-front`}> INICIO </Link>
-                            </li>
-                            <li>
-                            <a href="#"> NOSOTROS</a>
-                            </li>
-                            <li>
-                            <a href="#"> PRECIOS</a>
-                            </li>
-                            <li>
-                            <a href="#"> CONTACTO</a>
-                            </li>
-                            <li>
-                            <a href="#" id="btningresar">INGRESAR</a></li>
-                        </ul>
+                            <label id="menu-icon">
+                                <i className="fa fa-bars"></i>
+                            </label>
+                            <ul>
+                                <li>
+                                    <Link to={`/web-front`}> INICIO </Link>
+                                </li>
+                                <li>
+                                    <Link to={`/about`}> NOSOTROS</Link>
+                                </li>
+                                <li>
+                                    <Link to={`/prices`}> PRECIOS</Link>
+                                </li>
+                                <li>
+                                    <Link to={`/contact`}> CONTACTO</Link>
+                                </li>
+                                <li>
+                                    <a href="#" id="btningresar">INGRESAR</a>
+                                </li>
+                            </ul>
                         </nav>
                     </div>
-                    </header>
+                </header>
 
 
 

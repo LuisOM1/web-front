@@ -1,22 +1,21 @@
 import Wsp from './Wsp';
 import Header from './Header';
 import Footer from './Footer';
-import Contacto from './Contacto';
 import GoTop from './GoTop';
+import Precios from './Precios';
 import SliderNav from './SliderNav';
 
-function Contact() {
+function Prices() {
   return (
     <div>
       < Wsp />
       < Header />
-      < SliderNav titleSliderNav="Contáctanos"/>
-
-      < Contacto />
+      < SliderNav  titleSliderNav="Precios"/>
+      < Precios />
       < Footer/>
       < GoTop />
     </div>
   );
 }
 
-export default Contact;
+export default Prices;
