@@ -44,7 +44,7 @@ class Nosotros extends React.Component {
 
                             <Link to={`/about`} > 
                             <div className="button-info-nos">
-                                ¿Quieres saber mas de nosotros?
+                                ¿Quieres saber mas de nosotros? 
                                 <span className="icon fas fa-angle-double-right"></span>
                             </div>
                             </Link>

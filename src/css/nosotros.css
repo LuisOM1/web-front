@@ -128,17 +128,23 @@
                     }
 
                     .button-info-nos span{
-                        font-size: 14px;
+                        font-size: 10px;
                         box-sizing: border-box;
                         display: inline-block;
                         text-rendering: auto;
-                        width: 34px;
-                        height: 34px;
+                        width: 23px;
+                        height: 23px;
                         color: #ffffff;
-                        line-height: 34px;
+                        line-height: 23px;
                         text-align: center;
                         border-radius: 50px;
                         background-color: var(--color-negro-logo);
+                        margin-left: 10px;
+                    }
+
+                    .button-info-nos span:hover{
+                        color: var(--color-rojo-logo);
+                        background-color: var(--color-blanco-primary);
                     }
                 
 
