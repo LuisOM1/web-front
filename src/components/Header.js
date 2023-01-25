@@ -1,15 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import '../css/header.css';
 import  logo from  '../img/logo.png';
 
 
 
-//Componente de clase Header
-class Header extends React.Component {
-   
-    render(){      
-      return    <div>
+//Componente funcional Header
+function Header(){
+   const [click, setClick] = useState(false);
+
+   const handleClick = () => setClick(!click);
+   const closeMobileMenu = () => setClick(false);
+
+    // Para que no se pueda hacer scroll con el menu movil abierto
+    if (click){
+        document.body.classList.add('active-menum');
+    } else {
+        document.body.classList.remove('active-menum');
+    }
+         
+      return  (  <div>
                     <div className="head-superior">
                     <div className="container-left">
                     <ul>
@@ -57,24 +67,24 @@ class Header extends React.Component {
                         </Link>
 
                         <nav>
-                            <label id="menu-icon">
-                                <i className="fa fa-bars"></i>
-                            </label>
-                            <ul>
+                            <div className='menu-icon' onClick={handleClick}>
+                               <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
+                            </div>
+                            <ul className={click ? "menu-list" : "menu-list.close"} >
                                 <li>
-                                    <Link to={`/web-front`}> INICIO </Link>
+                                    <Link to={`/web-front`}  onClick={closeMobileMenu}> INICIO </Link>
                                 </li>
                                 <li>
-                                    <Link to={`/about`}> NOSOTROS</Link>
+                                    <Link to={`/about`}  onClick={closeMobileMenu}> NOSOTROS</Link>
                                 </li>
                                 <li>
-                                    <Link to={`/prices`}> PRECIOS</Link>
+                                    <Link to={`/prices`}  onClick={closeMobileMenu}> PRECIOS</Link>
                                 </li>
                                 <li>
-                                    <Link to={`/contact`}> CONTACTO</Link>
+                                    <Link to={`/contact`}  onClick={closeMobileMenu}> CONTACTO</Link>
                                 </li>
                                 <li>
-                                    <a href="#" id="btningresar">INGRESAR</a>
+                                    <a href="#" id="btningresar"  onClick={closeMobileMenu}>INGRESAR</a>
                                 </li>
                             </ul>
                         </nav>
@@ -85,7 +95,7 @@ class Header extends React.Component {
 
                 </div>
   
-    }
+      );
   
   }
 
