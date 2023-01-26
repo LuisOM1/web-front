@@ -63,7 +63,7 @@ function Header(){
                 <header>
                     <div id="head-inferior">
                         <Link to={`/web-front`} id="logo">
-                            <img src={logo} alt="" />
+                            <img src={logo} alt="GpsSkies" />
                         </Link>
 
                         <nav>
@@ -84,7 +84,7 @@ function Header(){
                                     <Link to={`/contact`}  onClick={closeMobileMenu}> CONTACTO</Link>
                                 </li>
                                 <li>
-                                    <a href="#" id="btningresar"  onClick={closeMobileMenu}>INGRESAR</a>
+                                    <Link to={`/login`}  id="btningresar"  onClick={closeMobileMenu}>INGRESAR</Link>
                                 </li>
                             </ul>
                         </nav>
