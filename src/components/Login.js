@@ -12,12 +12,10 @@ function Login() {
                     <img src={logo} alt="GpsSkies"></img>
                 </div>
                 <div className='login_center'>
-                    <div className='login_text'>
-                        <h5>¿No tienes una cuenta?</h5>
-                        <a>
-                            <span>Crea una cuenta ahora</span>
-                        </a>
-                    </div>
+                    <h5>¿No tienes una cuenta?</h5>
+                    <button>
+                        <span>Crea una cuenta ahora</span>
+                    </button>
                 </div>
             </div>
 

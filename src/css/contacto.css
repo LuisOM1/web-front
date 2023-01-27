@@ -73,6 +73,11 @@
                         
                     }
 
+                    .col-1-1 input:focus, .col-1-2 input:focus, .col-2 input:focus, .col-3 textarea:focus{
+                        outline: 1px solid #ced4da;
+                    }
+                    
+
                     .col-4 button{
                         overflow: visible;
                         border: none;

@@ -131,6 +131,7 @@
 
                     .button-info-nos:hover{
                         background-color: rgb(229, 11, 11);
+                        transition: all 0.5s ease-in-out;
                     }
 
                         .button-info-nos span{
