@@ -98,7 +98,7 @@ return (
                   </div>
                   <div className="info">
                       <h4> Dirección </h4>
-                      <p>Prolong. Alfonso ugarte 1918 Miraflores Bajo, Chimbote, Santa, Ancash</p>
+                      <p> Prolong. Alfonso ugarte 1918 Miraflores Bajo, Chimbote, Ancash</p>
                   </div>
               </li>
               <li>

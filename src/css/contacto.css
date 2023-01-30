@@ -30,7 +30,7 @@
 
                 .contacto_form_head h2{
                     font-size: 24px;
-                    color: #0e2b3d;
+                    color: var(--color-negro-logo);
                     margin-bottom: 15px;
                     font-weight: 700;
                     
@@ -81,11 +81,11 @@
                     .col-4 button{
                         overflow: visible;
                         border: none;
-                        color: #fff;
+                        color: var(--color-blanco-primary);
                         font-weight: 600;
                         padding: 15px 40px;
                         border-radius: 5px;
-                        background: #334fba;
+                        background: var(--color-rojo-logo);
                         cursor: pointer;
                     }
 
@@ -112,7 +112,6 @@
                 list-style: none;
                 border-bottom: 1px solid #e7e7e7;
                 margin-bottom: 20px;
-
             }
 
                 .option{
@@ -120,14 +119,14 @@
                     display: inline-block;
                     padding: 3px;
                     font-size: 23px;
-                    color: #0e2b3d;
+                    color: var(--color-negro-logo);
                     font-weight: 700;
                 }
 
 
                 .option-active {
-                    border-bottom: 4px solid #334fba;
-                    color: #334fba;
+                    border-bottom: 4px solid var(--color-rojo-logo);
+                    color: var(--color-rojo-logo);
                 }
 
 
@@ -135,7 +134,6 @@
                 text-align: left;
                 margin-right: 15px;
                 margin-left: 15px;
-
             }
 
                 .content {
@@ -157,7 +155,7 @@
                             height: 60px;
                             width: 60px;
                             line-height: 60px;
-                            background: #fff;
+                            background: var(--color-blanco-primary);
                             box-shadow: 0 5px 30px 0 rgb(214 215 216 / 57%);
                             border-radius: 50%;
                             text-align: center;
@@ -165,17 +163,17 @@
                         }
 
                         .contacto_contents .fa-map-marker-alt, .contacto_contents .fa-envelope-open, .contacto_contents .fa-phone, .contacto_contents .fa-whatsapp{
-                            color: #334fba;
+                            color: var(--color-rojo-logo);
                             font-size: 20px;
                         }
 
                         .contacto_contents .info p{
-                            color: #0e2b3d;
+                            color: #666;
                             font-size: 13px;
                         }
 
                         .contacto_contents .info h4{
-                            color: #0e2b3d;
+                            color: var(--color-negro-logo);
                             font-size: 12px;
                             text-transform: uppercase;
                             margin-bottom: 5px;

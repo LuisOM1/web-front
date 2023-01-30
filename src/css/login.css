@@ -12,8 +12,8 @@
         align-items: center;
         justify-content: center;
         background-image: linear-gradient(
-            var(--color-rojo-logo),
-            var(--color-rojo-logo)
+            var(--color-rojo-logo-secundary),
+            var(--color-rojo-logo-secundary)
             ),url('../img/img_login.jpg');
         background-size: cover;
         background-position: -100px;
@@ -78,7 +78,7 @@
             .login_form h5{
                 font-size: 2em;
                 font-weight: 600;
-                color: var(--color-rojo-logo);
+                color: var(--color-rojo-logo-secundary);
                 text-align: center;
                 margin-bottom: 40px;
                 overflow-wrap: break-word;
@@ -103,14 +103,14 @@
                 height: 50px;
                 border-radius: 8px;
                 color: #fff;
-                background-color: var(--color-rojo-logo);
-                border: solid 1px var(--color-rojo-logo);
+                background-color: var(--color-rojo-logo-secundary);
+                border: solid 1px var(--color-rojo-logo-secundary);
                 cursor: pointer;
                 margin-bottom: 40px;
             }
 
             .login_form button:hover{
-                background-color: rgb(229, 11, 11);
+                background-color: var(--color-rojo-logo);
                 transition: all 0.5s ease-in-out;
             }
 
@@ -133,7 +133,7 @@
                 }
 
                 .login_help a:hover{
-                    color: var(--color-rojo-logo);
+                    color: var(--color-rojo-logo-secundary);
                 }
 
 

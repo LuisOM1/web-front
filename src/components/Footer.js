@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../css/footer.css';
-import  logo_white from  '../img/logo_white.png';
+import  logo from  '../img/logo.png';
 
 
 
@@ -10,9 +11,9 @@ class Footer extends React.Component {
     render(){
       return    <div className="footer" >
                     <div className="footer_container">
-                        <a href="index.html" className="footer_logo " target="_self">
-                            <img src={logo_white} className="footer_logoimg " alt="GPS Skies" />
-                        </a>
+                        <Link to={`/web-front`} className="footer_logo" target="_self">
+                            <img src={logo} className="footer_logoimg " alt="GPS Skies" />
+                        </Link>
                     
                         <div className="footer_links">    
                             <div className="footer_list">
@@ -63,12 +64,12 @@ class Footer extends React.Component {
                                     <i aria-hidden="true" title="Facebook" className="fab fa-facebook-f"></i>
                                 </a>
                     
-                                <a href="https://www.instagram.com/gps_skies" target="_blank"  aria-label="Twitter" title="Twitter" rel="noreferrer">
-                                    <i aria-hidden="true" title="Twitter" className="fab fa-instagram"></i>
+                                <a href="https://www.instagram.com/gps_skies" target="_blank"  aria-label="Twitter" title="Instagram" rel="noreferrer">
+                                    <i aria-hidden="true" title="Instagram" className="fab fa-instagram"></i>
                                 </a>
                     
-                                <a href="https://twitter.com/gps_skies" target="_blank"  aria-label="Instagram" title="Instagram" rel="noreferrer">
-                                    <i aria-hidden="true" title="Instagram" className="fab fa-twitter"></i>
+                                <a href="https://twitter.com/gps_skies" target="_blank"  aria-label="Instagram" title="Twitter" rel="noreferrer">
+                                    <i aria-hidden="true" title="Twitter" className="fab fa-twitter"></i>
                                 </a>
                             </div>
                         </div>

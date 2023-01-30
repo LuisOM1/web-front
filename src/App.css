@@ -5,10 +5,13 @@
 }
 
 :root{
-  --color-rojo-logo: rgba(255, 0, 0, 0.832); 
-  --color-negro-logo: black;
+  --color-rojo-logo: #eb3135;
+  --color-rojo-logo-secundary: #eb3134e5;
+  --color-rojo-logo-trans: #eb3135c9;
+  --color-negro-logo: #000000;
+  --color-grey-logo: #383536;
   --color-amarillo-primary: rgba(255, 255, 0, 0.623);
-  --color-blanco-primary: white;
+  --color-blanco-primary: #ffffff;
   
 }
 
