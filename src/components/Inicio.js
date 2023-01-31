@@ -17,9 +17,9 @@ function Inicio() {
       < Slider />
       < Nosotros />
       < Ventajas />
+      < Clientes />
       < Precios/>
       < Contacto />
-      < Clientes />
       
       < Footer/>
       < GoTop />
