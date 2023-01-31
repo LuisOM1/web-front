@@ -29,11 +29,11 @@
         }
 
             .ventajas_title h2{
-                font-size: 27px;
+                font-size: 22px;
                 font-weight: 700;
-                color: #fff; 
+                color: #fff;
                 line-height: 1.2rem;
-                
+                text-transform: uppercase;
             }
 
         .ventajas_cards{
@@ -57,7 +57,7 @@
             }
 
                 .cardv:hover{
-                    border: 1px solid #0e2b3d;;
+                    border: 1px solid #0e2b3d;
                 }
 
 

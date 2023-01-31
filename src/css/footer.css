@@ -73,7 +73,7 @@
                     height: 25px;
                     display: inline-block;
                     font-size: 15px;
-                    background: var(--color-blanco-primary);
+                    background: var(--color-grey-logo);
                     background-size: 25px;
                     border-radius: 50%;
                     text-align: center;
@@ -81,7 +81,7 @@
                 }
 
                     .footer_sociallinks a:hover{
-                        background: var(--color-grey-logo);
+                        background: var(--color-blanco-primary);
                     }
 
 
@@ -94,7 +94,7 @@
                 font-family: Helvetica,Arial,sans-serif;
                 font-size: 12px;
                 line-height: 16px;
-                color: var(--color-blanco-primary);
+                color: var(--color-grey-logo);
             }
 
 
