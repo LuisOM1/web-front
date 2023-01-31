@@ -59,7 +59,13 @@ body.active-modal{
             .fa-check{
               margin-right: 8px;
               color: #00d664;
-              font-size: 10px;
+              font-size: 12px;
+            }
+
+            .fa-times{
+              color: red;
+              margin-right: 12px;
+              font-size: 12px;
             }
 
 

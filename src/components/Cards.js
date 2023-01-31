@@ -4,7 +4,7 @@ import '../css/modal.css';
 
 
 //Componente funcional Cards
-function Cards ({nivel, precio, tiempo}){
+function Cards ({nivel, precio, tiempo, iconx}){
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -44,9 +44,9 @@ function Cards ({nivel, precio, tiempo}){
                 <li> <i className='fas fa-check'></i> Certificado digital</li>
                 <li> <i className='fas fa-check'></i> Todos los módulos</li>
                 <li> <i className='fas fa-check'></i> Web, Android, IOS</li>
-                <li> <i className='fas fa-check'></i> Videotutoriales</li>
-                <li> <i className='fas fa-check'></i> Asesoría personalizada</li>
-                <li> <i className='fas fa-check'></i> Soporte personalizado</li>
+                <li> <i className={iconx}></i> Videotutoriales</li>
+                <li> <i className={iconx}></i> Asesoría personalizada</li>
+                <li> <i className={iconx}></i> Soporte personalizado</li>
               </ul>
             </div>
 
