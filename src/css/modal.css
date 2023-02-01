@@ -36,7 +36,7 @@
     font-size: 2.5em;
   }
     .btnclose:hover{
-      color: #eb3135c9;
+      color: var(--color-rojo-logo-trans);
     }
 
     .modal_container .col-lg-12{

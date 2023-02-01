@@ -56,13 +56,13 @@ body.active-modal{
             margin-bottom: 8px;
           }
 
-            .fa-check{
+            .precios_card_items .fa-check{
               margin-right: 8px;
               color: #00d664;
               font-size: 12px;
             }
 
-            .fa-times{
+            .precios_card_items .fa-times{
               color: red;
               margin-right: 12px;
               font-size: 12px;
