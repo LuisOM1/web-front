@@ -107,7 +107,9 @@ function Precios(){
                 </div>
               </div>
               <div className='precios_notas'>
-                *** Promociones y descuentos válidos hasta el 31 de Diciembre del 2023 (Clientes nuevos). ***
+                <div className='precios_notas_texto'>
+                  <p>*** Promociones y descuentos válidos hasta el 31 de Diciembre del 2023 (Clientes nuevos). ***</p>
+                </div>
               </div>
   
   

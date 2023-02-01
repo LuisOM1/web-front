@@ -12,7 +12,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      
+
     }
       .precios_head_title{
         margin-top: 80px;
@@ -88,12 +88,23 @@
       gap: 23px;
     }
     
-      .precios_notas{
+    .precios_notas{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+      .precios_notas_texto{
+        width: 100%;
         margin-top: 30px;
-        color: var(--color-rojo-logo);
-        font-size: 13px;
-        font-weight: 550;
       }
+        .precios_notas p{
+          color: var(--color-rojo-logo);
+          font-size: 13px;
+          font-weight: 550;
+          text-align: center;
+          overflow-wrap: break-word;
+        }
   
 
   
@@ -120,7 +131,9 @@
       align-items: center;
     }
 
-    
+      .precios_notas_texto{
+        width: 80%;
+      }
 
 }
 
@@ -128,26 +141,25 @@
   .precios {
     height: 2200px;
   }
-  .precios_head_title {
-    margin-bottom: 15px;
-  }
-
-  .precios_contents{
-    gap: 0px;
-  }
-  .precios_options{
-    height: 150px;
-
-  }
-    .precios_buttons{
-      width: 80%;
+    .precios_head_title {
       margin-bottom: 15px;
     }
-      .precios_buttons button {
-        width: 100%;
 
+    .precios_contents{
+      gap: 0px;
+    }
+    .precios_options{
+      height: 150px;
+
+    }
+      .precios_buttons{
+        width: 80%;
+        margin-bottom: 15px;
       }
+        .precios_buttons button {
+          width: 100%;
 
-
+        }      
 }
+
   
