@@ -2,7 +2,7 @@ import '../css/login.css';
 import  logo from  '../img/logo.png';
 
 function Login() {
-  return (
+  return(    
 
     <div className='login'>
         <div className='login_sup'>
