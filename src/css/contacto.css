@@ -67,17 +67,19 @@
                         background: #f5f5f5;
                         font-family: Arial, Helvetica, sans-serif;
                         width: 100%;
-                        
+                        border-radius: 0.25rem;
                     }
                     .col-1-1 input, .col-1-2 input, .col-2 input{
                         margin-bottom: 2rem;
                     }
                     .col-3 textarea{
                         margin-bottom: 1rem;
+                        resize: none;
                     }
 
                     .col-1-1 input:focus, .col-1-2 input:focus, .col-2 input:focus, .col-3 textarea:focus{
                         outline: 1px solid #ced4da;
+                        background: #fff;
                     }
                     
 
@@ -193,15 +195,16 @@
 
                     .contacto_contents iframe{
                         display: block;
-                        height: 300px;
+                        height: 100%;
+                        min-height: 275px;
                         position: relative;
                         width: 100%;
                         z-index: 1;
-                        padding: 15px;
+                        padding: 7px;
                         background: #fff;
                         box-shadow: 0 5px 30px 0 rgb(214 215 216 / 57%);
                         border: none;
-
+                        margin-bottom: 20px;
                     }
 
 
@@ -243,8 +246,9 @@
                             margin-bottom: 1.5rem;
                         }
                         .col-3 textarea {
-                            margin-bottom: 0.5rem;
+                            margin-bottom: 1rem;
                         }
+                        .col-4 button{width: 100%;}
 
                 .contacto_options{
                     margin-top: 30px;
@@ -260,19 +264,7 @@
 }
 
 @media screen and (max-width: 370px ){
-
     .contacto{overflow-x: hidden;}
-
-        .contacto_options{
-            text-align: center;
-            margin-top: 0px;
-        }
-            
-            .option{
-                width: 100%;
-                border: 1px solid #e7e7e7;
-            }
-
 }
 
             
