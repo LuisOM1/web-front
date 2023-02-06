@@ -5,14 +5,12 @@
     height: 800px;
     text-align: center;
     background-color: #f4f7fc;
-    
   }
 
     .precios_head{
       display: flex;
       align-items: center;
       justify-content: center;
-
     }
       .precios_head_title{
         margin-top: 80px;
@@ -20,7 +18,7 @@
   
       .precios_head h2{
         color: var(--color-rojo-logo);
-        font-weight: 600;
+        font-weight: bold;
         text-transform: uppercase;
         margin-bottom: 8px;
         text-align: center;
@@ -30,9 +28,8 @@
       .precios_head h4{
         display: inline-block;
         font-weight: 600;
-        line-height: 1.4;
         text-align: center;
-        font-size: 24px;
+        font-size: 22px;
       }
     
     .precios_options{
@@ -40,7 +37,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
     }
   
       .precios_buttons{
@@ -88,6 +84,12 @@
       display: flex;
       flex-wrap: wrap;
       gap: 23px;
+      animation: fadeIn 4s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
     
     .precios_notas{
@@ -109,20 +111,14 @@
         }
   
 
-  
-  .contenttab, .modalcontent{
-   display: none;
-  }
-  
-  .active-contenttab, .activemodal{
-   display: block;
-  }
+  .contenttab, .modalcontent{ display: none; }
+  .active-contenttab, .activemodal{ display: block; }
 
 
 /* Seccion Precios responsive */
 @media screen and (max-width: 1200px ){
   .precios {
-    height: 1230px;
+    height: 1240px;
   }
 
     .precios_contents{
@@ -140,19 +136,15 @@
 }
 
 @media screen and (max-width: 600px ){
-  .precios {
-    height: 2200px;
-  }
+  .precios { height: auto; overflow-x: hidden; }
+
     .precios_head_title {
-      margin-bottom: 15px;
+      width: 80%;
+      margin-bottom: 25px;
     }
 
-    .precios_contents{
-      gap: 0px;
-    }
-    .precios_options{
-      height: 150px;
-
+    .precios_options{ 
+      height: auto;
     }
       .precios_buttons{
         width: 80%;
@@ -160,8 +152,10 @@
       }
         .precios_buttons button {
           width: 100%;
-
-        }      
+        }
+    
+    .precios_contents{ gap: 0px; }
+    .precios_notas{ margin-bottom: 70px; }
 }
 
   

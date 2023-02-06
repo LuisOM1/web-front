@@ -51,8 +51,8 @@ function Precios(){
               
               <div className='precios_head'>
                 <div className='precios_head_title'>
-                <h2>Nuestros Precios</h2>
-                <h4>Planes a tu medida</h4>
+                  <h2>Nuestros Precios</h2>
+                  <h4>Planes a tu medida</h4>
                 </div>
               </div>
               <div className='precios_options'>
