@@ -1,24 +1,23 @@
 {
   "files": {
-    "main.css": "/web-front/static/css/main.d58697ab.css",
-    "main.js": "/web-front/static/js/main.38950e16.js",
+    "main.css": "/web-front/static/css/main.cc8d21c0.css",
+    "main.js": "/web-front/static/js/main.b5fba443.js",
     "static/js/787.618f3a8b.chunk.js": "/web-front/static/js/787.618f3a8b.chunk.js",
     "static/media/fondo.jpg": "/web-front/static/media/fondo.cbb56644f3193a6fb1ac.jpg",
     "static/media/1.png": "/web-front/static/media/1.d546e21c9c05643d0ee7.png",
     "static/media/img_ventajas.jpg": "/web-front/static/media/img_ventajas.85d8ef119ae10e131819.jpg",
     "static/media/img_slidernav.jpg": "/web-front/static/media/img_slidernav.ad5307786f3a5a4b4cf6.jpg",
-    "static/media/img_login.jpg": "/web-front/static/media/img_login.2440e6d0e16ec94d6b7e.jpg",
     "static/media/img_real.jpg": "/web-front/static/media/img_real.8484238748c2e014f9cf.jpg",
     "static/media/img_nosotros.jpg": "/web-front/static/media/img_nosotros.025e28f10c5865a697b9.jpg",
     "static/media/img_about.jpg": "/web-front/static/media/img_about.e0f9d401ab8f0f7e60b9.jpg",
     "static/media/logo.png": "/web-front/static/media/logo.bf97ac7ef14fca5310f6.png",
     "index.html": "/web-front/index.html",
-    "main.d58697ab.css.map": "/web-front/static/css/main.d58697ab.css.map",
-    "main.38950e16.js.map": "/web-front/static/js/main.38950e16.js.map",
+    "main.cc8d21c0.css.map": "/web-front/static/css/main.cc8d21c0.css.map",
+    "main.b5fba443.js.map": "/web-front/static/js/main.b5fba443.js.map",
     "787.618f3a8b.chunk.js.map": "/web-front/static/js/787.618f3a8b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d58697ab.css",
-    "static/js/main.38950e16.js"
+    "static/css/main.cc8d21c0.css",
+    "static/js/main.b5fba443.js"
   ]
 }
