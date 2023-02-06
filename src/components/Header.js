@@ -11,7 +11,6 @@ function Header(){
 
    const handleClick = () => setClick(!click);
    const closeMobileMenu = () => setClick(false);
-   const loginScroll= () => document.body.classList.remove('active-menum');
 
     // Para que no se pueda hacer scroll con el menu movil abierto
     if (click){
@@ -85,7 +84,7 @@ function Header(){
                                     <Link to={`/contact`}  onClick={closeMobileMenu}> CONTACTO</Link>
                                 </li>
                                 <li>
-                                    <Link to={`/login`}  id="btningresar" onClick={loginScroll}>INGRESAR</Link>
+                                    <a id="btningresar" onClick={closeMobileMenu}> SOLICITAR DEMO</a>
                                 </li>
                             </ul>
                         </nav>
