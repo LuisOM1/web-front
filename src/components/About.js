@@ -8,6 +8,7 @@ import CountUp from './CountUp';
 import Wsp from './Wsp';
 import SliderNav from './SliderNav';
 
+
 //Componente funcional About
 function About (){
 
@@ -31,29 +32,39 @@ function About (){
 
 							
 							<div className='about_mision'>
-								<div className='about_objective_center'>
-								<h3>Mision</h3>
-								<p>Ofrecer soluciones tecnológicas y humanas, que nos permitan ofrecer 
-									información más precisa, completa, confiable y en tiempo real que optimicen 
-									los procesos administrativos y financieros de sus activos; impactando su 
-									rentabilidad.
-								</p>
+								<div className='about_objective'>
+									<div className='icon_objective'>
+										<i className="fa-solid fa-bullseye"></i>
+									</div>
+									<div className='about_mision_text'>
+										<h3>Mision</h3>
+										<p>Ofrecer soluciones tecnológicas y humanas, que nos permitan ofrecer 
+											información más precisa, completa, confiable y en tiempo real que optimicen 
+											los procesos administrativos y financieros de sus activos; impactando su 
+											rentabilidad.
+										</p>
+									</div>
 								</div>
 							</div>
 							<div className='about_vision'>
-								<div className='about_objective_center'>
-								<h3>Vision</h3>
-								<p>Ser líderes en soluciones tecnológicas Innovadoras , para el transporte 
-									vehicular Seguridad Electronica logrando ser reconocidos a nivel nacional 
-									por la capacidad creativa e innovadora en tecnologías de información y 
-									comunicación enfocadas en la administración Satelital y m2m.
-								</p>
+								<div className='about_objective'>
+									<div className='icon_objective'>
+										<i className="fa-solid fa-bullseye"></i>
+									</div>
+									<div className='about_vision_text'>
+										<h3>Vision</h3>
+										<p>Ser líderes en soluciones tecnológicas Innovadoras , para el transporte 
+											vehicular Seguridad Electronica logrando ser reconocidos a nivel nacional 
+											por la capacidad creativa e innovadora en tecnologías de información y 
+											comunicación enfocadas en la administración Satelital y m2m.
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
 
 						<div className='about_img'>
-							<img src={img_about} alt=""></img>
+							<img src={img_about} alt="David De La Cruz"></img>
 						</div>
 					</div>
                 
