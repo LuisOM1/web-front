@@ -54,6 +54,7 @@ body.active-modal{
           .precios_card_items ul li{
             font-size: 12px;
             margin-bottom: 8px;
+            color: #666;
           }
 
             .precios_card_items .fa-check{
