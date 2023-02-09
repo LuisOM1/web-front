@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../css/about.css';
 import Header from './Header';
 import Footer from './Footer';
@@ -7,10 +7,21 @@ import GoTop from './GoTop';
 import CountUp from './CountUp';
 import Wsp from './Wsp';
 import SliderNav from './SliderNav';
-import { Link } from 'react-router-dom';
+
 
 //Componente funcional About
 function About (){
+	const [isOpen, setIsOpen] = useState(false);
+
+	const openVideo = () => {
+		setIsOpen(true);
+		document.body.classList.add('active_video');
+	}
+
+	const closeVideo = () => {
+		setIsOpen(false);
+		document.body.classList.remove('active_video');
+	}
 
       return (  
         <div>
@@ -115,12 +126,32 @@ function About (){
 
 
 				<div className="about_container_3">
-					<div className="about_video">
-						<span className="video_btn_border1"></span>
-						<span className="video_btn_border2"></span>
-						<a href="https://www.youtube.com/watch?v=l0rau5crOls" target="_blank" className='about_video_icon' rel="noreferrer">
-							<i className="fas fa-play"></i>
-						</a>
+					<div className='about_video'>
+						<div className='about_content1'>
+							<span className="video_btn_border1"></span>
+							<span className="video_btn_border2"></span>
+							<div className='about_video_icon' onClick={openVideo}>
+								<i className="fas fa-play"></i>
+							</div>
+						</div>
+							
+						{ isOpen &&(
+							<div className='about_content2'>
+								<div className='about_content2_container'>
+									<button onClick={closeVideo} className="about_btnclose">×</button>
+									<iframe 
+										width="560" 
+										height="315" 
+										src="https://www.youtube.com/embed/l0rau5crOls" 
+										title="YouTube video player" 
+										frameBorder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+										allowFullScreen>
+									</iframe>
+								</div>
+							</div>
+						)}
+			
 					</div>
 				</div>		
 	
