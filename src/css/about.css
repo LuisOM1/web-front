@@ -1,7 +1,5 @@
 
-body.active_video{
-    overflow-y: hidden;
-}
+body.active_video{ overflow-y: hidden; }
 
 .about{
     height: 1300px;
@@ -45,7 +43,7 @@ body.active_video{
 
                 .about_mision, .about_vision{
                     width: 100%;
-                    height: 130px;
+                    height: auto;
                     box-shadow: 1px 4px 20px -2px rgb(0 0 0 / 10%);
                     display: flex;
                     align-items: center;
@@ -72,22 +70,22 @@ body.active_video{
                     .about_objective{
                         width: 95%;
                         height: auto;
+                        margin: 13px, 13px;
+                        margin-top: 13px;
+                        display: flex; align-items: center; justify-content: center;
                     }
 
                         .icon_objective{
                             width: 8%;
-                            height: 110px;
+                            height: auto;
                             float: left;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
                         }
                             .icon_objective .fa-bullseye{ font-size: 20px; color: var(--color-rojo-logo); }
                             .icon_objective .fa-bullseye:hover{ color: #0e2b3d; }
 
                         .about_objective_text{
                             width: 90%;
-                            height: 110px;
+                            height: auto;
                             float: right;
                         }
 
@@ -158,7 +156,10 @@ body.active_video{
                 .about_content1{
                     width: 100%;
                     height: 100%;
-                    background-image: url('../img/img_autopista.jpg');
+                    background-image: linear-gradient(
+                    rgba(255, 255, 255, 0.100),
+                    rgba(255, 255, 255, 0.100)
+                    ),url('../img/img_autopista.jpg');
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: center center;
@@ -167,43 +168,6 @@ body.active_video{
                     align-items: center;
                     justify-content: center;
                 }
-
-                .about_content2{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    position: fixed;
-                    z-index: 999;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%,-50%);
-                    background-color: rgba(0, 0, 0, 0.75);
-                    width: 100%;
-                    height: 100%;
-                    min-height: 100vh;
-                }
-                    .about_content2_container{
-                        width: 560px;
-                        height: 400px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        position: relative;
-                    }
-                        .about_btnclose{
-                            color: #ccc;
-                            border: none;
-                            cursor: pointer;
-                            background-color: transparent;
-                            font-family: monospace;
-                            font-size: 2.5em;
-                            position: absolute;
-                            top: 5px;
-                            right: 0px;
-                        }
-                        .about_btnclose:hover{
-                            color: var(--color-rojo-logo-trans);
-                        }
 
                     .video_btn_border1{ width: 45px; height: 45px; }
                     .video_btn_border2{ width: 53px; height: 53px; }
@@ -244,44 +208,63 @@ body.active_video{
                         z-index: 1;
                         text-decoration: none;
                     }
-
                         .about_video_icon .fa-play{
                             color: #fff;
                             text-rendering: auto;
+                        }
+
+                .about_content2{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: fixed;
+                    z-index: 999;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    background-color: rgba(0, 0, 0, 0.75);
+                    width: 100%;
+                    height: 100%;
+                    min-height: 100vh;
+                }
+                    .about_content2_container{
+                        width: 560px;
+                        height: 400px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                    }
+                        .about_btnclose{
+                            color: #ccc;
+                            border: none;
+                            cursor: pointer;
+                            background-color: transparent;
+                            font-family: monospace;
+                            font-size: 2.5em;
+                            position: absolute;
+                            top: 5px;
+                            right: 0px;
+                        }
+                        .about_btnclose:hover{
+                            color: var(--color-rojo-logo-trans);
                         }
 
 
 /* Seccion About Responsive */
 @media screen and (max-width: 1210px ){
     .about{ overflow-x: hidden; }
-        .about_mision, .about_vision{
-            height: 150px;
-        }
-            .icon_objective, .about_objective_text{
-                height: 120px;
-            }
 }
 
 @media screen and (max-width: 1150px ){
-    .about, .about_container, .about_container_1{
-        height: auto;
-    }
-        .about_container_1{
-            margin-top: 30px;
-            margin-bottom: 4rem;
-        }
-
-            .about_container_left, .about_container_right{
-                width: 100%;
-                height: auto;
-                float: none;
-                margin-bottom: 2rem;
+    .about, .about_container, .about_container_1{ height: auto; }
+        .about_container_1{ margin-top: 30px; margin-bottom: 4rem; }
+            .about_container_left, .about_container_right{ width: 100%; height: auto;
+                float: none; margin-bottom: 2rem; 
             }
-
             .about_container_right{ text-align: center; }
                 .about_container_right img{  width: auto; }
 }
-
 
 @media screen and (max-width: 940px ){
     .about_container{ margin-left: 0px; margin-right: 0px; width: 80%; }
@@ -292,33 +275,18 @@ body.active_video{
 }
 
 @media screen and (max-width: 630px ){
-    .about_funfact .fa-users, .about_funfact .fa-tools, .about_funfact .fa-trophy,.about_funfact .fa-medal{
-        font-size: 35px;  }
+    .about_funfact .fa-users, .about_funfact .fa-tools, .about_funfact .fa-trophy,.about_funfact .fa-medal{ font-size: 35px; }
     .counter{ font-size: 20px; }
     .about_video { width: 100%; }
-        .about_content2_container, .about_content2_container iframe{ width: 100%;}
+        .about_content2_container, .about_content2_container iframe{ width: 100%; }
 }
 
 @media screen and (max-width: 450px ){
-    .about_mision, .about_vision{ height: auto; }
-        .about_objective{ height: auto; margin-top: 13px; margin-right: 13px; margin-left: 13px;
-          display: flex; align-items: center; justify-content: center; }
-            .icon_objective{ height: auto; margin-right: 13px;}
-            .about_objective_text{ height: auto;}
-
     .about_container_right img{ width: 100%; }
 
     .about_container_2{ height: auto; }
-        .about_funfact{
-            display: block;
-            height: auto;
-            margin-top: 2rem;
-        }
-            .about_funfact_block{
-                width: 100%;
-                height: auto;
-                margin-bottom: 2rem;
-            }
+        .about_funfact{ display: block; height: auto; margin-top: 2rem; }
+            .about_funfact_block{ width: 100%; height: auto; margin-bottom: 2rem; }
                 .counter p{ font-size: 10px; }
             .about_content2_container{height: 250px; } 
                 .about_content2_container iframe{ height: 180px;}

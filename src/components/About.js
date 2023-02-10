@@ -15,13 +15,20 @@ function About (){
 
 	const openVideo = () => {
 		setIsOpen(true);
-		document.body.classList.add('active_video');
+		document.body.classList.add('active_video');  //Permite no realizar scroll
 	}
 
 	const closeVideo = () => {
 		setIsOpen(false);
 		document.body.classList.remove('active_video');
 	}
+
+	const container2 = [
+		{ id:1, funfact_icon:'fas fa-tools', start:0, end:250, simbolo:'+', textp:'Instalaciones completadas'},
+		{ id:2, funfact_icon:'fas fa-users', start:0, end:100, simbolo:'+', textp:'Clientes activos'},
+		{ id:3, funfact_icon:'fas fa-trophy', start:0, end:3, simbolo:'+', textp:'Premios ganados'},
+		{ id:4, funfact_icon:'fas fa-medal', start:0, end:100, simbolo:'%', textp:'Tasa de satisfacción'}
+	]
 
       return (  
         <div>
@@ -40,7 +47,6 @@ function About (){
 								industria del GPS en el marco mundial. Crecimos con la finalidad de brindar 
 								un servicio seguro y confiable en miras de solucionar la problematica actual. 
 							</p>
-
 							
 							<div className='about_mision'>
 								<div className='about_objective'>
@@ -82,45 +88,19 @@ function About (){
 
 				<div className='about_container_2'>   
 					<div className='about_funfact'>
-						<div className='about_funfact_block'>
-							<div className='about_funfact_icon'>
-								<i className="fas fa-tools"></i>
-							</div>
-							<div className='about_funfact_text'>
-								<h3><CountUp start={0} end={250} />+</h3>
-								<p>Instalaciones completadas</p>
-							</div>
-						</div>
-
-						<div className='about_funfact_block'>
-							<div className='about_funfact_icon'>
-								<i className="fas fa-users"></i>
-							</div>
-							<div className='about_funfact_text'>
-								<h3><CountUp start={0} end={100} />+</h3>
-								<p>Clientes activos</p>
-							</div>
-						</div>
-
-						<div className='about_funfact_block'>
-							<div className='about_funfact_icon'>
-								<i className="fas fa-trophy"></i>
-							</div>
-							<div className='about_funfact_text'>
-								<h3><CountUp start={0} end={3} />+</h3>
-								<p>Premios ganados</p>
-							</div>
-						</div>
-
-						<div className='about_funfact_block'>
-							<div className='about_funfact_icon'>
-								<i className="fas fa-medal"></i>
-							</div>
-							<div className='about_funfact_text'>
-								<h3><CountUp start={0} end={100} />%</h3>
-								<p>Tasa de satisfacción</p>
-							</div>
-						</div>
+						{
+							container2.map(container2 =>(
+								<div className='about_funfact_block' key={container2.id}>
+									<div className='about_funfact_icon'>
+										<i className={container2.funfact_icon}></i>
+									</div>
+									<div className='about_funfact_text'>
+										<h3><CountUp start={container2.start} end={container2.end} />{container2.simbolo}</h3>
+										<p>{container2.textp}</p>
+									</div>
+								</div>
+							))
+						}
 					</div>
 				</div>
 
