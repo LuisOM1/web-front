@@ -13,9 +13,10 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 function Clientes (){
     const responsive = {
         0: { items: 1 },
-        568: { items: 2 },
-        1024: { items: 3 },
-        1200: { items: 5 },
+        450: { items: 2 },
+        750: { items: 3 },
+        1070: { items: 4 },
+        1250: { items: 5 },
     };
     
     const handleDragStart = (e) => e.preventDefault();
@@ -38,7 +39,7 @@ function Clientes (){
                     <AliceCarousel
                         infinite
                         autoPlay={true}
-                        autoPlayInterval={1000}
+                        autoPlayInterval={2000}
                         disableButtonsControls={true}
                         disableDotsControls={true}
                         mouseTracking

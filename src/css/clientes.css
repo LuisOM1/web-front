@@ -1,6 +1,4 @@
 
-
-
 .clientes{
     height: 360px;
     display: flex;
@@ -24,17 +22,47 @@
                 text-align: center;
             }
 
-
         .clientes_sponsors{
             height: 100px;
             width: 100%;
+            text-align: center;
         }
 
             .clientes_sponsors img{
                 height: 100px;
                 width: auto;
+                border-radius: 5px;
+                border: 1px solid #aec2c9;
             }
             
             
+/* Clientes responsive */ 
+@media screen and (max-width: 1000px ){
+    .clientes_container{
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 80%;
+    }
+}
 
+@media screen and (max-width: 700px ){
+    .clientes_container{
+        width: 90%;
+    }
+}
 
+@media screen and (max-width: 450px ){
+    .clientes_container{
+        height: auto;
+    }
+        .clientes_title{
+            height: auto;
+            margin-bottom: 25px;
+        }
+}
+
+@media screen and (max-width: 220px ){
+    .clientes_sponsors img{
+        width: 100%;
+    }
+}
