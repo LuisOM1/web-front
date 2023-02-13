@@ -2,8 +2,6 @@ import React from 'react';
 import '../css/ventajas.css';
 
 
-
-
 //Componente funcional Cardsv
 function Cardsv ({icono,titulo,parrafo}){
     const icono_style = { fontSize: '23px', color: 'white'};

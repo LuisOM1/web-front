@@ -4,7 +4,6 @@ import Cardsv from './Cardsv';
 
 
 
-
 //Componente funcional Ventajas
 function Ventajas (){
     const cardsv = [
