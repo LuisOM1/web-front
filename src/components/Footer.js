@@ -18,20 +18,24 @@ class Footer extends React.Component {
                         <div className="footer_links">    
                             <div className="footer_list">
                                 <div className="link">
+                                    <Link to={`/web-front`} className="link_content"> Inicio </Link>
+                                </div>
+                            
+                                <div className="link">
+                                    <Link to={`/about`}  className="link_content"> Nosotros</Link>
+                                </div>
+                            
+                                <div className="link">
+                                    <Link to={`/prices`}  className="link_content"> Precios</Link>
+                                </div>
+
+                                <div className="link">
+                                    <Link to={`/contact`}  className="link_content"> Contacto</Link>
+                                </div>
+
+                                <div className="link">
                                     <a className="link_content" target="_self" href=" ">
-                                        Seguridad
-                                    </a>
-                                </div>
-                            
-                                <div className="link">
-                                    <a className="link_content " target="_self" href=" ">
-                                        Aviso Legal
-                                    </a>
-                                </div>
-                            
-                                <div className="link">
-                                    <a href=" " className="link_content " target="_blank" title="Cláusulas Generales de Contratación" >
-                                        Cláusulas Generales de Contratación
+                                        Solicitar Demo
                                     </a>
                                 </div>
                             
@@ -42,14 +46,8 @@ class Footer extends React.Component {
                                 </div>
                             
                                 <div className="link">
-                                    <a className="link_content" target="_self" href=" ">
-                                        Libro de Reclamaciones
-                                    </a>
-                                </div>
-                            
-                                <div className="link">
                                     <a href="tel:015950000" className="link_content" target="_self">
-                                        Llámanos (01) 595-0000
+                                        Llámanos (01) 730-4000
                                     </a>
                                 </div>
                             </div>
