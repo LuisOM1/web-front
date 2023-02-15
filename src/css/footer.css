@@ -1,166 +1,218 @@
 
-
 .footer{
-    background-color: var(--color-rojo-logo);
-    height: 320px;
+    height: auto;
 }
 
-    .footer_container{
-        position: relative;
-        margin-right: 140px;
-        margin-left: 140px;
+    .footer_sup{
+        background-color: var(--color-rojo-logo);
+        height: 270px;
     }
 
-        .footer_logo{
-            text-align:left;
-            max-width:168px;
+        .footer_container{
+            position: relative;
+            height: auto;
+            margin-right: 140px;
+            margin-left: 140px;
         }
 
-            .footer_logoimg{
-                margin:0 0 20px;
-                margin-top: 15px;
-                padding: 10px;
-                padding-left: 0px;
+            .footer_logo{
+                text-align:left;
+                max-width:168px;
+            }
+
+                .footer_logoimg{
+                    margin:0 0 20px;
+                    margin-top: 15px;
+                    padding: 10px;
+                    padding-left: 0px;
+                    height: 100px;
+                }
+
+
+            .footer_links{
                 height: 100px;
             }
-
-
-        .footer_links{
-            height: 100px;
-        }
-
-            .footer_list{
-                word-wrap: break-word;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: left;
-                height: 80px;
-                width: 70%;
-
-            }
-
-                .link_content{
-                    font-family: Helvetica,Arial,sans-serif;
-                    font-size: 15px;
-                    line-height: 24px;
-                    text-decoration: none;
-                    color: var(--color-blanco-primary);
-                    display: inline-block;
-                    text-align: left;
-                    font-weight: bold;
-                    margin-right:25px;
-
+                .footer_horario{
+                    float: right;
+                    height: 80px;
+                    width: 45%;
                 }
-        
-        .footer_social{
-            position:absolute;
-            width: 20%;
-            top:40px;
-            right:0px;
-            flex-wrap:wrap;
-            justify-content:flex-end;
-        }
-
-            .footer_sociallinks{
-                float: right;
-            }
-
-                .footer_sociallinks a {
-                    text-decoration: none;
-                    line-height: 25px;
-                    color: var(--color-rojo-logo);
-                    width: 25px;
-                    height: 25px;
-                    display: inline-block;
-                    font-size: 15px;
-                    background: var(--color-blanco-primary);
-                    background-size: 25px;
-                    border-radius: 50%;
-                    text-align: center;
-                    margin-left: 5px;
-                }
-
-                    .footer_sociallinks a:hover{
-                        background: var(--color-grey-logo);
+                    .horario_title{
+                        font-weight: bold;
+                        margin-right: 10px;
+                    }
+                    .horario_text{
+                        text-align: right;
+                        font-family: Helvetica,Arial,sans-serif;
+                        font-size: 15px;
+                        line-height: 24px;
+                        text-decoration: none;
+                        color: var(--color-blanco-primary);
                     }
 
+                .footer_list{
+                    float: left;
+                    word-wrap: break-word;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: left;
+                    height: 80px;
+                    width: 50%;
+                }
 
-        .footer_derechos{
-            text-align: left;
-            height: 60px;
-        }
-
-            .footer_copyright{
-                font-family: Helvetica,Arial,sans-serif;
-                font-size: 12px;
-                line-height: 16px;
-                color: var(--color-grey-logo);
+                    .link_content{
+                        font-family: Helvetica,Arial,sans-serif;
+                        font-size: 15px;
+                        line-height: 24px;
+                        text-decoration: none;
+                        color: var(--color-blanco-primary);
+                        display: inline-block;
+                        text-align: left;
+                        font-weight: bold;
+                        margin-right:25px;
+                    }
+            
+            .footer_social{
+                position:absolute;
+                width: 20%;
+                top:40px;
+                right:0px;
+                flex-wrap:wrap;
+                justify-content:flex-end;
             }
+
+                .footer_sociallinks{
+                    float: right;
+                }
+
+                    .footer_sociallinks a {
+                        text-decoration: none;
+                        line-height: 25px;
+                        color: var(--color-rojo-logo);
+                        width: 25px;
+                        height: 25px;
+                        display: inline-block;
+                        font-size: 15px;
+                        background: var(--color-blanco-primary);
+                        background-size: 25px;
+                        border-radius: 50%;
+                        text-align: center;
+                        margin-left: 5px;
+                    }
+
+                        .footer_sociallinks a:hover{
+                            background: var(--color-grey-logo);
+                        }
+
+            .footer_f{
+                background-color: var(--color-rojo-logo-trans);
+                display: flex;
+                align-items: center;
+                justify-content: left;
+            }
+
+                .footer_derechos{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    margin-right: 140px;
+                    margin-left: 140px;
+                }
+
+                    .footer_copyright{
+                        font-family: Helvetica,Arial,sans-serif;
+                        font-size: 12px;
+                        color: var(--color-blanco-primary);
+                    }
 
 
 /* Footer responsive */
 @media screen and (max-width: 1000px ){
     .footer{
-        height: auto;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        overflow-x: hidden;
     }
 
-        .footer_container{
-            margin-left: 0px;
-            margin-right: 0px;
-            width: 80%;
+        .footer_sup{
+            height: auto;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-    
-            .footer_logo{
-                display: inline-block;
-                margin: 24px 0;
+
+            .footer_container{
                 margin-left: 0px;
+                margin-right: 0px;
+                width: 80%;
             }
-
-            .footer_links{
-                height: auto;
-                margin-bottom: 40px;
-            }
-
-                .footer_list{
-                    justify-content: center;
-                    height: auto;
-                    width: auto;
         
+                .footer_logo{
+                    display: inline-block;
+                    margin: 10px 0;
+                    margin-left: 0px;
                 }
 
-                    .link_content{
-                        text-align: center;
+                .footer_links{
+                    height: auto;
+                    margin-bottom: 40px;
+                }
+
+                    .footer_list{
+                        justify-content: center;
+                        height: auto;
+                        width: auto;
+                        float: none;
+                        margin-bottom: 30px;
+                    }
+                    .footer_horario{
+                        width: 100%;
+                        float: none;
+                        height: auto;
+                    }
+                        .horario_text{
+                            text-align: center;
+                        }
+
+                        .link_content{
+                            text-align: center;
+                            margin-right: 0px;
+                            padding: 8px;
+                        }
+
+                .footer_social{
+                    width: auto;
+                    top:0;
+                    text-align: center;
+                    position: inherit;
+                    margin-bottom: 15px;
+                }
+
+                    .footer_sociallinks{
+                        float: none;
+                    }
+
+                        .footer_sociallinks a {
+                            line-height: 35px;
+                            width: 35px;
+                            height: 35px;
+                            font-size: 20px;
+                            background-size: 35px;
+                        }
+
+                .footer_f{
+                    justify-content: center;
+                }
+                    .footer_derechos{
                         margin-right: 0px;
-                        padding: 8px;
+                        margin-left: 0px;
                     }
+                        .footer_copyright{
+                            text-align: center;
+                        }
 
-            .footer_social{
-                width: auto;
-                top:0;
-                text-align: center;
-                position: inherit;
-                margin-bottom: 15px;
-            }
+  }
 
-                .footer_sociallinks{
-                    float: none;
-                }
-
-                    .footer_sociallinks a {
-                        line-height: 35px;
-                        width: 35px;
-                        height: 35px;
-                        font-size: 20px;
-                        background-size: 35px;
-
-                    }
-
-            .footer_derechos{
-                text-align: center;
-            }
-
+  @media screen and (max-width: 380px ){
+    .footer_container{
+        width: 90%;
+    }
   }
