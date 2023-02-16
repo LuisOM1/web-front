@@ -108,7 +108,7 @@
                 background-color: var(--color-rojo-logo-trans);
                 display: flex;
                 align-items: center;
-                justify-content: left;
+                justify-content: center;
             }
 
                 .footer_derechos{
@@ -122,6 +122,7 @@
                         font-family: Helvetica,Arial,sans-serif;
                         font-size: 12px;
                         color: var(--color-blanco-primary);
+                        text-align: center;
                     }
 
 
@@ -198,16 +199,10 @@
                             background-size: 35px;
                         }
 
-                .footer_f{
-                    justify-content: center;
-                }
                     .footer_derechos{
                         margin-right: 0px;
                         margin-left: 0px;
                     }
-                        .footer_copyright{
-                            text-align: center;
-                        }
 
   }
 
