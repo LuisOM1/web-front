@@ -57,6 +57,11 @@
                 .cardv:hover{
                     border: 1px solid #0e2b3d;
                 }
+                .cardv:hover .cardv_icono_circle{
+                    transform: rotate(360deg);
+                    transition: 1s ease-in-out;
+                    background-color: var(--color-grey-logo);
+                }
 
                 .cardv_center{
                     margin-left: 15px;
