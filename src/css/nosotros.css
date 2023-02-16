@@ -97,7 +97,6 @@
                     font-size: 15px;
                     color: #666;
                     text-align: justify;
-
                 }
 
                     .list-nosotros .fa-check-circle{
@@ -110,7 +109,6 @@
                 .text-nosotros a{
                     text-decoration: none;
                     color: #fff;
-                    
                 }
 
                     .button-info-nos{
@@ -133,20 +131,23 @@
                             text-rendering: auto;
                             width: 23px;
                             height: 23px;
-                            color: var(--color-blanco-primary);
+                            color: var(--color-rojo-logo);
                             line-height: 23px;
                             text-align: center;
                             border-radius: 50px;
-                            background-color: var(--color-negro-logo);
+                            background-color: var(--color-blanco-primary);
                             margin-left: 10px;
                         }
-                        .button-info-nos span:hover{
-                            color: var(--color-rojo-logo);
-                            background-color: var(--color-blanco-primary);
+                        .button-info-nos:hover span{
+                            color: var(--color-blanco-primary);
+                            background-color: var(--color-rojo-logo);
+                            transform: rotate(360deg);
+                            transition: 1s ease-in-out;
+                        }
+                        .button-info-nos:hover{
+                            background-color: var(--color-grey-logo);
                         }
 
-                        
-                
 
 /* Seccion Nosotros responsive */
 @media screen and (max-width: 1070px ){
