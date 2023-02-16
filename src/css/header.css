@@ -6,85 +6,94 @@ body.active-menum{
 /*header superior*/
 .head-superior {
   width: 100%;
-  height: 50px;
+  height: 40px;
   top: 0;
   left: 0;
   background-color: var(--color-negro-logo);
   position: relative;
 }
 
-
   .container-left{
-      text-align: left;
-      float: left;
-      width: 40%;
-      height: 50px;
-      left: 140px;
-      position: absolute;
-  
+    text-align: left;
+    float: left;
+    width: 40%;
+    height: 40px;
+    left: 140px;
+    position: absolute;
   }
 
     .container-left ul{
-        list-style: none;
+      list-style: none;
     }
 
-    .container-left li{
-        font-size: 75%;
+      .container-left li{
         display: inline-block;
         box-sizing: border-box;
         text-decoration: none;
         color: var(--color-blanco-primary);
         padding-left: 20px;
         padding: 15px;
-    }
+        font-weight: 600;
+        font-size: 11px;
+      }
 
-
-
+      .container-left li i{
+        font-weight: 600;
+      }
 
   .container-right{
-      text-align: right;
-      float: right;
-      width: 40%;
-      height: 50px;
-      right: 140px;
-      position: absolute;
+    text-align: right;
+    float: right;
+    width: 40%;
+    height: 40px;
+    right: 140px;
+    position: absolute;
+}
 
+  .container-right ul{
+    list-style: none;
   }
 
-    .container-right ul{
-      list-style: none;
-    }
-    .container-right li{
-      font-size: 75%;
+    .headersup_horario{
       display: inline-block;
       box-sizing: border-box;
       text-decoration: none;
       color: var(--color-blanco-primary);
       padding-left: 20px;
-      padding: 11px;
+      padding: 15px;
+      font-weight: 600;
+      font-size: 11px;
     }
+      .headersup_horario i{
+        font-weight: 600;
+      }
 
-
+    .headersup_social{
+      display: inline-block;
+      box-sizing: border-box;
+      text-decoration: none;
+      color: var(--color-blanco-primary);
+      margin-left: 15px;
+    }
+    
       .icon--facebook, .icon--instagram, .icon--twitter{
-          overflow-wrap: break-word;
-          list-style-type: none;
-          font-weight: 600;
-          color: var(--color-blanco-primary);
-          font-size: 18px;
-          box-sizing: border-box;
-          padding: 0;
-          margin: 0;
-          -webkit-font-smoothing: antialiased;
-          display: inline-block;
-          font-style: normal;
-          font-variant: normal;
-          text-rendering: auto;
-          line-height: 1;
-          font-family: "font awesome 5 brands";
-
+        overflow-wrap: break-word;
+        list-style-type: none;
+        font-weight: 600;
+        color: var(--color-blanco-primary);
+        font-size: 18px;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+        font-family: "font awesome 5 brands";
       }
       
-
 
 /*Header inferior*/
 header {
