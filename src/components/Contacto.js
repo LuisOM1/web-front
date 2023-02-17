@@ -33,9 +33,8 @@ return (
                 <div className="contacto_form-group"> 
                   <span className="span_name">
                     <input type="text" name="name" size="40" className=" " id="name" 
-                    aria-required="true" aria-invalid="false" placeholder="Nombre*" />
-                  </span><br/> 
-                  <span className="alert-error"></span>
+                    aria-required="true" aria-invalid="false" placeholder="Nombre*" required/>
+                  </span><br/>
                 </div>
               </div>
               
@@ -43,9 +42,8 @@ return (
                 <div className="contacto_form-group"> 
                   <span className="span_email">
                     <input type="email" name="email" size="40" className=" " id="email" 
-                    aria-required="true" aria-invalid="false" placeholder="Email*" />
+                    aria-required="true" aria-invalid="false" placeholder="Email*" required/>
                   </span>
-                  <span className="alert-error"></span>
                 </div>
               </div>
             </div>
@@ -55,9 +53,8 @@ return (
                 <div className="contacto_form-group"> 
                   <span className="span_tel">
                     <input type="tel" name="tel" size="40" className=" " id="phone" 
-                    aria-required="true" aria-invalid="false" placeholder="Teléfono*" />
+                    aria-required="true" aria-invalid="false" placeholder="Teléfono*" required/>
                   </span>
-                  <span className="alert-error"></span>
                 </div>
               </div>
             </div>
@@ -66,7 +63,7 @@ return (
               <div className="col-3">
                 <div className="contacto_form-group"> 
                   <span className="span_comments">
-                    <textarea name="comments" cols="40" rows="4" className="" id="comments" aria-required="true" aria-invalid="false" placeholder="Por favor, describe lo que necesitas.*"></textarea>
+                    <textarea name="comments" cols="40" rows="4" className="" id="comments" aria-required="true" aria-invalid="false" placeholder="Por favor, describe lo que necesitas.*" required></textarea>
                   </span>
                 </div>
               </div>

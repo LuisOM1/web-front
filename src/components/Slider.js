@@ -38,7 +38,7 @@ class Slider extends React.Component {
                                         <div className="form-group">
                                             <span className="input-control-wrap">
                                                 <input type="text" name="nombre" size="40" className="input-form-control" 
-                                                id="nombre" aria-required="true" aria-invalid="false" placeholder="Nombre*" />
+                                                id="nombre" aria-required="true" aria-invalid="false" placeholder="Nombre*" required/>
                                             </span>
                                         </div>
                                     </div>
@@ -46,7 +46,7 @@ class Slider extends React.Component {
                                         <div className="form-group">
                                             <span className="input-control-wrap">
                                                 <input type="text" name="ruc" size="40" className="input-form-control" 
-                                                id="ruc" aria-required="true" aria-invalid="false" placeholder="RUC*" />
+                                                id="ruc" aria-required="true" aria-invalid="false" placeholder="RUC*" required/>
                                             </span>
                                         </div>
                                     </div>
@@ -54,7 +54,7 @@ class Slider extends React.Component {
                                         <div className="form-group">
                                             <span className="input-control-wrap">
                                                 <input type="text" name="telefono" size="40" className="input-form-control"
-                                                id="telefono" aria-required="true" aria-invalid="false" placeholder="Teléfono*" />
+                                                id="telefono" aria-required="true" aria-invalid="false" placeholder="Teléfono*" required/>
                                             </span>
                                         </div>
                                     </div>
