@@ -84,7 +84,9 @@ function Header(){
                                     <Link to={`/contact`}  onClick={closeMobileMenu}> CONTACTO</Link>
                                 </li>
                                 <li>
-                                    <a id="btningresar" onClick={closeMobileMenu}> SOLICITAR DEMO</a>
+                                    <a href='https://api.whatsapp.com/send?phone=51902534606&text=Hola%20me%20gustar%C3%ADa%20solicitar%20demo%20del%20sistema' 
+                                    target='_blank' id="btningresar" onClick={closeMobileMenu} rel="noreferrer"> SOLICITAR DEMO
+                                    </a>
                                 </li>
                             </ul>
                         </nav>
