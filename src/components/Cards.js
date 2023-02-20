@@ -1,29 +1,16 @@
-import React, {useState} from 'react';
 import '../css/cards.css';
-import '../css/modal.css';
-import Wsp from './Wsp';
+
 
 //Componente funcional Cards
 function Cards ({nivel, precio, tiempo, iconx}){
 
-  const [isOpen, setIsOpen] = useState(false);
+  const urlPlan_message=`https://api.whatsapp.com/send?phone=+51902534606&text=
+  Hola me gustaria solicitar un plan ${nivel} -  ${tiempo}`;
 
-  const openModal = () => {
-    setIsOpen(true);
+  const sendPlanWsp = () => {
+    window.open(urlPlan_message);
   }
 
-  const closeModal = () => {
-    setIsOpen(false);
-  }
-
-  
-  // Para que no se pueda hacer scroll con el modal abierto
-  if (isOpen){
-    document.body.classList.add('active-modal');
-  } else {
-    document.body.classList.remove('active-modal');
-  }
-  
       return (  
 
           <div>
@@ -51,12 +38,8 @@ function Cards ({nivel, precio, tiempo, iconx}){
             </div>
 
             <div className='precios_card_boton' >
-              <button onClick={openModal}>Seleccionar</button>
+              <button onClick={sendPlanWsp}>Seleccionar</button>
             </div>
-
-            { isOpen &&(
-                <Wsp/>
-            )}
             
           </div>
                 
