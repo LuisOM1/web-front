@@ -1,24 +1,17 @@
-import React from 'react';
+import { FloatingWhatsApp } from 'react-floating-whatsapp-button'
+import 'react-floating-whatsapp-button/dist/index.css'
 import '../css/wsp.css';
 
 
+//Componente funcional Wsp
+function Wsp() {
 
-
-//Componente de clase Footer
-class Wsp extends React.Component {
-   
-    render(){
-      return    <div>
-                <div>
-                    <a href="https://wa.me/51970951302?" className="btn-wsp" target="_blank" rel="noreferrer">
-                        <i className='fab fa-whatsapp icono'></i>
-                    </a>
-                </div>
-                </div>
+return (
+    
+    < FloatingWhatsApp  phone='+51902534606' zIndex={100} size={55} headerTitle={'¡Bienvenido!'} 
+    popupMessage={'Hola, ¿cómo podemos ayudarte?'}  showOnIE= {false} />
+                
+);
+}
   
-    }
-  
-  }
-
-
   export default Wsp;

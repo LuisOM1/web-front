@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import '../css/cards.css';
 import '../css/modal.css';
-
+import Wsp from './Wsp';
 
 //Componente funcional Cards
 function Cards ({nivel, precio, tiempo, iconx}){
@@ -55,40 +55,7 @@ function Cards ({nivel, precio, tiempo, iconx}){
             </div>
 
             { isOpen &&(
-              <div className='modal'>
-                <div className='modal_container'>
-                  <button onClick={closeModal} className="btnclose">×</button>
-                  <form>
-                    <div className="col-lg-12">
-                      <h3>Contacta un asesor</h3> 
-                    </div>
-                    <div className="col-lg-12">
-                      <div className="form-group">
-                        <span>
-                          <input type="text" name="nombre" size="40" id="nombre" aria-required="true" aria-invalid="false" placeholder="Nombre*"></input>
-                        </span>
-                      </div>
-                    </div>
-                    <div className="col-lg-12">
-                      <div className="form-group">
-                        <span>
-                          <input type="text" name="ruc" size="40" id="ruc" aria-required="true" aria-invalid="false" placeholder="RUC*"></input>
-                        </span>
-                      </div>
-                    </div>
-                    <div className="col-lg-12">
-                      <div className="form-group">
-                        <span>
-                          <input type="text" name="telefono" size="40" id="telefono" aria-required="true" aria-invalid="false" placeholder="Teléfono*"></input>
-                        </span>
-                      </div>
-                    </div>
-                    <div className="col-lg-12">
-                      <button className="btncontactar" type="submit" name="submit">Contactar</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
+                <Wsp/>
             )}
             
           </div>
