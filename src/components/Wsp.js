@@ -6,12 +6,12 @@ import '../css/wsp.css';
 //Componente funcional Wsp
 function Wsp() {
 
-return (
-    
+  return (
+      
     < FloatingWhatsApp  phone='+51902534606' zIndex={100} size={55} headerTitle={'¡Bienvenido!'} 
-    popupMessage={'Hola, ¿cómo podemos ayudarte?'}  showOnIE= {false} />
-                
-);
+    popupMessage={'Hola, ¿cómo podemos ayudarte?'}  autoOpenTimeout={9000000} />
+                  
+  );
 }
   
   export default Wsp;

@@ -6,8 +6,13 @@
 ._34Oew ._1jTF6._3sodH {
     width: 220px;
     bottom: 62px;
+    color: #666;
 }
 
+._34Oew ._22mst textarea {
+    color: #666;
+}
 ._34Oew ._22mst textarea:focus {
     outline: 0.3px solid #ccc;
 }
+
