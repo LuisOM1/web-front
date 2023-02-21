@@ -3,12 +3,17 @@ body.active-menum{
 }
 
 
+.head{
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 900;
+}
+
 /*header superior*/
 .head-superior {
   width: 100%;
   height: 40px;
-  top: 0;
-  left: 0;
   background-color: var(--color-negro-logo);
   position: relative;
 }
@@ -31,8 +36,9 @@ body.active-menum{
         box-sizing: border-box;
         text-decoration: none;
         color: var(--color-blanco-primary);
-        padding-left: 20px;
+        padding-right: 20px;
         padding: 15px;
+        padding-left: 0px;
         font-weight: 600;
         font-size: 11px;
       }
@@ -97,17 +103,17 @@ body.active-menum{
 
 /*Header inferior*/
 header {
-    width: 100%;
-    height: 100px;
-    top: 0;
-    left: 0;
-    background-color: var(--color-rojo-logo); 
-  }
+  width: 100%;
+  height: 90px;
+  background-color: var(--color-rojo-logo); 
+  position: relative;
+}
   
   header #logo img{
-    padding: 10px;
     float: left;
-    height: 100px;
+    height: 90px;
+    padding: 10px;
+    padding-left: 0px;
     margin-left: 140px;
   }
 
@@ -117,6 +123,7 @@ header {
     padding: 25px 20px 0px 0px;
     padding: 25px;
     margin-right: 105px;
+    height: 90px;
   }
   
   .menu-icon {
@@ -133,16 +140,16 @@ header {
     font-size: 80%;
     display: inline-block;
     padding: 10px;
-    padding-top: 20px;
+    padding-top: 15px;
     box-sizing: border-box;
   }
   
   nav ul li #btningresar{
-      cursor: pointer;
-      animation-delay: .7s;
-      padding: 15px 15px;
-      border-radius: 30px;
-      background: var(--color-amarillo-primary); 
+    cursor: pointer;
+    animation-delay: .7s;
+    padding: 15px 15px;
+    border-radius: 30px;
+    background: var(--color-amarillo-primary); 
   }
   
   nav ul li a {
@@ -196,7 +203,7 @@ header {
     background-color: var(--color-rojo-logo);
     width: 100%;
     height: 100vh;
-    top: 100px;
+    top: 90px;
     left: 0;
     border-top: 1px solid var(--color-blanco-primary)
   }

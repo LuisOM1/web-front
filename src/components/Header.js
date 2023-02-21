@@ -30,7 +30,7 @@ function Header(){
         document.body.classList.remove('active-menum');
     }
          
-      return  (  <div>
+      return  (  <div className='head'>
                     <div className="head-superior">
                         <div className="container-left">
                             <ul>
