@@ -4,13 +4,24 @@ import '../css/header.css';
 import  logo from  '../img/logo.png';
 
 
-
 //Componente funcional Header
 function Header(){
    const [click, setClick] = useState(false);
 
    const handleClick = () => setClick(!click);
    const closeMobileMenu = () => setClick(false);
+
+   //Para que me redirija directamente al QR de Watsapp en web
+   const isMobile = function isMobile() {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) 
+    return true;
+    return false;
+    };
+
+    var url_message = 'http://';
+    url_message += isMobile() ? 'api' : 'web';
+    url_message += `.whatsapp.com/send?phone=+51902534606&text=Hola, me gustaría solicitar demo del sistema`;
+    
 
     // Para que no se pueda hacer scroll con el menu movil abierto
     if (click){
@@ -84,8 +95,8 @@ function Header(){
                                     <Link to={`/contact`}  onClick={closeMobileMenu}> CONTACTO</Link>
                                 </li>
                                 <li>
-                                    <a href='https://api.whatsapp.com/send?phone=51902534606&text=Hola%20me%20gustar%C3%ADa%20solicitar%20demo%20del%20sistema' 
-                                    target='_blank' id="btningresar" onClick={closeMobileMenu} rel="noreferrer"> SOLICITAR DEMO
+                                    <a href={url_message} target='_blank' id="btningresar" 
+                                    onClick={closeMobileMenu} rel="noreferrer"> SOLICITAR DEMO
                                     </a>
                                 </li>
                             </ul>
