@@ -38,7 +38,7 @@ body.active-menum{
         color: var(--color-blanco-primary);
         padding-right: 20px;
         padding: 15px;
-        padding-left: 0px;
+        padding-left: 8px;
         font-weight: 600;
         font-size: 11px;
       }
@@ -109,13 +109,20 @@ header {
   position: relative;
 }
   
-  header #logo img{
+  header #logo{
     float: left;
     height: 90px;
-    padding: 10px;
-    padding-left: 0px;
     margin-left: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
+    header #logo img{
+      height: 85px;
+      padding: 10px;
+      padding-left: 0px;
+    }
 
 
   nav {
@@ -128,8 +135,9 @@ header {
   
   .menu-icon {
     display: none;
-    font-size: 40px;
+    font-size: 30px;
     cursor: pointer;
+    margin-top: 5px;
   }
   
   .menu-list {
@@ -176,8 +184,8 @@ header {
 }
 
 @media screen and (max-width: 960px ){
-  header #logo img{
-    margin-left: 0px;
+  header #logo{
+    margin-left: 15px;
   }
   nav{
     margin-right: 0px;
@@ -224,7 +232,6 @@ header {
     height: 50px;
     text-decoration: none;
     font-size: medium;
-
   }
   nav ul li a:hover{
     background-color: rgba(255, 255, 255, 0.3);
@@ -234,4 +241,8 @@ header {
     right: -100%;
   }
 
+}
+
+@media screen and (max-width: 210px ){
+  .menu-icon { display: none; }
 }
