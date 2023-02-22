@@ -25,7 +25,7 @@
                     margin-top: 15px;
                     padding: 10px;
                     padding-left: 0px;
-                    height: 100px;
+                    height: 90px;
                 }
 
 
@@ -148,9 +148,13 @@
         
                 .footer_logo{
                     display: inline-block;
-                    margin: 10px 0;
+                    margin: 15px 0;
                     margin-left: 0px;
                 }
+                    .footer_logoimg{
+                        margin:0 0 0px;
+                    }
+                
 
                 .footer_links{
                     height: auto;
