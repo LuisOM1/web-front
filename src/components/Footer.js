@@ -5,11 +5,21 @@ import  logo from  '../img/logo.png';
 
 
 
-//Componente de clase Footer
-class Footer extends React.Component {
-   
-    render(){
-      return    <div className="footer" >
+//Componente funcional Footer
+function Footer() {
+   //Para que me redirija directamente al QR de Watsapp en web
+   const isMobile = function isMobile() {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) 
+    return true;
+    return false;
+    };
+
+    var url_message = 'http://';
+    url_message += isMobile() ? 'api' : 'web';
+    url_message += `.whatsapp.com/send?phone=+51902534606&text=Hola, me gustaría solicitar demo del sistema`;
+    
+    
+      return(   <div className="footer" >
                     <div className='footer_sup'>
                         <div className="footer_container">
                             <Link to={`/web-front`} className="footer_logo" target="_self">
@@ -35,8 +45,8 @@ class Footer extends React.Component {
                                     </div>
 
                                     <div className="link">
-                                        <a className="link_content" target="_self" href=" ">
-                                            Solicitar Demo
+                                        <a href={url_message} target='_blank' className="link_content" 
+                                        rel="noreferrer"> Solicitar Demo
                                         </a>
                                     </div>
                                 
@@ -91,7 +101,7 @@ class Footer extends React.Component {
 
                 </div>
   
-    }
+      )
   
   }
 
