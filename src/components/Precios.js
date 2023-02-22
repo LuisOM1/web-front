@@ -66,7 +66,7 @@ function Precios(){
   
               <div>
                 <div  className={activetab == 1 ? "contenttab  active-contenttab" : "contenttab"}>
-                  <div className='precios_contents'>
+                  <div className='precios_contents fadeMostrar'>
                     {  cards_mensual.map(card => (
                         <div className='precios_cards' key={card.id}>
                           <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} />
@@ -76,7 +76,7 @@ function Precios(){
                   </div>
                 </div>
                 <div className={activetab == 2 ? "contenttab  active-contenttab" : "contenttab"}>
-                  <div className='precios_contents'>
+                  <div className='precios_contents fadeMostrar'>
                     {  cards_3m.map(card => (
                         <div className='precios_cards' key={card.id}>
                           <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} />
@@ -86,7 +86,7 @@ function Precios(){
                   </div>
                 </div>
                 <div className={activetab == 3 ? "contenttab  active-contenttab" : "contenttab"}>
-                  <div className='precios_contents'>
+                  <div className='precios_contents fadeMostrar'>
                     {  cards_6m.map(card => (
                         <div className='precios_cards' key={card.id}>
                           <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} />
@@ -96,7 +96,7 @@ function Precios(){
                   </div>
                 </div>
                 <div className={activetab == 4 ? "contenttab  active-contenttab" : "contenttab"}>
-                  <div className='precios_contents'>
+                  <div className='precios_contents fadeMostrar'>
                     {  cards_12m.map(card => (
                         <div className='precios_cards' key={card.id}>
                           <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} />

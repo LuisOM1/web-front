@@ -84,10 +84,12 @@
       display: flex;
       flex-wrap: wrap;
       gap: 23px;
-      animation: fadeIn 4s ease;
     }
 
-    @keyframes fadeIn {
+    .fadeMostrar{
+      animation: fadeMostrar 4s ease;
+    }
+    @keyframes fadeMostrar {
       from { opacity: 0; }
       to { opacity: 1; }
     }
