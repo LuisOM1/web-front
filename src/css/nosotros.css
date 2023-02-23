@@ -32,6 +32,8 @@
             .div-imgs{
                 width: 100%;
                 height: 450px;
+                opacity: 0;
+                transition: all 1s;
             }
 
                 .div-imgs #img-nos1{
@@ -68,6 +70,7 @@
                 height: 370px;
                 float: right;
                 margin-top: 67px;
+                opacity: 0;
             }
 
                 .text-nosotros h2{

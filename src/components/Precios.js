@@ -2,6 +2,8 @@ import React, {useState}from 'react';
 import Cards from './Cards';
 import '../css/precios.css';
 import '../css/cards.css';
+import '../css/animacion.css';
+
 
 
 function Precios(){
@@ -66,7 +68,7 @@ function Precios(){
   
               <div>
                 <div  className={activetab == 1 ? "contenttab  active-contenttab" : "contenttab"}>
-                  <div className='precios_contents fadeMostrar'>
+                  <div className='precios_contents animacion'>
                     {  cards_mensual.map(card => (
                         <div className='precios_cards' key={card.id}>
                           <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} />
@@ -76,7 +78,7 @@ function Precios(){
                   </div>
                 </div>
                 <div className={activetab == 2 ? "contenttab  active-contenttab" : "contenttab"}>
-                  <div className='precios_contents fadeMostrar'>
+                  <div className='precios_contents animacion'>
                     {  cards_3m.map(card => (
                         <div className='precios_cards' key={card.id}>
                           <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} />
@@ -86,7 +88,7 @@ function Precios(){
                   </div>
                 </div>
                 <div className={activetab == 3 ? "contenttab  active-contenttab" : "contenttab"}>
-                  <div className='precios_contents fadeMostrar'>
+                  <div className='precios_contents animacion'>
                     {  cards_6m.map(card => (
                         <div className='precios_cards' key={card.id}>
                           <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} />
@@ -96,7 +98,7 @@ function Precios(){
                   </div>
                 </div>
                 <div className={activetab == 4 ? "contenttab  active-contenttab" : "contenttab"}>
-                  <div className='precios_contents fadeMostrar'>
+                  <div className='precios_contents animacion'>
                     {  cards_12m.map(card => (
                         <div className='precios_cards' key={card.id}>
                           <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} />
