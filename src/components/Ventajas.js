@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/ventajas.css';
+import '../css/animacion.css';
 import Cardsv from './Cardsv';
 
 
@@ -24,12 +25,12 @@ function Ventajas (){
       return (  <div className='ventajas'>
                     <div className='ventajas_container'>
                         <div className='ventajas_title'>
-                            <h2>Ventajas del Sistema</h2>
+                            <h2 className='abajo'>Ventajas del Sistema</h2>
                         </div>
 
                         <div className='ventajas_cards'>
                             {  cardsv.map(card => (
-                                <div className='cardv' key={card.id}>
+                                <div className='cardv izquierda' key={card.id}>
                                 <Cardsv icono={card.icono} titulo={card.titulo} parrafo={card.parrafo} />
                                 </div>
                                 ))

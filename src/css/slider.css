@@ -40,11 +40,37 @@
           font-weight: 800;
           line-height: 1.2;
           margin-bottom: 10px;
+          animation: fadeArribaAbajotext 2s;
+        }
+        
+        @keyframes fadeArribaAbajotext {
+          0% {
+            opacity: 0;
+            transform: translateY(-20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
         }
         .slider_text p {
           text-align: justify;
           color: var(--color-blanco-primary);
+          animation: fadeLefttext 1s;
         }
+
+        @keyframes fadeLefttext {
+          0% {
+            opacity: 0;
+            transform: translateX(-20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+
+
 
 
     /* FORMULARIO DEL SLIDER*/
@@ -59,7 +85,18 @@
         width: 71%;
         margin-top: 70px;
         float: right;
+        animation: fadeArribaAbajoform 1s;
+      }
 
+      @keyframes fadeArribaAbajoform {
+        0% {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
 
         .form-circle{
@@ -69,7 +106,6 @@
           padding: 35px 35px;
           background: #fff;
           border-radius: 16px;
-      
         }
 
 

@@ -58,7 +58,7 @@ function Precios(){
                 </div>
               </div>
               <div className='precios_options'>
-                <div className='precios_buttons'> 
+                <div className='precios_buttons arriba'> 
                   <button className={(activetab == "1" ? "activetab button": "button")} onClick={()=>cambiartab("1")} >MENSUAL</button> 
                   <button className={(activetab == "2" ? "activetab button": "button")} onClick={()=>cambiartab("2")} >03 MESES </button> 
                   <button className={(activetab == "3" ? "activetab button": "button")} onClick={()=>cambiartab("3")} >06 MESES <label>DESCUENTO</label></button> 
@@ -68,7 +68,7 @@ function Precios(){
   
               <div>
                 <div  className={activetab == 1 ? "contenttab  active-contenttab" : "contenttab"}>
-                  <div className='precios_contents animacion'>
+                  <div className='precios_contents mostrar4s'>
                     {  cards_mensual.map(card => (
                         <div className='precios_cards' key={card.id}>
                           <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} />
@@ -78,7 +78,7 @@ function Precios(){
                   </div>
                 </div>
                 <div className={activetab == 2 ? "contenttab  active-contenttab" : "contenttab"}>
-                  <div className='precios_contents animacion'>
+                  <div className='precios_contents mostrar4s'>
                     {  cards_3m.map(card => (
                         <div className='precios_cards' key={card.id}>
                           <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} />
@@ -88,7 +88,7 @@ function Precios(){
                   </div>
                 </div>
                 <div className={activetab == 3 ? "contenttab  active-contenttab" : "contenttab"}>
-                  <div className='precios_contents animacion'>
+                  <div className='precios_contents mostrar4s'>
                     {  cards_6m.map(card => (
                         <div className='precios_cards' key={card.id}>
                           <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} />
@@ -98,7 +98,7 @@ function Precios(){
                   </div>
                 </div>
                 <div className={activetab == 4 ? "contenttab  active-contenttab" : "contenttab"}>
-                  <div className='precios_contents animacion'>
+                  <div className='precios_contents mostrar4s'>
                     {  cards_12m.map(card => (
                         <div className='precios_cards' key={card.id}>
                           <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} />

@@ -24,7 +24,7 @@ function Footer() {
                     <div className='footer_sup'>
                         <div className="footer_container">
                             <Link to={`/web-front`} className="footer_logo" target="_self">
-                                <img src={logo} className="footer_logoimg animacion" alt="GPS Skies" />
+                                <img src={logo} className="footer_logoimg mostrar4s" alt="GPS Skies" />
                             </Link>
                         
                             <div className="footer_links">    

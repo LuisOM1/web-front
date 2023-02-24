@@ -84,6 +84,16 @@
       display: flex;
       flex-wrap: wrap;
       gap: 23px;
+      animation: fadeMostrar 4s;
+    }
+
+    @keyframes fadeMostrar {
+      0% {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
     
     .precios_notas{

@@ -1,35 +1,48 @@
 
 
-.animacion{
-    opacity: 0;
-    transition: all 5s;
+/* Efecto desde la derecha*/
+.derecha{
+	opacity: 0;
 }
-
-.visible{
-    opacity: 1;
-}
-
-
 .fadeRight{
 	opacity: 1;
-    animation: fadeRight 2s;
+    animation: fadeRight 1s;
 }
 
 @keyframes fadeRight {
 	0% {
-		transform: translate3d(30%, 0, 0);
+		transform: translateX(20px);
 	}
 	to {
-		transform: translateZ(0);
+		transform: translateX(0);
 	}
 }
 
 
-.mostrarImg{
+/* Efecto para mostrar elementos */
+.mostrar{
+	opacity: 0;
+	transition: all 1s;
+}
+.fadeMostrar{
+	opacity: 1;
+}
+
+/* Efecto para mostrar elementos por 4s*/
+.mostrar4s{
+	opacity: 0;
+	transition: all 4s;
+}
+.fadeMostrar4s{
 	opacity: 1;
 }
 
 
+
+/* Efecto desde la izquierda */
+.izquierda{
+	opacity: 0;
+}
 .fadeLeft{
 	opacity: 1;
     animation: fadeLeft 1s;
@@ -37,10 +50,46 @@
 
 @keyframes fadeLeft {
 	0% {
-		transform: translate3d(-100%, 0, 0);
+		transform: translateX(-20px);
 	}
 	to {
-		transform: translateZ(0);
+		transform: translateX(0);
 	}
 }
 
+
+
+/* Animacion hacia abajo */
+.abajo{
+	opacity: 0;
+}
+.fadeAbajo{
+	opacity: 1;
+    animation: fadeAbajo 1s;
+}
+@keyframes fadeAbajo{
+	0% {
+	  transform: translateY(-20px);
+	}
+	100% {
+	  transform: translateY(0);
+	}
+}
+
+
+/* Animacion hacia arriba */
+.arriba{
+	opacity: 0;
+}
+.fadeArriba{
+	opacity: 1;
+    animation: fadeArriba 1s;
+}
+@keyframes fadeArriba{
+	0% {
+	  transform: translateY(20px);
+	}
+	100% {
+	  transform: translateY(0);
+	}
+}
