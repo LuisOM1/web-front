@@ -7,6 +7,7 @@ import GoTop from './GoTop';
 import CountUp from './CountUp';
 import Wsp from './Wsp';
 import SliderNav from './SliderNav';
+import AnimationScroll from './AnimationScroll';
 
 
 //Componente funcional About
@@ -32,6 +33,7 @@ function About (){
 
       return (  
         <div>
+			< AnimationScroll />
 			< Wsp />
             < Header />
 			< SliderNav titleSliderNav="Nosotros"/>
