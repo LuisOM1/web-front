@@ -2,11 +2,48 @@ import React, {useState} from 'react';
 import '../css/contacto.css';
 
 
-
-
 //Componente funcional Contacto
 function Contacto (){
 
+  //Formulario de Contacto
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [tel, setTel] = useState('');
+  const [description, setDescription] = useState('');
+  const [emailStatus, setEmailStatus] = useState('');
+
+  const submitContactForm = (e) => {
+    //crear un new XMLHttpRequest
+    var xhr = new XMLHttpRequest();
+
+    //obtener una devolución de llamada cuando el servidor responde
+    xhr.addEventListener('load', () => {
+      //Actualizar el emailStatus con la respuesta
+      setEmailStatus(xhr.responseText);
+    });
+
+    //Abrir la solicitud con la url
+    xhr.open('GET', 'http://api.ruvictor.com/sendemail/index.php?sendto=' + email + 
+                            '&name=' + name + 
+                            '&tel=' + tel +
+                            '&description=' + description);
+    //Enviar la respuesta
+    xhr.send();
+
+    //Limpiar formulario
+    setName('');
+    setEmail('');
+    setTel('');
+    setDescription('');
+
+
+    e.preventDefault();
+  }
+
+    
+
+
+  //Tabs de opciones
   const[activetab, setActivetab]= useState("1");
     const cambiartab = (numerotab) =>{
       if(activetab !== numerotab){
@@ -27,14 +64,16 @@ return (
             <p>Escribenos y te contactaremos lo mas pronto posible</p>
           </div>
           
-          <form action=" " method="post" className=" " data-status="init">
+          <form onSubmit={submitContactForm}>
+            {emailStatus ? emailStatus : null}
             <div className="contacto_form_fila">
               <div className="col-1-1">
                 <div className="contacto_form-group"> 
                   <span className="span_name">
                     <input type="text" name="name" size="40" className=" " id="name" 
-                    aria-required="true" aria-invalid="false" placeholder="Nombre*" required/>
-                  </span><br/>
+                    aria-required="true" aria-invalid="false" placeholder="Nombre*" 
+                    value={name} onChange={(e) => setName(e.target.value)} required/>
+                  </span><br/> 
                 </div>
               </div>
               
@@ -42,7 +81,8 @@ return (
                 <div className="contacto_form-group"> 
                   <span className="span_email">
                     <input type="email" name="email" size="40" className=" " id="email" 
-                    aria-required="true" aria-invalid="false" placeholder="Email*" required/>
+                    aria-required="true" aria-invalid="false" placeholder="Email*" 
+                    value={email} onChange={(e) => setEmail(e.target.value)} required/>
                   </span>
                 </div>
               </div>
@@ -53,7 +93,8 @@ return (
                 <div className="contacto_form-group"> 
                   <span className="span_tel">
                     <input type="tel" name="tel" size="40" className=" " id="phone" 
-                    aria-required="true" aria-invalid="false" placeholder="Teléfono*" required/>
+                    aria-required="true" aria-invalid="false" placeholder="Teléfono*" 
+                    value={tel} onChange={(e) => setTel(e.target.value)} required/>
                   </span>
                 </div>
               </div>
@@ -63,7 +104,7 @@ return (
               <div className="col-3">
                 <div className="contacto_form-group"> 
                   <span className="span_comments">
-                    <textarea name="comments" cols="40" rows="4" className="" id="comments" aria-required="true" aria-invalid="false" placeholder="Por favor, describe lo que necesitas.*" required></textarea>
+                    <textarea name="comments" cols="40" rows="4" className="" id="comments" aria-required="true" aria-invalid="false" placeholder="Por favor, describe lo que necesitas.*" value={description} onChange={(e) => setDescription(e.target.value)} required></textarea>
                   </span>
                 </div>
               </div>
