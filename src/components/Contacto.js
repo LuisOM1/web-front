@@ -26,13 +26,13 @@ return (
             <p>Escribenos y te contactaremos lo mas pronto posible</p>
           </div>
           
-          <form action="https://formsubmit.co/lobregon988@gmail.com" method="POST" >
+          <form action="https://formsubmit.co/lobregon988@gmail.com" method="POST">
             <div className="contacto_form_fila">
               <div className="col-1-1">
                 <div className="contacto_form-group"> 
                   <span className="span_name">
                     <input type="text" name="Nombre" size="40" className=" " id="name" 
-                    aria-required="true" aria-invalid="false" placeholder="Nombre*" 
+                    aria-required="true" aria-invalid="false" placeholder="Nombre*" autocomplete='off'
                     required/>
                   </span><br/> 
                 </div>
@@ -42,7 +42,7 @@ return (
                 <div className="contacto_form-group"> 
                   <span className="span_email">
                     <input type="email" name="Email" size="40" className=" " id="email" 
-                    aria-required="true" aria-invalid="false" placeholder="Email*" 
+                    aria-required="true" aria-invalid="false" placeholder="Email*" autocomplete='off'
                     required/>
                   </span>
                 </div>
@@ -54,7 +54,7 @@ return (
                 <div className="contacto_form-group"> 
                   <span className="span_tel">
                     <input type="tel" name="Teléfono" size="40" className=" " id="phone" 
-                    aria-required="true" aria-invalid="false" placeholder="Teléfono*" 
+                    aria-required="true" aria-invalid="false" placeholder="Teléfono*" autocomplete='off'
                     required/>
                   </span>
                 </div>
@@ -65,7 +65,7 @@ return (
               <div className="col-3">
                 <div className="contacto_form-group"> 
                   <span className="span_comments">
-                    <textarea name="Comentario" cols="40" rows="4" className="" id="comments" aria-required="true" aria-invalid="false" placeholder="Por favor, describe lo que necesitas.*" required></textarea>
+                    <textarea name="Comentario" cols="40" rows="4" className="" id="comments" aria-required="true" aria-invalid="false" placeholder="Por favor, describe lo que necesitas.*" autocomplete='off' required></textarea>
                   </span>
                 </div>
               </div>
