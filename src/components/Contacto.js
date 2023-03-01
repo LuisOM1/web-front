@@ -4,6 +4,41 @@ import '../css/contacto.css';
 
 //Componente funcional Contacto
 function Contacto (){
+
+  //Formulario de Contacto
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [tel, setTel] = useState('');
+  const [description, setDescription] = useState('');
+  const [emailStatus, setEmailStatus] = useState('');
+
+  const submit =(e)=>{
+    fetch("https://formsubmit.co/ajax/lobregon988@gmail.com", {
+    method: "POST",
+    headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    },
+    body: JSON.stringify({
+        Nombre: name,
+        Email: email,
+        Telefono: tel,
+        Comentario: description
+    })
+})
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log(error));
+
+    //Limpiar formulario
+    setName('');
+    setEmail('');
+    setTel('');
+    setDescription('');
+    e.preventDefault();
+  }
+
+
   //Tabs de opciones
   const[activetab, setActivetab]= useState("1");
   
@@ -26,14 +61,14 @@ return (
             <p>Escribenos y te contactaremos lo mas pronto posible</p>
           </div>
           
-          <form action="https://formsubmit.co/lobregon988@gmail.com" method="POST">
+          <form onSubmit={submit}>
             <div className="contacto_form_fila">
               <div className="col-1-1">
                 <div className="contacto_form-group"> 
                   <span className="span_name">
                     <input type="text" name="Nombre" size="40" className=" " id="name" 
                     aria-required="true" aria-invalid="false" placeholder="Nombre*" autocomplete='off'
-                    required/>
+                     value={name} onChange={(e) => setName(e.target.value)} required/>
                   </span><br/> 
                 </div>
               </div>
@@ -43,7 +78,7 @@ return (
                   <span className="span_email">
                     <input type="email" name="Email" size="40" className=" " id="email" 
                     aria-required="true" aria-invalid="false" placeholder="Email*" autocomplete='off'
-                    required/>
+                    value={email} onChange={(e) => setEmail(e.target.value)} required/>
                   </span>
                 </div>
               </div>
@@ -55,7 +90,7 @@ return (
                   <span className="span_tel">
                     <input type="tel" name="Teléfono" size="40" className=" " id="phone" 
                     aria-required="true" aria-invalid="false" placeholder="Teléfono*" autocomplete='off'
-                    required/>
+                    value={tel} onChange={(e) => setTel(e.target.value)} required/>
                   </span>
                 </div>
               </div>
@@ -65,7 +100,7 @@ return (
               <div className="col-3">
                 <div className="contacto_form-group"> 
                   <span className="span_comments">
-                    <textarea name="Comentario" cols="40" rows="4" className="" id="comments" aria-required="true" aria-invalid="false" placeholder="Por favor, describe lo que necesitas.*" autocomplete='off' required></textarea>
+                    <textarea name="Comentario" cols="40" rows="4" className="" id="comments" aria-required="true" aria-invalid="false" placeholder="Por favor, describe lo que necesitas.*" autocomplete='off' value={description} onChange={(e) => setDescription(e.target.value)} required></textarea>
                   </span>
                 </div>
               </div>
@@ -76,10 +111,6 @@ return (
                 <button type="submit">Enviar</button>
               </div>
             </div>
-
-            <input type="hidden" name="_captcha" value="false"></input>
-            <input type="hidden" name="_next" value="http://localhost:3000/contact"></input>
-
           </form>
         </div>
       </div>
