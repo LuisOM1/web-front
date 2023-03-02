@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import '../css/contacto.css';
+import '../css/modal.css';
 
 
 //Componente funcional Contacto
@@ -10,24 +11,37 @@ function Contacto (){
   const [email, setEmail] = useState('');
   const [tel, setTel] = useState('');
   const [description, setDescription] = useState('');
-  const [emailStatus, setEmailStatus] = useState('');
+  //Modal que contiene mensaje de confirmacion
+  const [isOpen, setIsOpen] = useState(false);
 
+  const openModal = () => {
+    setIsOpen(true);
+    document.body.classList.add('active-modal');
+  }
+
+  const closeModal = () => {
+    setIsOpen(false);
+    document.body.classList.remove('active-modal');
+  }
+
+  //Funcion para enviar email
   const submit =(e)=>{
     fetch("https://formsubmit.co/ajax/lobregon988@gmail.com", {
     method: "POST",
     headers: { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
     },
     body: JSON.stringify({
-        Nombre: name,
-        Email: email,
-        Telefono: tel,
-        Comentario: description
+      Nombre: name,
+      Email: email,
+      Telefono: tel,
+      Comentario: description
+      })
     })
-})
     .then(response => response.json())
     .then(data => console.log(data))
+    .then(openModal)
     .catch(error => console.log(error));
 
     //Limpiar formulario
@@ -35,9 +49,9 @@ function Contacto (){
     setEmail('');
     setTel('');
     setDescription('');
+
     e.preventDefault();
   }
-
 
   //Tabs de opciones
   const[activetab, setActivetab]= useState("1");
@@ -112,6 +126,24 @@ return (
               </div>
             </div>
           </form>
+
+          { isOpen &&(
+              <div className='modal'>
+                <div className='modal_container'>
+                  <div className='modal_content_center'>
+                    <div className='modal_icon'>
+                      <div className='modal_check'>
+                        <i className="fa-solid fa-check"></i>
+                      </div>
+                    </div>
+                    <h2 className="modal_title">Completado!</h2>
+                    <div className="modal_text">Gracias por tu mensaje. Ha sido enviado.</div>
+                    <button className="btnOk" onClick={closeModal} >OK</button>
+                  </div>
+                </div>
+              </div>
+            )}
+
         </div>
       </div>
   

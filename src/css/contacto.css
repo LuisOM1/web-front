@@ -1,9 +1,9 @@
 
+body.active-modal{ overflow-y: hidden; }
 
 .contacto{
     width: 100%;
     height: 550px;
-
 }
 
     .contacto_container_left{
