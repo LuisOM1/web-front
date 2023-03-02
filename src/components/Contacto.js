@@ -81,7 +81,7 @@ return (
                 <div className="contacto_form-group"> 
                   <span className="span_name">
                     <input type="text" name="Nombre" size="40" className=" " id="name" 
-                    aria-required="true" aria-invalid="false" placeholder="Nombre*" autocomplete='off'
+                    aria-required="true" aria-invalid="false" placeholder="Nombre*" autoComplete='off'
                      value={name} onChange={(e) => setName(e.target.value)} required/>
                   </span><br/> 
                 </div>
@@ -91,7 +91,7 @@ return (
                 <div className="contacto_form-group"> 
                   <span className="span_email">
                     <input type="email" name="Email" size="40" className=" " id="email" 
-                    aria-required="true" aria-invalid="false" placeholder="Email*" autocomplete='off'
+                    aria-required="true" aria-invalid="false" placeholder="Email*" autoComplete='off'
                     value={email} onChange={(e) => setEmail(e.target.value)} required/>
                   </span>
                 </div>
@@ -103,7 +103,7 @@ return (
                 <div className="contacto_form-group"> 
                   <span className="span_tel">
                     <input type="tel" name="Teléfono" size="40" className=" " id="phone" 
-                    aria-required="true" aria-invalid="false" placeholder="Teléfono*" autocomplete='off'
+                    aria-required="true" aria-invalid="false" placeholder="Teléfono*" autoComplete='off'
                     value={tel} onChange={(e) => setTel(e.target.value)} required/>
                   </span>
                 </div>
@@ -114,7 +114,7 @@ return (
               <div className="col-3">
                 <div className="contacto_form-group"> 
                   <span className="span_comments">
-                    <textarea name="Comentario" cols="40" rows="4" className="" id="comments" aria-required="true" aria-invalid="false" placeholder="Por favor, describe lo que necesitas.*" autocomplete='off' value={description} onChange={(e) => setDescription(e.target.value)} required></textarea>
+                    <textarea name="Comentario" cols="40" rows="4" className="" id="comments" aria-required="true" aria-invalid="false" placeholder="Por favor, describe lo que necesitas.*" autoComplete='off' value={description} onChange={(e) => setDescription(e.target.value)} required></textarea>
                   </span>
                 </div>
               </div>
