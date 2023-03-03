@@ -9,11 +9,13 @@ import Ventajas from './Ventajas';
 import Clientes from './Clientes';
 import GoTop from './GoTop';
 import AnimationScroll from './AnimationScroll';
+import HeaderHiden from './HeaderHiden';
 
 function Inicio() {
   return (
     <div>
       < AnimationScroll />
+      < HeaderHiden />
       < Wsp />
       < Header />
       < Slider />

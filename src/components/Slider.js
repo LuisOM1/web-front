@@ -19,7 +19,7 @@ function Slider() {
         setTel('');
    }
 
-      return (    <div className="slider"> 
+      return (    <div className="slider top"> 
                     <div className="slider_container">
                         
                         <div className="slider_container_left">

@@ -6,8 +6,6 @@ body.active-menum{
 .head{
   width: 100%;
   top: 0;
-  position: fixed;
-  z-index: 900;
 }
 
 /*header superior*/
@@ -106,7 +104,6 @@ header {
   width: 100%;
   height: 90px;
   background-color: var(--color-rojo-logo); 
-  position: relative;
 }
   
   header #logo{
@@ -181,6 +178,7 @@ header {
   .head-superior{
       display: none;
   }
+  .header{ top: 0px; position: fixed; z-index: 900;}
 }
 
 @media screen and (max-width: 960px ){

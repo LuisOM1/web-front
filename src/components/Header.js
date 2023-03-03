@@ -71,7 +71,7 @@ function Header(){
                     </div>
 
 
-                <header>
+                <header className='header'>
                     <div id="head-inferior">
                         <Link to={`/web-front`} id="logo">
                             <img src={logo} alt="GpsSkies" />

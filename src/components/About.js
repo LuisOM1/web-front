@@ -8,6 +8,7 @@ import CountUp from './CountUp';
 import Wsp from './Wsp';
 import SliderNav from './SliderNav';
 import AnimationScroll from './AnimationScroll';
+import HeaderHiden from './HeaderHiden';
 
 
 //Componente funcional About
@@ -33,6 +34,7 @@ function About (){
 
       return (  
         <div>
+			< HeaderHiden />
 			< AnimationScroll />
 			< Wsp />
             < Header />
