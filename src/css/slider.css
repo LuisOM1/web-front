@@ -80,8 +80,8 @@
     }
             
       .slider_form{
-        width: 71%;
-        margin-top: 70px;
+        width: 67%;
+        margin-top: 95px;
         float: right;
         animation: fadeArribaAbajoform 1s;
       }
@@ -101,7 +101,7 @@
           color: #f8f9fa!important;
           box-sizing: border-box;
           text-align: center!important;
-          padding: 35px 35px;
+          padding: 33px 33px;
           background: #fff;
           border-radius: 16px;
         }
@@ -135,12 +135,12 @@
 
             .col{
               width: 100%;
-              padding-right: 15px;
-              padding-left: 15px;
+              padding-right: 9px;
+              padding-left: 9px;
             }
 
                 .col button{
-                  border: none!important;
+                  border: none;
                   cursor: pointer;
                   padding: 10px 25px;
                   border-radius: 30px;
