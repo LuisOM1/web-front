@@ -80,7 +80,7 @@
     }
             
       .slider_form{
-        width: 67%;
+        width: 65%;
         margin-top: 95px;
         float: right;
         animation: fadeArribaAbajoform 1s;
@@ -106,20 +106,18 @@
           border-radius: 16px;
         }
 
-
           .headform h4 {
-            text-align: center!important;
+            text-align: center;
             margin-bottom: 15px;
-            font-size: 20px;
+            font-size: 21px;
             line-height: 1.4;
             color: #0e2b3d;
             font-weight: 600;
-              
           }
 
           .headform p {
             text-align: center;
-            margin: 0 0 15px;
+            margin-bottom: 15px;
             font-weight: 400;
             line-height: 26px;
             font-size: 14px;
@@ -135,8 +133,8 @@
 
             .col{
               width: 100%;
-              padding-right: 9px;
-              padding-left: 9px;
+              padding-right: 15px;
+              padding-left: 15px;
             }
 
                 .col button{
@@ -153,9 +151,7 @@
                 
 
             .form-group{
-              font-size: 10px;
-              font-weight: 400;
-              line-height: 24px;
+              font-size: 20px;
               box-sizing: border-box;
               margin-bottom: 1rem;
             }
@@ -163,11 +159,8 @@
               .input-form-control{
                 min-height: 30px;
                 width: 100%;
-                height: calc(1.5em + .75rem + 2px);
-                padding: .375rem .75rem;
-                font-size: 1rem;
-                font-weight: 400;
-                line-height: 1.5;
+                height: calc(1.5em + .75rem + 2.1px);
+                font-size: 0.9rem;
                 border: none;
                 border-bottom: 1px solid #e6e6e6;
               }
