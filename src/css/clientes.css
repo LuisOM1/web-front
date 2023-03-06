@@ -8,7 +8,7 @@
 
     .clientes_container{
         width: 100%;
-        height: 160px;
+        height: 145px;
         margin-left: 140px;
         margin-right: 140px;
         overflow: hidden;
@@ -23,13 +23,13 @@
             }
 
         .clientes_sponsors{
-            height: 100px;
+            height: 85px;
             width: 100%;
             text-align: center;
         }
 
             .clientes_sponsors img{
-                height: 100px;
+                height: 85px;
                 width: auto;
                 border-radius: 5px;
                 border: 1px solid #aec2c9;
