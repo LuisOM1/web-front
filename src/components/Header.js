@@ -1,15 +1,15 @@
 import React, {useState} from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import '../css/header.css';
 import  logo from  '../img/logo.png';
 
 
 //Componente funcional Header
 function Header(){
-   const [click, setClick] = useState(false);
+   const [menu, setMenu] = useState(false);
 
-   const handleClick = () => setClick(!click);
-   const closeMobileMenu = () => setClick(false);
+   const handleClick = () => setMenu(!menu);
+   const closeMobileMenu = () => setMenu(false);
 
    //Para que me redirija directamente al QR de Watsapp en web
    const isMobile = function isMobile() {
@@ -24,13 +24,13 @@ function Header(){
     
 
     // Para que no se pueda hacer scroll con el menu movil abierto
-    if (click){
+    if (menu){
         document.body.classList.add('active-menum');
     } else {
         document.body.classList.remove('active-menum');
     }
          
-      return  (  <div className='head'>
+    return  (   <div className='head'>
                     <div className="head-superior">
                         <div className="container-left">
                             <ul>
@@ -71,46 +71,48 @@ function Header(){
                     </div>
 
 
-                <header className='header'>
-                    <div id="head-inferior">
-                        <Link to={`/web-front`} id="logo">
-                            <img src={logo} alt="GpsSkies" />
-                        </Link>
+                    <header className='header'>
+                        <div id="head-inferior">
+                            <Link to={`/web-front`} id="logo">
+                                <img src={logo} alt="GpsSkies" />
+                            </Link>
 
-                        <nav>
-                            <div className='menu-icon' onClick={handleClick}>
-                               <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
-                            </div>
-                            <ul className={click ? "menu-list" : "menu-list.close"} >
-                                <li>
-                                    <Link to={`/web-front`}  onClick={closeMobileMenu}> INICIO </Link>
-                                </li>
-                                <li>
-                                    <Link to={`/about`}  onClick={closeMobileMenu}> NOSOTROS</Link>
-                                </li>
-                                <li>
-                                    <Link to={`/prices`}  onClick={closeMobileMenu}> PRECIOS</Link>
-                                </li>
-                                <li>
-                                    <Link to={`/contact`}  onClick={closeMobileMenu}> CONTACTO</Link>
-                                </li>
-                                <li>
-                                    <a href={url_message} target='_blank' id="btningresar" 
-                                    onClick={closeMobileMenu} rel="noreferrer"> SOLICITAR DEMO
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </header>
-
-
+                            <nav>
+                                <div className='menu-icon' onClick={handleClick}>
+                                    <i className={menu ? 'fas fa-times' : 'fas fa-bars'}/>
+                                </div>
+                                <ul className={menu ? "menu-list" : "menu-list.close"} >
+                                    <li>
+                                        <NavLink to={`/web-front`} className={({ isActive }) => isActive? "active": ''} 
+                                        title='Inicio' onClick={closeMobileMenu}> INICIO </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to={`/about`} className={({ isActive }) => isActive? "active": ''} 
+                                        title='Nosotros' onClick={closeMobileMenu}> NOSOTROS</NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to={`/prices`} className={({ isActive }) => isActive? "active": ''} 
+                                        title='Precios' onClick={closeMobileMenu}> PRECIOS</NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to={`/contact`} className={({ isActive }) => isActive? "active": ''} 
+                                        title='Contacto' onClick={closeMobileMenu}> CONTACTO</NavLink>
+                                    </li>
+                                    <li>
+                                        <a href={url_message} title='Solicitar Demo' target='_blank' id="btnSolicitar" 
+                                        onClick={closeMobileMenu} rel="noreferrer"> SOLICITAR DEMO
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </header>
 
                 </div>
+
+    );
   
-      );
-  
-  }
+}
 
 
-  export default Header;
+export default Header;
