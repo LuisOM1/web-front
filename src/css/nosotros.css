@@ -74,7 +74,7 @@
                     text-align: center;
                     color: #0e2b3d;
                     margin-bottom: 25px;
-                    font-size: 25px;
+                    font-size: 24px;
                     font-weight: 700;
                 }
 
@@ -91,7 +91,7 @@
                 .list-nosotros{
                     list-style-type:none;
                     overflow-wrap: break-word;
-                    margin: 0 0 15px;
+                    margin: 0 0 16px;
                     font-weight: 500;
                     line-height: 26px;
                     font-size: 15px;
@@ -112,10 +112,10 @@
                 }
 
                     .button-info-nos{
-                        border: none!important;
+                        border: none;
                         cursor: pointer;
                         font-size: 14px;
-                        padding: 10px 10px;
+                        padding: 9px 9px;
                         border-radius: 10px;
                         font-weight: 600;
                         margin-top: 10px;
