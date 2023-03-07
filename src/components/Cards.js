@@ -2,7 +2,7 @@ import '../css/cards.css';
 
 
 //Componente funcional Cards
-function Cards ({nivel, precio, tiempo, iconx}){
+function Cards ({nivel, precio, tiempo, iconx, docs}){
 
   //Para que me redirija directamente al QR de Watsapp en web
   const isMobile = function isMobile() {
@@ -30,7 +30,7 @@ function Cards ({nivel, precio, tiempo, iconx}){
         </div>
         <div className='precios_card_items'>
           <ul>
-            <li> <i className='fas fa-check'></i> 300 Documentos/mes </li>
+            <li> <i className='fas fa-check'></i> {docs} </li>
             <li> <i className='fas fa-check'></i> 02 Establecimientos </li>
             <li> <i className='fas fa-check'></i> 02 Almacenes</li>
             <li> <i className='fas fa-check'></i> 04 Usuarios</li>
