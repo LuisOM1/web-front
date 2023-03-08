@@ -37,18 +37,21 @@
                     height: 80px;
                     width: 45%;
                 }
-                    .horario_title{
-                        font-weight: bold;
-                        margin-right: 10px;
-                    }
-                    .horario_text{
+                    .footer_horario p{
                         text-align: right;
-                        font-family: Helvetica,Arial,sans-serif;
-                        font-size: 15px;
-                        line-height: 24px;
-                        text-decoration: none;
                         color: var(--color-blanco-primary);
                     }
+                        .horario_title{
+                            font-family: Helvetica,Arial,sans-serif;
+                            font-weight: bold;
+                            margin-right: 10px;
+                            text-decoration: none;
+                            line-height: 24px;
+                        }
+                        .horario_text{
+                            line-height: 24px;
+                            font-size: 14px;
+                        }
 
                 .footer_list{
                     float: left;
@@ -119,7 +122,6 @@
                 }
 
                     .footer_copyright{
-                        font-family: Helvetica,Arial,sans-serif;
                         font-size: 12px;
                         color: var(--color-blanco-primary);
                         text-align: center;
@@ -173,7 +175,7 @@
                         float: none;
                         height: auto;
                     }
-                        .horario_text{
+                        .footer_horario p{
                             text-align: center;
                         }
 

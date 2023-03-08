@@ -66,8 +66,8 @@ function Footer() {
 
                               
                                 <div className='footer_horario'>
-                                    <p className='horario_text'><span className="horario_title" > Horario:</span>Lunes-Viernes: 9:00 am - 7:00 pm<br></br> 
-                                    Domingos: 9:00 am - 7:00 pm</p>
+                                    <p><span className="horario_title" > Horario:</span> <span className='horario_text'>Lunes-Viernes: 9:00 am - 7:00 pm<br></br> 
+                                    Domingos: 9:00 am - 7:00 pm</span></p>
                                 </div>
                         
                             </div>
