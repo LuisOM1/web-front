@@ -229,7 +229,7 @@ body.active-modal{ overflow-y: hidden; }
                 margin-left: 0px;
                 margin-right: 0px;
             }
-            .contacto_form{ margin-bottom: 20px; }
+            .contacto_form{ margin-top: 10px; margin-bottom: 20px; }
             .contacto_ubicacion{ margin-bottom: 40px; }
 
                 .contacto_form_head{
