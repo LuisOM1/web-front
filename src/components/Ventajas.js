@@ -25,7 +25,7 @@ function Ventajas (){
       return (  <div className='ventajas'>
                     <div className='ventajas_container'>
                         <div className='ventajas_title'>
-                            <h2 className='abajo'>Ventajas del Sistema</h2>
+                            <h2 className='mostrar4s'>Ventajas del Sistema</h2>
                         </div>
 
                         <div className='ventajas_cards'>
