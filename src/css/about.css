@@ -50,7 +50,7 @@ body.active_video{ overflow-y: hidden; }
                     justify-content: center;
                     border-radius: 12px;
                     margin-bottom: 15px;
-                    animation: fadeInUp 4s  ease;
+                    animation: fadeInUp 1s  ease;
                 }
                 @keyframes fadeInUp {
                     0% {
@@ -94,7 +94,7 @@ body.active_video{ overflow-y: hidden; }
                 width: 40%;
                 height: auto;
                 float: right;
-                animation: fadeInImg 4s ease;
+                animation: fadeInImg 1s ease;
             }
 
             @keyframes fadeInImg {
