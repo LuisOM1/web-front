@@ -23,7 +23,7 @@ export default function HeaderHiden() {
             let header = headerInf[i];
             let top = elementsTop[i];
             // ocultar o mostrar el menu superior negro
-            if(desplazamientoActual > 40 && !isMobile()) {
+            if(desplazamientoActual > 35 && !isMobile()) {
                 header.classList.add('mostrarMenu');
                 top.classList.add('masTop');
                 
