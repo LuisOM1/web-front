@@ -2,7 +2,7 @@
 body.active_video{ overflow-y: hidden; }
 
 .about{
-    height: 1300px;
+    height: 1320px;
     width: 100%;
 }
 
@@ -258,7 +258,7 @@ body.active_video{ overflow-y: hidden; }
 
 @media screen and (max-width: 1150px ){
     .about, .about_container, .about_container_1{ height: auto; }
-        .about_container_1{ margin-top: 30px; margin-bottom: 4rem; }
+        .about_container_1{ margin-top: 50px; margin-bottom: 4rem; }
             .about_container_left, .about_container_right{ width: 100%; height: auto;
                 float: none; margin-bottom: 2rem; 
             }
