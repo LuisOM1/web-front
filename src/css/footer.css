@@ -5,7 +5,7 @@
 
     .footer_sup{
         background-color: var(--color-rojo-logo);
-        height: 270px;
+        height: 230px;
     }
 
         .footer_container{
@@ -23,9 +23,9 @@
                 .footer_logoimg{
                     margin:0 0 20px;
                     margin-top: 15px;
-                    padding: 10px;
+                    padding: 5px;
                     padding-left: 0px;
-                    height: 90px;
+                    height: 75px;
                 }
 
 
@@ -78,7 +78,7 @@
             .footer_social{
                 position:absolute;
                 width: 20%;
-                top:40px;
+                top:30px;
                 right:0px;
                 flex-wrap:wrap;
                 justify-content:flex-end;
@@ -115,8 +115,8 @@
             }
 
                 .footer_derechos{
-                    margin-top: 20px;
-                    margin-bottom: 20px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
                     margin-right: 140px;
                     margin-left: 140px;
                 }
