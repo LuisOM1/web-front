@@ -98,7 +98,7 @@ body.active_video{ overflow-y: hidden; }
             }
 
             @keyframes fadeInImg {
-                from { opacity: 0; transform: scale3d(0.90, 0.90, 1); }
+                from { opacity: 0; transform: scale3d(0.93, 0.93, 1); }
                 to { opacity: 1; transform: scale3d(1, 1, 1); }
             }
 
