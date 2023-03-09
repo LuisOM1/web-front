@@ -43,9 +43,9 @@ function About (){
             	<div className='about_container'>
 					<div className='about_container_1'>
 						<div className='about_container_left'>
-							<span className="about_sub_title">Sobre Nosotros</span>
-							<h2>Brindamos servicios de calidad <br></br>
-								<span>desde 2015</span>
+							<h4 className="about_sub_title">Sobre Nosotros</h4>
+							<h2>Brindamos servicios de calidad
+								<span> desde 2015</span>
 							</h2>
 							<p>Fundada por el Ing. David de la Cruz, Skies, nació para revolucionar la 
 								industria del GPS en el marco mundial. Crecimos con la finalidad de brindar 
