@@ -18,7 +18,7 @@ body.active_video{ overflow-y: hidden; }
         }
 
             .about_container_left{
-                width: 54%;
+                width: 58%;
                 height: 550px;
                 float: left;
             }
@@ -92,7 +92,7 @@ body.active_video{ overflow-y: hidden; }
 
 
             .about_container_right{
-                width: 40%;
+                width: 35%;
                 height: 550px;
                 float: right;
                 text-align: center;
@@ -256,9 +256,6 @@ body.active_video{ overflow-y: hidden; }
 /* Seccion About Responsive */
 @media screen and (max-width: 1210px ){
     .about{ overflow-x: hidden; }
-}
-
-@media screen and (max-width: 1150px ){
     .about, .about_container, .about_container_1{ height: auto; }
         .about_container_1{ margin-top: 50px; margin-bottom: 4rem; }
             .about_container_left, .about_container_right{ width: 100%; height: auto;
