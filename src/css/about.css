@@ -14,12 +14,12 @@ body.active_video{ overflow-y: hidden; }
     }
 
         .about_container_1{
-            height: 550px;
+            height: 520px;
         }
 
             .about_container_left{
                 width: 58%;
-                height: 550px;
+                height: 520px;
                 float: left;
             }
 
@@ -93,7 +93,7 @@ body.active_video{ overflow-y: hidden; }
 
             .about_container_right{
                 width: 35%;
-                height: 550px;
+                height: 520px;
                 float: right;
                 text-align: center;
                 animation: fadeInImg 1s ease;
@@ -117,7 +117,7 @@ body.active_video{ overflow-y: hidden; }
             justify-content: center;
         }
         .about_container_2{
-            height: 170px;
+            height: 180px;
             background-color: rgba(211, 211, 211, 0.342);
         }
 
@@ -133,26 +133,27 @@ body.active_video{ overflow-y: hidden; }
                 }
 
                     .about_funfact_icon{
-                        margin-bottom: 8px;
+                        margin-bottom: 2px;
                     }
 
                         .about_funfact .fa-users, .about_funfact .fa-tools, .about_funfact .fa-trophy,.about_funfact .fa-medal{
-                            font-size: 45px;
+                            font-size: 35px;
                             color:  var(--color-rojo-logo);
                         }
 
-                        .about_funfact_text h3{ font-size: 14px; color: #0e2b3d; }
-                        .about_funfact_text p{ font-size: 14px; color: #666;}
+                        .about_funfact_text h3{ font-size: 25px; color: #0e2b3d; margin-bottom: 1px;}
+                        .about_funfact_text p{ font-size: 14px; color: #666; }
 
-                        .counter{ font-size: 30px; }
+                        .counter{ font-size: 25px; }
 
         .about_container_3{
             height: 500px;
+            width: 100%;
         }
 
             .about_video{
-                height: 315px;
-                width: 80%;
+                height: 330px;
+                width: 90%;
             }
 
                 .about_content1{
@@ -272,17 +273,16 @@ body.active_video{ overflow-y: hidden; }
 }
 
 @media screen and (max-width: 630px ){
-    .about_funfact .fa-users, .about_funfact .fa-tools, .about_funfact .fa-trophy,.about_funfact .fa-medal{ font-size: 35px; }
-    .counter{ font-size: 20px; }
+    .counter, .about_funfact_text h3{ font-size: 20px; }
     .about_video { width: 100%; }
         .about_content2_container, .about_content2_container iframe{ width: 100%; }
 }
 
 @media screen and (max-width: 450px ){
     .about_container_2{ height: auto; }
-        .about_funfact{ display: block; height: auto; margin-top: 2rem; }
-            .about_funfact_block{ width: 100%; height: auto; margin-bottom: 2rem; }
-                .counter p{ font-size: 10px; }
+        .about_funfact{ display: block; height: auto; margin-top: 2.5rem; }
+            .about_funfact_block{ width: 100%; height: auto; margin-bottom: 2.5rem; }
+                .about_funfact_icon{ margin-bottom: 10px; }
             .about_content2_container{height: 250px; } 
                 .about_content2_container iframe{ height: 180px;}
                 .about_btnclose{top: 0px;}
