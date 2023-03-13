@@ -8,8 +8,17 @@ function Slider() {
    const [ruc, setRuc] = useState('');
    const [tel, setTel] = useState('');
 
-   const url_mensaje = `https://api.whatsapp.com/send?phone=+51902534606&text=
-		Yo ${name} con numero de RUC: ${ruc} y teléfono: ${tel} deseo más información`;
+   //Para que me redirija directamente al QR de Watsapp en web
+   const isMobile = function isMobile() {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) 
+    return true;
+    return false;
+    };
+
+    var url_mensaje = 'http://';
+    url_mensaje += isMobile() ? 'api' : 'web';
+    url_mensaje += `.whatsapp.com/send?phone=+51902534606&text=Yo ${name} con numero de RUC: ${ruc} y teléfono: ${tel} deseo más información`;
+    
 
    function sendWsp(e){
         window.open(url_mensaje);
@@ -17,7 +26,7 @@ function Slider() {
         setName('');
         setRuc('');
         setTel('');
-   }
+    }
 
       return (    <div className="slider top"> 
                     <div className="slider_container">
@@ -85,8 +94,6 @@ function Slider() {
                     </div>
 
 
-
-  
    )
   
   }
