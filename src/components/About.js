@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import '../css/about.css';
 import Header from './Header';
 import Footer from './Footer';
@@ -9,6 +9,7 @@ import Wsp from './Wsp';
 import SliderNav from './SliderNav';
 import AnimationScroll from './AnimationScroll';
 import HeaderHiden from './HeaderHiden';
+import Loading from './Loading';
 
 
 //Componente funcional About
@@ -32,8 +33,27 @@ function About (){
 		{ id:4, funfact_icon:'fas fa-medal', start:0, end:100, simbolo:'%', textp:'Tasa de satisfacción'}
 	]
 
+
+	//Loading
+	const [loading, setLoading] = useState(false);
+
+	const mostrarCarga = ()=>{
+		setLoading(true);
+		setTimeout(()=>{
+		setLoading(false);
+		}, 1000);
+	  }
+	
+	  useEffect (()=> {
+		mostrarCarga();
+	  },[])
+
+
       return (  
         <div>
+			{ loading ? <Loading/>: 
+
+      		<div>
 			< HeaderHiden />
 			< AnimationScroll />
 			< Wsp />
@@ -143,6 +163,9 @@ function About (){
             </div>
             < Footer />
 			< GoTop />
+
+			</div>
+    		}
         </div>
        
       );
