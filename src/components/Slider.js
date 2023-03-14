@@ -13,11 +13,11 @@ function Slider() {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) 
     return true;
     return false;
-    };
+    }
 
     var url_mensaje = 'http://';
     url_mensaje += isMobile() ? 'api' : 'web';
-    url_mensaje += `.whatsapp.com/send?phone=+51902534606&text=Yo ${name} con numero de RUC: ${ruc} y teléfono: ${tel} deseo más información`;
+    url_mensaje += `.whatsapp.com/send?phone=+51902534606&text=Hola, mi nombre es ${name} con numero de RUC: ${ruc}, teléfono: ${tel} y deseo mayor información del sistema`;
     
 
    function sendWsp(e){
