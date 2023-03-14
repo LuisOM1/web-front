@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../css/footer.css';
 import '../css/animacion.css';
 import  logo from  '../img/logo.png';
-import {isMobile} from './isMobile';
+import {isMobile} from '../Functions/isMobile';
 
 
 //Componente funcional Footer

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import '../css/slider.css';
-import {isMobile} from './isMobile';
+import {isMobile} from '../Functions/isMobile';
 
 
 //Componente funcional Slider

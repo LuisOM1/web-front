@@ -1,15 +1,15 @@
 import React, {useState, useEffect} from 'react';
 import '../css/about.css';
-import Header from './Header';
-import Footer from './Footer';
+import Header from '../Sections/Header';
+import Footer from '../Sections/Footer';
 import  img_about from  '../img/img_about.jpg';
-import GoTop from './GoTop';
-import CountUp from './CountUp';
-import Wsp from './Wsp';
-import SliderNav from './SliderNav';
-import AnimationScroll from './AnimationScroll';
-import HeaderHiden from './HeaderHiden';
-import Loading from './Loading';
+import GoTop from '../Functions/GoTop';
+import CountUp from '../Functions/CountUp';
+import Wsp from '../Sections/Wsp';
+import SliderNav from '../Sections/SliderNav';
+import AnimationScroll from '../Functions/AnimationScroll';
+import HeaderHiden from '../Functions/HeaderHiden';
+import Loading from '../Sections/Loading';
 
 
 //Componente funcional About

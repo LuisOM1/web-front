@@ -1,16 +1,16 @@
-import Wsp from './Wsp';
-import Header from './Header';
-import Slider from './Slider';
-import Nosotros from './Nosotros';
-import Precios from './Precios';
-import Footer from './Footer';
-import Contacto from './Contacto';
-import Ventajas from './Ventajas';
-import Clientes from './Clientes';
-import GoTop from './GoTop';
-import AnimationScroll from './AnimationScroll';
-import HeaderHiden from './HeaderHiden';
-import Loading from './Loading';
+import Wsp from '../Sections/Wsp';
+import Header from '../Sections/Header';
+import Slider from '../Sections/Slider';
+import Nosotros from '../Sections/Nosotros';
+import Precios from '../Sections/Precios';
+import Footer from '../Sections/Footer';
+import Contacto from '../Sections/Contacto';
+import Ventajas from '../Sections/Ventajas';
+import Clientes from '../Sections/Clientes';
+import GoTop from '../Functions/GoTop';
+import AnimationScroll from '../Functions/AnimationScroll';
+import HeaderHiden from '../Functions/HeaderHiden';
+import Loading from '../Sections/Loading';
 import React, {useState, useEffect} from 'react';
 
 function Inicio() {

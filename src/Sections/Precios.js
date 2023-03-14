@@ -1,5 +1,5 @@
 import React, {useState}from 'react';
-import Cards from './Cards';
+import Cards from '../Sections/Cards';
 import '../css/precios.css';
 import '../css/cards.css';
 import '../css/animacion.css';

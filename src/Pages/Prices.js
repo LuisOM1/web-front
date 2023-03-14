@@ -1,13 +1,15 @@
-import Wsp from './Wsp';
-import Header from './Header';
-import Footer from './Footer';
-import GoTop from './GoTop';
-import Precios from './Precios';
-import SliderNav from './SliderNav';
-import AnimationScroll from './AnimationScroll';
-import HeaderHiden from './HeaderHiden';
-import Loading from './Loading';
+import Wsp from '../Sections/Wsp';
+import Header from '../Sections/Header';
+import Footer from '../Sections/Footer';
+import GoTop from '../Functions/GoTop';
+import Precios from '../Sections/Precios';
+import SliderNav from '../Sections/SliderNav';
+import AnimationScroll from '../Functions/AnimationScroll';
+import HeaderHiden from '../Functions/HeaderHiden';
+import Loading from '../Sections/Loading';
 import React, {useState, useEffect} from 'react';
+
+
 
 function Prices() {
   const [loading, setLoading] = useState(false);

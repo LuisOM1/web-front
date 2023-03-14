@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import '../css/header.css';
 import  logo from  '../img/logo.png';
-import {isMobile} from './isMobile';
+import {isMobile} from '../Functions/isMobile';
 
 
 //Componente funcional Header

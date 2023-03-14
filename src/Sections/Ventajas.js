@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/ventajas.css';
 import '../css/animacion.css';
-import Cardsv from './Cardsv';
+import Cardsv from '../Sections/Cardsv';
 
 
 
