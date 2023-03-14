@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import '../css/slider.css';
+import {isMobile} from './isMobile';
 
 
 //Componente funcional Slider
@@ -9,19 +10,13 @@ function Slider() {
    const [tel, setTel] = useState('');
 
    //Para que me redirija directamente al QR de Watsapp en web
-   const isMobile = function isMobile() {
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) 
-    return true;
-    return false;
-    }
-
-    var url_mensaje = 'http://';
-    url_mensaje += isMobile() ? 'api' : 'web';
-    url_mensaje += `.whatsapp.com/send?phone=+51902534606&text=Hola, mi nombre es ${name} con numero de RUC: ${ruc}, teléfono: ${tel} y deseo mayor información del sistema`;
+    var msgForm = 'http://';
+    msgForm += isMobile() ? 'api' : 'web';
+    msgForm += `.whatsapp.com/send?phone=+51902534606&text=Hola, mi nombre es ${name} con numero de RUC: ${ruc}, teléfono: ${tel} y deseo mayor información del sistema`;
     
 
    function sendWsp(e){
-        window.open(url_mensaje);
+        window.open(msgForm);
         e.preventDefault();
         setName('');
         setRuc('');

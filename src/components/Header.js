@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import '../css/header.css';
 import  logo from  '../img/logo.png';
+import {isMobile} from './isMobile';
 
 
 //Componente funcional Header
@@ -12,15 +13,9 @@ function Header(){
    const closeMobileMenu = () => setMenu(false);
 
    //Para que me redirija directamente al QR de Watsapp en web
-   const isMobile = function isMobile() {
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) 
-    return true;
-    return false;
-    };
-
-    var url_message = 'http://';
-    url_message += isMobile() ? 'api' : 'web';
-    url_message += `.whatsapp.com/send?phone=+51902534606&text=Hola, me gustaría solicitar demo del sistema`;
+    var msg_solicitarDemo = 'http://';
+    msg_solicitarDemo += isMobile() ? 'api' : 'web';
+    msg_solicitarDemo += `.whatsapp.com/send?phone=+51902534606&text=Hola, me gustaría solicitar demo del sistema`;
     
 
     // Para que no se pueda hacer scroll con el menu movil abierto
@@ -99,7 +94,7 @@ function Header(){
                                         title='Contacto' onClick={closeMobileMenu}> CONTACTO</NavLink>
                                     </li>
                                     <li>
-                                        <a href={url_message} title='Solicitar Demo' target='_blank' id="btnSolicitar" 
+                                        <a href={msg_solicitarDemo} title='Solicitar Demo' target='_blank' id="btnSolicitar" 
                                         onClick={closeMobileMenu} rel="noreferrer"> SOLICITAR DEMO
                                         </a>
                                     </li>

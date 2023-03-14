@@ -3,18 +3,12 @@ import { Link } from 'react-router-dom';
 import '../css/footer.css';
 import '../css/animacion.css';
 import  logo from  '../img/logo.png';
-
+import {isMobile} from './isMobile';
 
 
 //Componente funcional Footer
 function Footer() {
    //Para que me redirija directamente al QR de Watsapp en web
-   const isMobile = function isMobile() {
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) 
-    return true;
-    return false;
-    };
-
     var url_message = 'http://';
     url_message += isMobile() ? 'api' : 'web';
     url_message += `.whatsapp.com/send?phone=+51902534606&text=Hola, me gustaría solicitar demo del sistema`;
