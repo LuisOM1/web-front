@@ -4,7 +4,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /*background-image: url('../img/2.jpg');*/
     background-image: linear-gradient(
     rgba(255, 255, 255, 0.5),
     rgba(255, 255, 255, 0.5)
@@ -52,9 +51,7 @@
                     border: solid 3px white;
                     position: absolute;
                     z-index: 100;
-                    
                 }
-
 
 
         .column-right-nos{
@@ -161,98 +158,78 @@
 
 @media screen and (max-width: 1000px ){
     .section-nosotros{
-      height: 800px;
-    }
-  
-      .divborder{
-          height: 700px;
-      }
-  
-          .column-left-nos, .column-right-nos{
-              width: 100%;
-              height: 350px;
-          }
-          .column-right-nos{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-  
-              .div-imgs{
-                  height: 300px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-              }
-                  .div-imgs #img-nos1{
-                      width: 45%;
-                      height: auto;
-                      margin-top: 0px;
-                      z-index: none;
-                  }
-  
-                  .div-imgs #img-nos2{
-                      display: none;
-                  }
-              
-              .text-nosotros{
-                  height: 300px;
-                  float: none;
-                  margin-top: 0px;
-                  width: 80%;
-              }
-      
-  }
-  
-  
-    @media screen and (max-width: 820px ){
-    .divborder{ height: auto;}
-      .column-left-nos{
-          height: 330px;
-      }
-          .div-imgs{
-            height: 280px;
-          }
-          .div-imgs #img-nos1{
-            width: 50%;
-          }
-      
-      .column-right-nos{
-          height: auto;
-      }
-        .text-nosotros{
-            height: auto;
-            margin-bottom: 50px;
-            margin-top: 10px;
-        }
-        
-   }
-  
-  
-   @media screen and (max-width: 700px ){
-      .div-imgs #img-nos1{
-        width: 70%;
-        }
-      .text-nosotros{
-        width: 100%;
-        }
-   }
-  
-   @media screen and (max-width: 480px ){
-      .section-nosotros{
         height: auto;
         overflow-x: hidden;
-      }
+    }
   
         .divborder{
-            width: 90%;
+            height: auto;
+            margin-bottom: 70px;
         }
-            .column-left-nos{
+  
+            .column-left-nos, .column-right-nos{
+                width: 100%;
                 height: auto;
-    
             }
+
+            .column-left-nos{
+                margin-bottom: 30px;
+            }
+            .column-right-nos{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+  
                 .div-imgs{
-                    margin-top: 40px;
-                    height: 230px;
+                    margin-top: 70px;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
-   }
+                    .div-imgs #img-nos1{
+                        width: 60%;
+                        height: auto;
+                        margin-top: 0px;
+                        z-index: none;
+                        position: relative;
+                    }
+
+                    .div-imgs #img-nos2{
+                        display: none;
+                    }
+                
+                .text-nosotros{
+                    height: auto;
+                    float: none;
+                    margin-top: 0px;
+                    width: 80%;
+                }
+      
+}
+  
+@media screen and (max-width: 700px ){
+    .text-nosotros{
+        width: 100%;
+    }
+        .div-imgs #img-nos1{
+            width: 80%;
+        }
+
+}
+
+@media screen and (max-width: 600px ){
+    .div-imgs{
+        width: 100%;
+    }
+        .div-imgs #img-nos1{
+            width: 100%;
+        }
+
+}
+
+@media screen and (max-width: 550px ){
+    .divborder{ width: 90%; }
+}
+  
