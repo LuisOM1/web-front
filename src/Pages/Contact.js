@@ -11,10 +11,9 @@ import Loading from '../Sections/Loading';
 
 
 function Contact() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const mostrarCarga = ()=>{
-    setLoading(true);
     setTimeout(()=>{
     setLoading(false);
     }, 1000);

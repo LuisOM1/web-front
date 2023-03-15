@@ -14,10 +14,9 @@ import Loading from '../Sections/Loading';
 import React, {useState, useEffect} from 'react';
 
 function Inicio() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const mostrarCarga = ()=>{
-    setLoading(true);
     setTimeout(()=>{
     setLoading(false);
     }, 1000);

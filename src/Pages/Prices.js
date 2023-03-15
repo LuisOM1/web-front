@@ -12,10 +12,9 @@ import React, {useState, useEffect} from 'react';
 
 
 function Prices() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const mostrarCarga = ()=>{
-    setLoading(true);
     setTimeout(()=>{
     setLoading(false);
     }, 1000);

@@ -35,18 +35,17 @@ function About (){
 
 
 	//Loading
-	const [loading, setLoading] = useState(false);
+	const [loading, setLoading] = useState(true);
 
 	const mostrarCarga = ()=>{
-		setLoading(true);
 		setTimeout(()=>{
 		setLoading(false);
 		}, 1000);
-	  }
+	}
 	
-	  useEffect (()=> {
+	useEffect (()=> {
 		mostrarCarga();
-	  },[])
+	},[])
 
 
       return (  
