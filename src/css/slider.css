@@ -9,9 +9,13 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
   .slider_container{
+    max-width: 1070px;
     height: 570px;
     margin-left: 140px;
     margin-right: 140px;
@@ -177,29 +181,23 @@
 
 
 @media screen and (max-width: 1070px ){
-.slider{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.slider_container{
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 80%;
 }
 
-  .slider_container{
-    margin-left: 0px;
-    margin-right: 0px;
-    width: 80%;
+  .slider_container_left{
+    justify-content: left;
   }
-
-    .slider_container_left{
-      justify-content: left;
+    .slider_text{
+      margin-right: 0px;
+      width: 80%;
     }
-      .slider_text{
-        margin-right: 0px;
-        width: 80%;
-      }
 
-      .slider_form{
-        width: 80%;
-      }
+    .slider_form{
+      width: 80%;
+    }
 
 }
 

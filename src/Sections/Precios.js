@@ -49,73 +49,73 @@ function Precios(){
     return(
   
             <div className='precios'>
+              <div className='container_precios'>
               
-              
-              <div className='precios_head'>
-                <div className='precios_head_title'>
-                  <h2>Nuestros Precios</h2>
-                  <h4>Planes a tu medida</h4>
-                </div>
-              </div>
-              <div className='precios_options'>
-                <div className='precios_buttons arriba'> 
-                  <button className={(activetab == "1" ? "activetab button": "button")} onClick={()=>cambiartab("1")} >MENSUAL</button> 
-                  <button className={(activetab == "2" ? "activetab button": "button")} onClick={()=>cambiartab("2")} >03 MESES </button> 
-                  <button className={(activetab == "3" ? "activetab button": "button")} onClick={()=>cambiartab("3")} >06 MESES <label>DESCUENTO</label></button> 
-                  <button className={(activetab == "4" ? "activetab button": "button")} onClick={()=>cambiartab("4")} >ANUAL <label>DESCUENTO</label></button>
-                </div>
-              </div>
-  
-              <div>
-                <div  className={activetab == 1 ? "contenttab  active-contenttab" : "contenttab"}>
-                  <div className='precios_contents mostrar4s'>
-                    {  cards_mensual.map(card => (
-                        <div className='precios_cards' key={card.id}>
-                          <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} docs={card.docs} />
-                        </div>
-                        ))
-                    } 
+                <div className='precios_head'>
+                  <div className='precios_head_title'>
+                    <h2>Nuestros Precios</h2>
+                    <h4>Planes a tu medida</h4>
                   </div>
                 </div>
-                <div className={activetab == 2 ? "contenttab  active-contenttab" : "contenttab"}>
-                  <div className='precios_contents'>
-                    {  cards_3m.map(card => (
-                        <div className='precios_cards' key={card.id}>
-                          <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} docs={card.docs} />
-                        </div>
-                        ))
-                    } 
+                <div className='precios_options'>
+                  <div className='precios_buttons arriba'> 
+                    <button className={(activetab == "1" ? "activetab button": "button")} onClick={()=>cambiartab("1")} >MENSUAL</button> 
+                    <button className={(activetab == "2" ? "activetab button": "button")} onClick={()=>cambiartab("2")} >03 MESES </button> 
+                    <button className={(activetab == "3" ? "activetab button": "button")} onClick={()=>cambiartab("3")} >06 MESES <label>DESCUENTO</label></button> 
+                    <button className={(activetab == "4" ? "activetab button": "button")} onClick={()=>cambiartab("4")} >ANUAL <label>DESCUENTO</label></button>
                   </div>
                 </div>
-                <div className={activetab == 3 ? "contenttab  active-contenttab" : "contenttab"}>
-                  <div className='precios_contents'>
-                    {  cards_6m.map(card => (
-                        <div className='precios_cards' key={card.id}>
-                          <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} docs={card.docs} />
-                        </div>
-                        ))
-                    } 
+    
+                <div>
+                  <div  className={activetab == 1 ? "contenttab  active-contenttab" : "contenttab"}>
+                    <div className='precios_contents mostrar4s'>
+                      {  cards_mensual.map(card => (
+                          <div className='precios_cards' key={card.id}>
+                            <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} docs={card.docs} />
+                          </div>
+                          ))
+                      } 
+                    </div>
+                  </div>
+                  <div className={activetab == 2 ? "contenttab  active-contenttab" : "contenttab"}>
+                    <div className='precios_contents'>
+                      {  cards_3m.map(card => (
+                          <div className='precios_cards' key={card.id}>
+                            <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} docs={card.docs} />
+                          </div>
+                          ))
+                      } 
+                    </div>
+                  </div>
+                  <div className={activetab == 3 ? "contenttab  active-contenttab" : "contenttab"}>
+                    <div className='precios_contents'>
+                      {  cards_6m.map(card => (
+                          <div className='precios_cards' key={card.id}>
+                            <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} docs={card.docs} />
+                          </div>
+                          ))
+                      } 
+                    </div>
+                  </div>
+                  <div className={activetab == 4 ? "contenttab  active-contenttab" : "contenttab"}>
+                    <div className='precios_contents'>
+                      {  cards_12m.map(card => (
+                          <div className='precios_cards' key={card.id}>
+                            <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} docs={card.docs} />
+                          </div>
+                          ))
+                      } 
+                    </div>
                   </div>
                 </div>
-                <div className={activetab == 4 ? "contenttab  active-contenttab" : "contenttab"}>
-                  <div className='precios_contents'>
-                    {  cards_12m.map(card => (
-                        <div className='precios_cards' key={card.id}>
-                          <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} docs={card.docs} />
-                        </div>
-                        ))
-                    } 
+                <div className='precios_notas'>
+                  <div className='precios_notas_texto'>
+                    <p>*** Promociones y descuentos válidos hasta el 31 de Diciembre del 2023 (Clientes nuevos). ***</p>
                   </div>
                 </div>
+  
+  
               </div>
-              <div className='precios_notas'>
-                <div className='precios_notas_texto'>
-                  <p>*** Promociones y descuentos válidos hasta el 31 de Diciembre del 2023 (Clientes nuevos). ***</p>
-                </div>
-              </div>
-  
-  
-  
             </div>
              
     );

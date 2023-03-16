@@ -12,6 +12,7 @@
         margin-left: 140px;
         margin-right: 140px;
         overflow: hidden;
+        max-width: 1070px;
     }
 
         .clientes_title {

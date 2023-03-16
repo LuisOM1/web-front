@@ -27,79 +27,82 @@ function Header(){
          
     return  (   <div className='head'>
                     <div className="head-superior">
-                        <div className="container-left">
-                            <ul>
-                                <li>
-                                    <i className="far fa-envelope-open" aria-hidden="true"></i> contacto@gps.com
-                                </li>
-                                <li> 
-                                    <i className="fab fa-whatsapp" aria-hidden="true"></i> +51 970 951 302
-                                </li>
-                                <li> 
-                                    <i className="fas fa-phone" aria-hidden="true"></i> (01) 730 4000
-                                </li>
-                            </ul>
-                        </div>
+                        <div className='container_head-superior'>
+                            <div className="container-left">
+                                <ul>
+                                    <li>
+                                        <i className="far fa-envelope-open" aria-hidden="true"></i> contacto@gps.com
+                                    </li>
+                                    <li> 
+                                        <i className="fab fa-whatsapp" aria-hidden="true"></i> +51 970 951 302
+                                    </li>
+                                    <li> 
+                                        <i className="fas fa-phone" aria-hidden="true"></i> (01) 730 4000
+                                    </li>
+                                </ul>
+                            </div>
 
-                        <div className="container-right">
-                            <ul>
-                                <li className='headersup_horario'> 
-                                    <i className="far fa-clock"></i> Atención: 9:00 AM – 7:00 PM
-                                </li>
-                                <li className='headersup_social'> 
-                                    <a href="https://www.facebook.com/SKIESGPS" target="_blank" className=" icon icon--facebook" rel="noreferrer"> 
-                                        <i className="fab fa-facebook-f"></i> 
-                                    </a>
-                                </li>
-                                <li className='headersup_social'> 
-                                    <a href="https://www.instagram.com/gps_skies" target="_blank" className="icon icon--instagram" rel="noreferrer"> 
-                                        <i className="fab fa-instagram"></i> 
-                                    </a>
-                                </li>
-                                <li className='headersup_social'> 
-                                    <a href="https://twitter.com/gps_skies" target="_blank" className="icon icon--twitter" rel="noreferrer">
-                                        <i className="fab fa-twitter"></i> 
-                                    </a>
-                                </li>
-                            </ul>
+                            <div className="container-right">
+                                <ul>
+                                    <li className='headersup_horario'> 
+                                        <i className="far fa-clock"></i> Atención: 9:00 AM – 7:00 PM
+                                    </li>
+                                    <li className='headersup_social'> 
+                                        <a href="https://www.facebook.com/SKIESGPS" target="_blank" className=" icon icon--facebook" rel="noreferrer"> 
+                                            <i className="fab fa-facebook-f"></i> 
+                                        </a>
+                                    </li>
+                                    <li className='headersup_social'> 
+                                        <a href="https://www.instagram.com/gps_skies" target="_blank" className="icon icon--instagram" rel="noreferrer"> 
+                                            <i className="fab fa-instagram"></i> 
+                                        </a>
+                                    </li>
+                                    <li className='headersup_social'> 
+                                        <a href="https://twitter.com/gps_skies" target="_blank" className="icon icon--twitter" rel="noreferrer">
+                                            <i className="fab fa-twitter"></i> 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
 
                     <header className='header'>
-                        <div id="head-inferior">
-                            <Link to={`/web-front`} id="logo">
-                                <img src={logo} alt="GpsSkies" />
-                            </Link>
+                        <div className='container_header'>
+                                <Link to={`/web-front`} id="logo">
+                                    <img src={logo} alt="GpsSkies" />
+                                </Link>
 
-                            <nav>
-                                <div className='menu-icon' onClick={handleClick}>
-                                    <i className={menu ? 'fas fa-times' : 'fas fa-bars'}/>
-                                </div>
-                                <ul className={menu ? "menu-list" : "menu-list.close"} >
-                                    <li>
-                                        <NavLink to={`/web-front`} className={({ isActive }) => isActive? "active": ''} 
-                                        title='Inicio' onClick={closeMobileMenu}> INICIO </NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to={`/about`} className={({ isActive }) => isActive? "active": ''} 
-                                        title='Nosotros' onClick={closeMobileMenu}> NOSOTROS</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to={`/prices`} className={({ isActive }) => isActive? "active": ''} 
-                                        title='Precios' onClick={closeMobileMenu}> PRECIOS</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to={`/contact`} className={({ isActive }) => isActive? "active": ''} 
-                                        title='Contacto' onClick={closeMobileMenu}> CONTACTO</NavLink>
-                                    </li>
-                                    <li>
-                                        <a href={msg_solicitarDemo} title='Solicitar Demo' target='_blank' id="btnSolicitar" 
-                                        onClick={closeMobileMenu} rel="noreferrer"> SOLICITAR DEMO
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
+                                <nav>
+                                    <div className='menu-icon' onClick={handleClick}>
+                                        <i className={menu ? 'fas fa-times' : 'fas fa-bars'}/>
+                                    </div>
+                                    <ul className={menu ? "menu-list" : "menu-list.close"} >
+                                        <li>
+                                            <NavLink to={`/web-front`} className={({ isActive }) => isActive? "active": ''} 
+                                            title='Inicio' onClick={closeMobileMenu}> INICIO </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink to={`/about`} className={({ isActive }) => isActive? "active": ''} 
+                                            title='Nosotros' onClick={closeMobileMenu}> NOSOTROS</NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink to={`/prices`} className={({ isActive }) => isActive? "active": ''} 
+                                            title='Precios' onClick={closeMobileMenu}> PRECIOS</NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink to={`/contact`} className={({ isActive }) => isActive? "active": ''} 
+                                            title='Contacto' onClick={closeMobileMenu}> CONTACTO</NavLink>
+                                        </li>
+                                        <li>
+                                            <a href={msg_solicitarDemo} title='Solicitar Demo' target='_blank' id="btnSolicitar" 
+                                            onClick={closeMobileMenu} rel="noreferrer"> SOLICITAR DEMO
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            
                         </div>
                     </header>
 

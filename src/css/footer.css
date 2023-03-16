@@ -6,6 +6,9 @@
     .footer_sup{
         background-color: var(--color-rojo-logo);
         height: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
         .footer_container{
@@ -13,6 +16,7 @@
             height: auto;
             margin-right: 140px;
             margin-left: 140px;
+            max-width: 1070px;
         }
 
             .footer_logo{

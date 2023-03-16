@@ -18,6 +18,7 @@
         height: 500px;
         margin-left: 140px;
         margin-right: 140px;
+        max-width: 1070px;
     }
 
         .column-left-nos{
@@ -34,29 +35,27 @@
             }
 
                 .div-imgs #img-nos1{
-                    width: 30%;
+                    max-width: 100%;
                     height: 210px;
                     border-radius: 15px;
                     margin-top: 40px;
-                    position: absolute;
                     z-index:90;
                 }
 
                 .div-imgs #img-nos2{
-                    width: 30%;
+                    max-width: 100%;
                     height: 210px;
                     border-radius: 15px;
-                    margin-top: 200px;
-                    margin-left: 90px;
+                    margin-top: -58px;
+                    margin-left: 120px;
                     border: solid 3px white;
-                    position: absolute;
                     z-index: 100;
                 }
 
 
         .column-right-nos{
             float: right;
-            width: 50%;
+            width: 45%;
             height: 500px;
         }
 
@@ -111,7 +110,7 @@
                         cursor: pointer;
                         font-size: 14px;
                         padding: 9px 9px;
-                        border-radius: 10px;
+                        border-radius: 7px;
                         font-weight: 600;
                         margin-top: 10px;
                         width: 100%;
@@ -145,18 +144,20 @@
 
 
 /* Seccion Nosotros responsive */
-@media screen and (max-width: 1070px ){
-    .divborder{
-        width: 80%;
-        margin-left: 0px;
-        margin-right: 0px;
+@media screen and (max-width: 1200px ){
+    .div-imgs #img-nos2{
+        margin-left: 40px;
     }
-        .text-nosotros{
-            width: 90%;
-        }
+    .column-right-nos{
+        width: 50%;
+    }
 }
 
-@media screen and (max-width: 1000px ){
+@media screen and (max-width: 1070px ){
+    
+}
+
+@media screen and (max-width: 1070px ){
     .section-nosotros{
         height: auto;
         overflow-x: hidden;
@@ -165,6 +166,9 @@
         .divborder{
             height: auto;
             margin-bottom: 70px;
+            width: 80%;
+            margin-left: 0px;
+            margin-right: 0px;
         }
   
             .column-left-nos, .column-right-nos{
@@ -226,7 +230,6 @@
         .div-imgs #img-nos1{
             width: 100%;
         }
-
 }
 
 @media screen and (max-width: 550px ){
