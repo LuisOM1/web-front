@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/web-front/static/css/main.832269d2.css",
-    "main.js": "/web-front/static/js/main.1e8f51ee.js",
+    "main.js": "/web-front/static/js/main.c80a1270.js",
     "static/js/787.618f3a8b.chunk.js": "/web-front/static/js/787.618f3a8b.chunk.js",
     "static/media/fondo.jpg": "/web-front/static/media/fondo.cbb56644f3193a6fb1ac.jpg",
     "static/media/1.png": "/web-front/static/media/1.d546e21c9c05643d0ee7.png",
@@ -10,15 +10,15 @@
     "static/media/img_autopista.jpg": "/web-front/static/media/img_autopista.a6f975182989e3897bda.jpg",
     "static/media/img_real.jpg": "/web-front/static/media/img_real.8484238748c2e014f9cf.jpg",
     "static/media/img_nosotros.jpg": "/web-front/static/media/img_nosotros.025e28f10c5865a697b9.jpg",
+    "static/media/logo.png": "/web-front/static/media/logo.fa31d5309ff5a631bd87.png",
     "static/media/img_about.jpg": "/web-front/static/media/img_about.e0f9d401ab8f0f7e60b9.jpg",
-    "static/media/logo.png": "/web-front/static/media/logo.bf97ac7ef14fca5310f6.png",
     "index.html": "/web-front/index.html",
     "main.832269d2.css.map": "/web-front/static/css/main.832269d2.css.map",
-    "main.1e8f51ee.js.map": "/web-front/static/js/main.1e8f51ee.js.map",
+    "main.c80a1270.js.map": "/web-front/static/js/main.c80a1270.js.map",
     "787.618f3a8b.chunk.js.map": "/web-front/static/js/787.618f3a8b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.832269d2.css",
-    "static/js/main.1e8f51ee.js"
+    "static/js/main.c80a1270.js"
   ]
 }
