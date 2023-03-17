@@ -8,42 +8,42 @@ import '../css/animacion.css';
 
 function Precios(){
 
-    const cards_mensual = [
-      { id:1, nivel:'Principiante', precio:'¡Gratis!', tiempo:'Mensual', iconx:'fas fa-times', docs:'100 Documentos/mes'},
-      { id:2, nivel:'Microempresa', precio:'S/ 33.90', tiempo:'+IGV / Mensual', iconx:'fas fa-check', docs:'300 Documentos/mes'},
-      { id:3, nivel:'Emprendedor', precio:'S/ 49.90', tiempo:'+IGV / Mensual', iconx:'fas fa-check', docs:'300 Documentos/mes'},
-      { id:4, nivel:'Corporativo', precio:'S/ 99.90', tiempo:'+IGV / Mensual', iconx:'fas fa-check', docs:'300 Documentos/mes'}
-    ]
+  const cards_mensual = [
+    { id:1, nivel:'Principiante', precio:'S/ 45.00', tiempo:'+IGV / Mensual', iconx:'fas fa-times', docs:'300 Documentos/mes'},
+    { id:2, nivel:'Microempresa', precio:'S/ 55.00', tiempo:'+IGV / Mensual', iconx:'fas fa-check', docs:'500 Documentos/mes'},
+    { id:3, nivel:'Emprendedor', precio:'S/ 69.00', tiempo:'+IGV / Mensual', iconx:'fas fa-check', docs:'1000 Documentos/mes'},
+    { id:4, nivel:'Corporativo', precio:'S/ 89.00', tiempo:'+IGV / Mensual', iconx:'fas fa-check', docs:'+1000 Documentos/mes'}
+  ]
+
+  const cards_3m = [
+    { id:1, nivel:'Principiante', precio:'S/ 135.00', tiempo:'+IGV / 03 Meses', iconx:'fas fa-times', docs:'300 Documentos/mes'},
+    { id:2, nivel:'Microempresa', precio:'S/ 165.00', tiempo:'+IGV / 03 Meses', iconx:'fas fa-check', docs:'500 Documentos/mes'},
+    { id:3, nivel:'Emprendedor', precio:'S/ 207.00', tiempo:'+IGV / 03 Meses', iconx:'fas fa-check', docs:'1000 Documentos/mes'},
+    { id:4, nivel:'Corporativo', precio:'S/ 267.00', tiempo:'+IGV / 03 Meses', iconx:'fas fa-check', docs:'+1000 Documentos/mes'}
+  ]
+
+  const cards_6m = [
+    { id:1, nivel:'Principiante', precio:'S/ 270.00', tiempo:'+IGV / 06 Meses', iconx:'fas fa-times', docs:'300 Documentos/mes'},
+    { id:2, nivel:'Microempresa', precio:'S/ 330.00', tiempo:'+IGV / 06 Meses', iconx:'fas fa-check', docs:'500 Documentos/mes'},
+    { id:3, nivel:'Emprendedor', precio:'S/ 414.00', tiempo:'+IGV / 06 Meses', iconx:'fas fa-check', docs:'1000 Documentos/mes'},
+    { id:4, nivel:'Corporativo', precio:'S/ 534.00', tiempo:'+IGV / 06 Meses', iconx:'fas fa-check', docs:'+1000 Documentos/mes'}
+  ]
+
+  const cards_12m = [
+    { id:1, nivel:'Principiante', precio:'S/ 495.00', tiempo:'+IGV / 12 Meses', iconx:'fas fa-times', docs:'300 Documentos/mes'},
+    { id:2, nivel:'Microempresa', precio:'S/ 605.00', tiempo:'+IGV / 12 Meses', iconx:'fas fa-check', docs:'500 Documentos/mes'},
+    { id:3, nivel:'Emprendedor', precio:'S/ 759.00', tiempo:'+IGV / 12 Meses', iconx:'fas fa-check', docs:'1000 Documentos/mes'},
+    { id:4, nivel:'Corporativo', precio:'S/ 979.00', tiempo:'+IGV / 12 Meses', iconx:'fas fa-check', docs:'+1000 Documentos/mes'}
+  ]
+
   
-    const cards_3m = [
-      { id:1, nivel:'Principiante', precio:'¡Gratis!', tiempo:'Mensual', iconx:'fas fa-times', docs:'100 Documentos/mes'},
-      { id:2, nivel:'Microempresa', precio:'S/ 101.70', tiempo:'+IGV / 03 Meses', iconx:'fas fa-check', docs:'300 Documentos/mes'},
-      { id:3, nivel:'Emprendedor', precio:'S/ 149.70', tiempo:'+IGV / 03 Meses', iconx:'fas fa-check', docs:'300 Documentos/mes'},
-      { id:4, nivel:'Corporativo', precio:'S/ 299.70', tiempo:'+IGV / 03 Meses', iconx:'fas fa-check', docs:'300 Documentos/mes'}
-    ]
-  
-    const cards_6m = [
-      { id:1, nivel:'Principiante', precio:'¡Gratis!', tiempo:'Mensual', iconx:'fas fa-times', docs:'100 Documentos/mes'},
-      { id:2, nivel:'Microempresa', precio:'S/ 183.06', tiempo:'+IGV / 06 Meses', iconx:'fas fa-check', docs:'300 Documentos/mes'},
-      { id:3, nivel:'Emprendedor', precio:'S/ 269.46', tiempo:'+IGV / 06 Meses', iconx:'fas fa-check', docs:'300 Documentos/mes'},
-      { id:4, nivel:'Corporativo', precio:'S/ 539.46', tiempo:'+IGV / 06 Meses', iconx:'fas fa-check', docs:'300 Documentos/mes'}
-    ]
-  
-    const cards_12m = [
-      { id:1, nivel:'Principiante', precio:'¡Gratis!', tiempo:'Mensual', iconx:'fas fa-times', docs:'100 Documentos/mes'},
-      { id:2, nivel:'Microempresa', precio:'S/ 325.42', tiempo:'+IGV / 12 Meses', iconx:'fas fa-check', docs:'300 Documentos/mes'},
-      { id:3, nivel:'Emprendedor', precio:'S/ 479.07', tiempo:'+IGV / 12 Meses', iconx:'fas fa-check', docs:'300 Documentos/mes'},
-      { id:4, nivel:'Corporativo', precio:'S/ 959.07', tiempo:'+IGV / 12 Meses', iconx:'fas fa-check', docs:'300 Documentos/mes'}
-    ]
-  
-    
-  
-    const[activetab, setActivetab]= useState("1");
-    const cambiartab = (numerotab) =>{
-      if(activetab !== numerotab){
-        setActivetab(numerotab);
-      }
+
+  const[activetab, setActivetab]= useState("1");
+  const cambiartab = (numerotab) =>{
+    if(activetab !== numerotab){
+      setActivetab(numerotab);
     }
+  }
   
   
     return(
@@ -61,7 +61,7 @@ function Precios(){
                   <div className='precios_buttons arriba'> 
                     <button className={(activetab == "1" ? "activetab button": "button")} onClick={()=>cambiartab("1")} >MENSUAL</button> 
                     <button className={(activetab == "2" ? "activetab button": "button")} onClick={()=>cambiartab("2")} >03 MESES </button> 
-                    <button className={(activetab == "3" ? "activetab button": "button")} onClick={()=>cambiartab("3")} >06 MESES <label>DESCUENTO</label></button> 
+                    <button className={(activetab == "3" ? "activetab button": "button")} onClick={()=>cambiartab("3")} >06 MESES </button> 
                     <button className={(activetab == "4" ? "activetab button": "button")} onClick={()=>cambiartab("4")} >ANUAL <label>DESCUENTO</label></button>
                   </div>
                 </div>
@@ -110,11 +110,11 @@ function Precios(){
                 </div>
                 <div className='precios_notas'>
                   <div className='precios_notas_texto'>
-                    <p>*** Promociones y descuentos válidos hasta el 31 de Diciembre del 2023 (Clientes nuevos). ***</p>
+                    <p>*** Promociones y descuentos válidos hasta agotar stock. Costo de configuración: S/ 80.00. ***</p>
                   </div>
                 </div>
   
-  
+   
               </div>
             </div>
              
