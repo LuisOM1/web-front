@@ -8,18 +8,18 @@ import Cardsv from '../Sections/Cardsv';
 //Componente funcional Ventajas
 function Ventajas (){
     const cardsv = [
-        { id:1, icono:'fas fa-pencil-ruler', titulo:'DISEÑO CREATIVO', parrafo:'Plataforma  con la mejor interfaz para el usuario.'},
-        { id:2, icono:'fas fa-file', titulo:'REPORTES COMPLETOS', parrafo:'Consulta reportes en HTML o en archivo Excel en todo momento.'},
-        { id:3, icono:'fas fa-laptop', titulo:'RESPUESTA ONLINE', parrafo:'Realiza tus consultas desde cualquier parte del mundo.'},
-        { id:4, icono:'fas fa-clock', titulo:'TIEMPO REAL', parrafo:'La plataforma realiza transmisiones en tiempo real por segundos.'},
-        { id:5, icono:'fas fa-check-square', titulo:'FISCALIZADOS', parrafo:'Homologados y autorizados por el MTC y SUTRAN.'},
-        { id:6, icono:'fas fa-tachometer-alt', titulo:'CONTROL DE VELOCIDAD', parrafo:'Controla la velocidad de todas tus unidades.'},
-        { id:7, icono:'fas fa-toggle-on', titulo:'APAGADO DE MOTOR', parrafo:'Podrás apagar tu(s) unidad(es) desde cualquier lugar donde te encuentres.'},
-        { id:8, icono:'fas fa-map-marked-alt', titulo:'GEOZONAS', parrafo:'Podrás delimitar una zona geográfica para gestionar la circulación de su vehículo y alertar si sale de la geozona.'},
-        { id:9, icono:'fas fa-bell', titulo:'ALERTAS', parrafo:'Notificaciones de alertas mediante whatsapp.'},
-        { id:10, icono:'fas fa-mobile-alt', titulo:'RASTREO DE CELULARES', parrafo:'Te brindamos la mejor herramienta de rastreo en dispositivos moviles.'},
+        { id:1, icono:'fas fa-pencil-ruler', titulo:'DISEÑO CREATIVO', parrafo:'Plataforma con la mejor interfaz para el usuario.'},
+        { id:2, icono:'fa-solid fa-chart-pie', titulo:'REPORTES', parrafo:'Obtén reportes de tus ventas, compras, inventario y finanzas.'},
+        { id:3, icono:'fa-solid fa-cart-shopping', titulo:'COMPRAS', parrafo:'Registra tus compras y genera tus órdenes de compra.'},
+        { id:4, icono:'fas fa-clock', titulo:'TIEMPO REAL', parrafo:'La plataforma realiza los registros y emisiones en tiempo real por segundos.'},
+        { id:5, icono:'fas fa-check-square', titulo:'AUTORIZADO', parrafo:'Plataforma autorizada por SUNAT.'},
+        { id:6, icono:'fa-solid fa-shuffle', titulo:'ADAPTABLE', parrafo:'El sistema se personaliza de acuerdo a las necesidades de tu empresa.'},
+        { id:7, icono:'fa-solid fa-truck-ramp-box', titulo:'INVENTARIO', parrafo:'Podrás registrar y controlar tu stock de productos.'},
+        { id:8, icono:'fa-solid fa-gears', titulo:'AUTOMATIZADO', parrafo:'Registra, almacena y genera tus comprobantes de manera rápida y segura.'},
+        { id:9, icono:'fa-solid fa-envelope-open-text', titulo:'FÁCIL ENVIO', parrafo:'Envia tus comprobantes por WhatsApp y correo.'},
+        { id:10, icono:'fa-solid fa-receipt', titulo:'FACTURACIÓN', parrafo:'Emite boletas, facturas, notas de crédito, débito y guías de remisión.'},
         { id:11, icono:'fas fa-headset', titulo:'SOPORTE 24/7', parrafo:'Resolveremos tus consultas las 24 horas del día, los 7 días a la semana.'},
-        { id:12, icono:'fas fa-lock', titulo:'RESPALDO DE DATOS', parrafo:'En Skies, tus datos estarán seguros y respaldados por el equipo altamente calificado.'}
+        { id:12, icono:'fas fa-lock', titulo:'RESPALDO DE DATOS', parrafo:'Tus datos estarán seguros y respaldados por el equipo altamente calificado.'}
       ]
      
       return (  <div className='ventajas'>

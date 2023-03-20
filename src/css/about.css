@@ -32,7 +32,7 @@ body.active_video{ overflow-y: hidden; }
                 }
                 .about_container_left h2, .about_container_left h3 {
                     font-weight: 600;
-                    color: #0e2b3d;
+                    color: var(--color-negro-logo);
                 }
                 .about_container_left h2{ margin-bottom: 11px; }
                 .about_container_left h3{ margin-bottom: 10px; }

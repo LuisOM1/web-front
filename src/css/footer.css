@@ -82,7 +82,7 @@
             .footer_social{
                 position:absolute;
                 width: 20%;
-                top:30px;
+                top:22px;
                 right:0px;
                 flex-wrap:wrap;
                 justify-content:flex-end;
@@ -104,7 +104,7 @@
                         background-size: 25px;
                         border-radius: 50%;
                         text-align: center;
-                        margin-left: 5px;
+                        margin-left: 2px;
                     }
 
                         .footer_sociallinks a:hover{
@@ -194,7 +194,7 @@
                     top:0;
                     text-align: center;
                     position: inherit;
-                    margin-bottom: 15px;
+                    margin-bottom: 5px;
                 }
 
                     .footer_sociallinks{
@@ -202,11 +202,11 @@
                     }
 
                         .footer_sociallinks a {
-                            line-height: 35px;
-                            width: 35px;
-                            height: 35px;
-                            font-size: 20px;
-                            background-size: 35px;
+                            line-height: 25px;
+                            width: 25px;
+                            height: 25px;
+                            font-size: 15px;
+                            background-size: 25px;
                         }
 
                     .footer_derechos{

@@ -68,7 +68,7 @@
 
                 .text-nosotros h2{
                     text-align: center;
-                    color: #0e2b3d;
+                    color: var(--color-negro-logo);
                     margin-bottom: 25px;
                     font-size: 24px;
                     font-weight: 700;
@@ -94,7 +94,7 @@
                 }
 
                     .list-nosotros .fa-check-circle{
-                        color: #0e2b3d;
+                        color: var(--color-negro-logo);
                         font-size: 15px;
                         margin-right: 5px;
                     }

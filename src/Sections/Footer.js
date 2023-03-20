@@ -52,8 +52,8 @@ function Footer() {
                                     </div>
                                 
                                     <div className="link">
-                                        <a href="tel:+51902534606" className="link_content" target="_blank" rel="noreferrer">
-                                            Llámanos (01) 730-4000
+                                        <a href="tel:+51970951302" className="link_content" target="_blank" rel="noreferrer">
+                                            Llámanos 
                                         </a>
                                     </div>
                                 </div>

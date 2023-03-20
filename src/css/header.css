@@ -139,7 +139,7 @@ body.active-menum{ overflow-y: hidden; }
       
         .menu-icon {
           display: none;
-          font-size: 30px;
+          font-size: 25px;
           color: var(--color-blanco-primary);
           cursor: pointer;
         }

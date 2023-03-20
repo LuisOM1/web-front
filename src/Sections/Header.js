@@ -37,7 +37,7 @@ function Header(){
                                         <i className="fab fa-whatsapp" aria-hidden="true"></i> +51 970 951 302
                                     </li>
                                     <li> 
-                                        <i className="fas fa-phone" aria-hidden="true"></i> (01) 730 4000
+                                        <i className="fas fa-phone" aria-hidden="true"></i> +51 970 951 302
                                     </li>
                                 </ul>
                             </div>

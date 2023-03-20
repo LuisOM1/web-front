@@ -104,7 +104,7 @@
         .form-circle{
           color: #f8f9fa!important;
           box-sizing: border-box;
-          text-align: center!important;
+          text-align: center;
           padding: 33px 33px;
           background: #fff;
           border-radius: 16px;
@@ -115,7 +115,7 @@
             margin-bottom: 15px;
             font-size: 21px;
             line-height: 1.4;
-            color: #0e2b3d;
+            color: var(--color-negro-logo);
             font-weight: 600;
           }
 
@@ -125,7 +125,7 @@
             font-weight: 400;
             line-height: 26px;
             font-size: 14px;
-            color: #0e2b3d;
+            color: #666;
           }
 
 
