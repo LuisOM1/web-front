@@ -14,9 +14,10 @@
         .footer_container{
             position: relative;
             height: auto;
+            width: 100%;
             margin-right: 140px;
             margin-left: 140px;
-            max-width: 1070px;
+            max-width: 1000px;
         }
 
             .footer_logo{

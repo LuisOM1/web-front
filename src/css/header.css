@@ -17,7 +17,7 @@ body.active-menum{ overflow-y: hidden; }
 
     .container_head-superior{
       width: 100%;
-      max-width: 1070px;
+      max-width: 1000px;
       margin-left: 140px;
       margin-right: 140px;
     }
@@ -112,7 +112,7 @@ body.active-menum{ overflow-y: hidden; }
   }
     .container_header{
       width: 100%;
-      max-width: 1070px;
+      max-width: 1000px;
       margin-left: 140px;
       margin-right: 140px;
     }

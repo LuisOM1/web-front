@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import '../css/slider.css';
 import {isMobile} from '../Functions/isMobile';
-
+import  peru from  '../img/peru.svg';
 
 //Componente funcional Slider
 function Slider() {
@@ -31,6 +31,7 @@ function Slider() {
                                 <h2>Facturación Electrónica</h2><br/>
                                 <p> Plataforma de gestión de ventas, compras e inventarios utilizada
                                     por <strong>miles de empresas</strong> en todo el <strong>Perú</strong>
+                                    <img alt="🇵🇪" src={peru}/>
                                 </p>
                             </div>
                         </div>

@@ -8,11 +8,11 @@
 
     .clientes_container{
         width: 100%;
-        height: 145px;
+        height: 140px;
         margin-left: 140px;
         margin-right: 140px;
         overflow: hidden;
-        max-width: 1070px;
+        max-width: 1000px;
     }
 
         .clientes_title {
@@ -24,13 +24,13 @@
             }
 
         .clientes_sponsors{
-            height: 85px;
+            height: 80px;
             width: 100%;
             text-align: center;
         }
 
             .clientes_sponsors img{
-                height: 85px;
+                height: 80px;
                 width: auto;
                 border-radius: 5px;
                 border: 1px solid #aec2c9;
