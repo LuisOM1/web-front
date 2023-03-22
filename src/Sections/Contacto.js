@@ -182,7 +182,7 @@ return (
                     </div>
                     <div className="info">
                         <h4> Central telefónica </h4>
-                        <p> +51 970 951 302 </p>
+                        <p> 970 951 302 </p>
                     </div>
                 </li>
                 <li>

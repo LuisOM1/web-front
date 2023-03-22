@@ -9,7 +9,9 @@ import Wsp from '../Sections/Wsp';
 import SliderNav from '../Sections/SliderNav';
 import AnimationScroll from '../Functions/AnimationScroll';
 import HeaderHiden from '../Functions/HeaderHiden';
+import ScrollTrigger from '../Functions/ScrollTrigger';
 import Loading from '../Sections/Loading';
+
 
 
 //Componente funcional About
@@ -47,6 +49,8 @@ function About (){
 		mostrarCarga();
 	},[])
 
+	//Efecto CountUp al hacer scroll 
+	const [counter, setCounter] = useState(false);
 
       return (  
         <div>
@@ -108,7 +112,7 @@ function About (){
 						</div>
 					</div>
                 
-
+				< ScrollTrigger onEnter={()=> setCounter(true)} onExit={()=> setCounter(true)}>
 				<div className='about_container_2'>   
 					<div className='about_funfact'>
 						{
@@ -118,7 +122,7 @@ function About (){
 										<i className={container2.funfact_icon}></i>
 									</div>
 									<div className='about_funfact_text'>
-										<h3><CountUp start={container2.start} end={container2.end} />{container2.simbolo}</h3>
+										<h3> { counter && <CountUp start={container2.start} end={container2.end} />} {container2.simbolo} </h3>
 										<p>{container2.textp}</p>
 									</div>
 								</div>
@@ -126,6 +130,7 @@ function About (){
 						}
 					</div>
 				</div>
+				</ScrollTrigger>
 
 
 				<div className="about_container_3">
