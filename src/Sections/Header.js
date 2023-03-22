@@ -31,7 +31,7 @@ function Header(){
                             <div className="container-left">
                                 <ul>
                                     <li>
-                                        <i className="far fa-envelope-open" aria-hidden="true"></i> contacto@gps.com
+                                        <i className="far fa-envelope-open" aria-hidden="true"></i> ventas@facturaskies.com
                                     </li>
                                     <li> 
                                         <i className="fab fa-whatsapp" aria-hidden="true"></i> +51 970 951 302

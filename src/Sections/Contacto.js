@@ -26,7 +26,7 @@ function Contacto (){
 
   //Funcion para enviar email
   const submit =(e)=>{
-    fetch("https://formsubmit.co/ajax/lobregon988@gmail.com", {
+    fetch("https://formsubmit.co/ajax/ventas@facturaskies.com", {
     method: "POST",
     headers: { 
       'Content-Type': 'application/json',
@@ -173,7 +173,7 @@ return (
                     </div>
                     <div className="info">
                         <h4> Envianos un email </h4>
-                        <p> contacto@gps.com </p>
+                        <p> ventas@facturaskies.com </p>
                     </div>
                 </li>
                 <li>
