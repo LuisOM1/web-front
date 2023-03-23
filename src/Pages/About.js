@@ -122,7 +122,7 @@ function About (){
 										<i className={container2.funfact_icon}></i>
 									</div>
 									<div className='about_funfact_text'>
-										<h3> { counter && <CountUp start={container2.start} end={container2.end} />} {container2.simbolo} </h3>
+										<h3> { counter && <CountUp start={container2.start} end={container2.end} />}{container2.simbolo} </h3>
 										<p>{container2.textp}</p>
 									</div>
 								</div>
