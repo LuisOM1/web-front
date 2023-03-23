@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/web-front/static/css/main.61239f48.css",
-    "main.js": "/web-front/static/js/main.aaf10a5a.js",
+    "main.css": "/web-front/static/css/main.bd57816b.css",
+    "main.js": "/web-front/static/js/main.77ccb8a8.js",
     "static/js/787.618f3a8b.chunk.js": "/web-front/static/js/787.618f3a8b.chunk.js",
-    "static/media/fondo.jpg": "/web-front/static/media/fondo.cbb56644f3193a6fb1ac.jpg",
+    "static/media/fondo.png": "/web-front/static/media/fondo.7780f4c08e5aea3f737e.png",
     "static/media/1.png": "/web-front/static/media/1.d546e21c9c05643d0ee7.png",
     "static/media/img_ventajas.jpg": "/web-front/static/media/img_ventajas.1110342b56d34f0751ce.jpg",
     "static/media/img_slidernav.jpg": "/web-front/static/media/img_slidernav.ad5307786f3a5a4b4cf6.jpg",
@@ -14,12 +14,12 @@
     "static/media/img_about.jpg": "/web-front/static/media/img_about.e0f9d401ab8f0f7e60b9.jpg",
     "index.html": "/web-front/index.html",
     "static/media/peru.svg": "/web-front/static/media/peru.e674c54d58e9959616e4603dbe266db1.svg",
-    "main.61239f48.css.map": "/web-front/static/css/main.61239f48.css.map",
-    "main.aaf10a5a.js.map": "/web-front/static/js/main.aaf10a5a.js.map",
+    "main.bd57816b.css.map": "/web-front/static/css/main.bd57816b.css.map",
+    "main.77ccb8a8.js.map": "/web-front/static/js/main.77ccb8a8.js.map",
     "787.618f3a8b.chunk.js.map": "/web-front/static/js/787.618f3a8b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.61239f48.css",
-    "static/js/main.aaf10a5a.js"
+    "static/css/main.bd57816b.css",
+    "static/js/main.77ccb8a8.js"
   ]
 }
