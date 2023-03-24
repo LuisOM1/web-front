@@ -63,14 +63,14 @@
                 width: 80%;
                 height: 370px;
                 float: right;
-                margin-top: 67px;
+                margin-top: 68px;
             }
 
                 .text-nosotros h2{
                     text-align: center;
                     color: var(--color-negro-logo);
-                    margin-bottom: 25px;
-                    font-size: 24px;
+                    margin-bottom: 24px;
+                    font-size: 23.5px;
                     font-weight: 700;
                 }
 
@@ -79,26 +79,25 @@
                     overflow-wrap: break-word;
                     margin: 0 0 15px;
                     line-height: 26px;
-                    font-size: 15px;
+                    font-size: 14px;
                     color: #666;
                 }
 
                 .list-nosotros{
                     list-style-type:none;
                     overflow-wrap: break-word;
-                    margin: 0 0 16px;
+                    margin: 0 0 17px;
                     line-height: 26px;
-                    font-size: 15px;
+                    font-size: 14px;
                     color: #666;
                     text-align: justify;
                 }
 
-                    .list-nosotros .fa-check-circle{
-                        color: var(--color-negro-logo);
-                        font-size: 15px;
-                        margin-right: 5px;
+                    .list-nosotros .fa-check{
+                        color: var(--color-rojo-logo);
+                        font-size: 14px;
+                        margin-right: 8px;
                     }
-
 
                 .text-nosotros a{
                     text-decoration: none;
@@ -108,7 +107,7 @@
                     .button-info-nos{
                         border: none;
                         cursor: pointer;
-                        font-size: 14px;
+                        font-size: 13px;
                         padding: 9px 9px;
                         border-radius: 7px;
                         font-weight: 600;
@@ -154,10 +153,6 @@
 }
 
 @media screen and (max-width: 1070px ){
-    
-}
-
-@media screen and (max-width: 1070px ){
     .section-nosotros{
         height: auto;
         overflow-x: hidden;
@@ -166,7 +161,7 @@
         .divborder{
             height: auto;
             margin-bottom: 70px;
-            width: 80%;
+            width: 70%;
             margin-left: 0px;
             margin-right: 0px;
         }
@@ -177,7 +172,7 @@
             }
 
             .column-left-nos{
-                margin-bottom: 30px;
+                margin-bottom: 35px;
             }
             .column-right-nos{
                 display: flex;
@@ -212,7 +207,11 @@
                 }
       
 }
-  
+
+@media screen and (max-width: 870px ){
+    .divborder{ width: 80%; }
+}
+
 @media screen and (max-width: 700px ){
     .text-nosotros{
         width: 100%;

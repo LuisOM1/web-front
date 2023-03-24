@@ -36,6 +36,24 @@
       .slider_text{
         margin-right: 100px;
       }
+        .slider_text h4{
+          text-align: left;
+          font-size: 20px;
+          color: var(--color-blanco-primary);
+          font-weight: 400;
+          margin-bottom: 15px;
+          animation: fadeHaciaArribatext 1s;
+        }
+        @keyframes fadeHaciaArribatext {
+          0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
 
         .slider_text h2{
           text-align: left;
@@ -43,8 +61,8 @@
           color: var(--color-blanco-primary);
           font-weight: 800;
           line-height: 1.2;
-          margin-bottom: 10px;
-          animation: fadeArribaAbajotext 2s;
+          margin-bottom: 18px;
+          animation: fadeArribaAbajotext 1s;
         }
         
         @keyframes fadeArribaAbajotext {
@@ -230,9 +248,8 @@
         .slider_text h2{
           text-align: center;
           font-size: 35px;
-          margin-bottom: 0;
         }
-        .slider_text p{
+        .slider_text p, .slider_text h4{
           text-align: center;
         }
 

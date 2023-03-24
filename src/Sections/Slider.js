@@ -28,7 +28,8 @@ function Slider() {
                         
                         <div className="slider_container_left">
                             <div className="slider_text">
-                                <h2>Facturación Electrónica</h2><br/>
+                                <h4> —  Digitaliza tu negocio</h4>
+                                <h2>Facturación Electrónica</h2>
                                 <p> Plataforma de gestión de ventas, compras e inventarios utilizada
                                     por <strong>miles de empresas</strong> en todo el <strong>Perú</strong>
                                     <img alt="🇵🇪" src={peru}/>

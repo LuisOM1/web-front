@@ -22,7 +22,7 @@ class Nosotros extends React.Component {
                     
                         <div className="column-right-nos">
                             <div className="text-nosotros">
-                                <h2 className=''>Mas de 10 años brindando el mejor servicio</h2>
+                                <h2>Más de 10 años brindando el mejor servicio</h2>
                                 <div className="textp">Desde hace 12 años venimos trabajando para ofrecerte un servicio 
                                 transparente y de calidad acorde a las nuevas necesidades y a la evolución de la 
                                 tecnología. Nuestros servicios marcan la diferencia, y nuestros clientes nos 
@@ -30,15 +30,15 @@ class Nosotros extends React.Component {
                                 </div>
                                 <ul className="list-nosotros">
                                     <li>
-                                        <i className="fa fa-check-circle" aria-hidden="true"></i>
+                                        <i className="fa fa-check" aria-hidden="true"></i>
                                         Somos líderes en el rastreo satelital.
                                     </li>
                                     <li>
-                                        <i className="fa fa-check-circle " aria-hidden="true"></i>
+                                        <i className="fa fa-check" aria-hidden="true"></i>
                                         Tenemos precios según tu necesidad.
                                     </li>
                                     <li>
-                                        <i className="fa fa-check-circle" aria-hidden="true"></i>
+                                        <i className="fa fa-check" aria-hidden="true"></i>
                                         Te brindamos un servicio diferenciado.
                                     </li>
                                 </ul>

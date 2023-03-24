@@ -49,8 +49,8 @@ function About (){
 		mostrarCarga();
 	},[])
 
-	//Efecto CountUp al hacer scroll 
-	const [counter, setCounter] = useState(false);
+	//Estado del CountUp para que inicie cuando sea visualizado
+	const [counterStart, setCounterStart] = useState(false);
 
       return (  
         <div>
@@ -112,7 +112,7 @@ function About (){
 						</div>
 					</div>
                 
-				< ScrollTrigger onEnter={()=> setCounter(true)} onExit={()=> setCounter(true)}>
+				< ScrollTrigger onEnter={()=> setCounterStart(true)} onExit={()=> setCounterStart(true)}>
 				<div className='about_container_2'>   
 					<div className='about_funfact'>
 						{
@@ -122,7 +122,7 @@ function About (){
 										<i className={container2.funfact_icon}></i>
 									</div>
 									<div className='about_funfact_text'>
-										<h3> { counter && <CountUp start={container2.start} end={container2.end} />}{container2.simbolo} </h3>
+										<h3> { counterStart && <CountUp start={container2.start} end={container2.end} />}{container2.simbolo} </h3>
 										<p>{container2.textp}</p>
 									</div>
 								</div>
