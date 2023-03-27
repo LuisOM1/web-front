@@ -1,12 +1,12 @@
-import Wsp from '../Sections/Wsp';
-import Header from '../Sections/Header';
-import Footer from '../Sections/Footer';
+import Wsp from '../Components/Wsp';
+import Header from '../Components/Header';
+import Footer from '../Components/Footer';
 import GoTop from '../Functions/GoTop';
-import Precios from '../Sections/Precios';
-import SliderNav from '../Sections/SliderNav';
+import Precios from '../Components/Precios';
+import SliderNav from '../Components/SliderNav';
 import AnimationScroll from '../Functions/AnimationScroll';
 import HeaderHiden from '../Functions/HeaderHiden';
-import Loading from '../Sections/Loading';
+import Loading from '../Components/Loading';
 import React, {useState, useEffect} from 'react';
 
 

@@ -2,7 +2,7 @@ import '../css/cards.css';
 
 
 //Componente funcional Cards
-function Cards ({nivel, precio, tiempo, iconx, docs}){
+function Cards ({nivel, precio, tiempo, iconx, docs, locales, users, products}){
 
   //Para que me redirija directamente al QR de Watsapp en web
   const isMobile = function isMobile() {
@@ -26,15 +26,15 @@ function Cards ({nivel, precio, tiempo, iconx, docs}){
         </div>
         <div className='precios_card_precio'>
           <h2>{precio}</h2>
-          <span>{tiempo}</span>
+          <span>+IGV / {tiempo}</span>
         </div>
         <div className='precios_card_items'>
           <ul>
-            <li> <i className='fas fa-check'></i> {docs} </li>
-            <li> <i className='fas fa-check'></i> 02 Establecimientos </li>
-            <li> <i className='fas fa-check'></i> 02 Almacenes</li>
-            <li> <i className='fas fa-check'></i> 04 Usuarios</li>
-            <li> <i className='fas fa-check'></i> 5,000 Productos</li>
+            <li> <i className='fas fa-check'></i> {docs} Documentos/mes</li>
+            <li> <i className='fas fa-check'></i> 0{locales} Establecimientos </li>
+            <li> <i className='fas fa-check'></i> 0{locales} Almacenes</li>
+            <li> <i className='fas fa-check'></i> 0{users} Usuarios</li>
+            <li> <i className='fas fa-check'></i> {products} Productos</li>
             <li> <i className='fas fa-check'></i> Certificado digital</li>
             <li> <i className='fas fa-check'></i> Todos los módulos</li>
             <li> <i className='fas fa-check'></i> Web, Android, IOS</li>

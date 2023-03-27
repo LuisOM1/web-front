@@ -70,7 +70,7 @@ function Header(){
 
                     <header className='header'>
                         <div className='container_header'>
-                                <Link to={`/web-front`} id="logo">
+                                <Link to={`/`} id="logo">
                                     <img src={logo} alt="GpsSkies" />
                                 </Link>
 
@@ -80,7 +80,7 @@ function Header(){
                                     </div>
                                     <ul className={menu ? "menu-list" : "menu-list.close"} >
                                         <li>
-                                            <NavLink to={`/web-front`} className={({ isActive }) => isActive? "active": ''} 
+                                            <NavLink to={`/`} className={({ isActive }) => isActive? "active": ''} 
                                             title='Inicio' onClick={closeMobileMenu}> INICIO </NavLink>
                                         </li>
                                         <li>

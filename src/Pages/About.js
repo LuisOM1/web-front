@@ -1,16 +1,16 @@
 import React, {useState, useEffect} from 'react';
 import '../css/about.css';
-import Header from '../Sections/Header';
-import Footer from '../Sections/Footer';
+import Header from '../Components/Header';
+import Footer from '../Components/Footer';
 import  img_about from  '../img/img_about.jpg';
 import GoTop from '../Functions/GoTop';
 import CountUp from '../Functions/CountUp';
-import Wsp from '../Sections/Wsp';
-import SliderNav from '../Sections/SliderNav';
+import Wsp from '../Components/Wsp';
+import SliderNav from '../Components/SliderNav';
 import AnimationScroll from '../Functions/AnimationScroll';
 import HeaderHiden from '../Functions/HeaderHiden';
 import ScrollTrigger from '../Functions/ScrollTrigger';
-import Loading from '../Sections/Loading';
+import Loading from '../Components/Loading';
 
 
 

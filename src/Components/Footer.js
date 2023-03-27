@@ -17,14 +17,14 @@ function Footer() {
       return(   <div className="footer" >
                     <div className='footer_sup'>
                         <div className="footer_container">
-                            <Link to={`/web-front`} className="footer_logo" target="_self">
+                            <Link to={`/`} className="footer_logo" target="_self">
                                 <img src={logo} className="footer_logoimg mostrar4s" alt="GPS Skies" />
                             </Link>
                         
                             <div className="footer_links">    
                                 <div className="footer_list">
                                     <div className="link">
-                                        <Link to={`/web-front`} className="link_content"> Inicio </Link>
+                                        <Link to={`/`} className="link_content"> Inicio </Link>
                                     </div>
                                 
                                     <div className="link">

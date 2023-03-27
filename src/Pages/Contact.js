@@ -1,13 +1,13 @@
-import Wsp from '../Sections/Wsp';
-import Header from '../Sections/Header';
-import Footer from '../Sections/Footer';
-import Contacto from '../Sections/Contacto';
+import Wsp from '../Components/Wsp';
+import Header from '../Components/Header';
+import Footer from '../Components/Footer';
+import Contacto from '../Components/Contacto';
 import GoTop from '../Functions/GoTop';
-import SliderNav from '../Sections/SliderNav';
+import SliderNav from '../Components/SliderNav';
 import AnimationScroll from '../Functions/AnimationScroll';
 import HeaderHiden from '../Functions/HeaderHiden';
 import React, {useState, useEffect} from 'react';
-import Loading from '../Sections/Loading';
+import Loading from '../Components/Loading';
 
 
 function Contact() {

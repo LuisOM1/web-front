@@ -1,5 +1,5 @@
 import React, {useState}from 'react';
-import Cards from '../Sections/Cards';
+import Cards from '../Components/Cards';
 import '../css/precios.css';
 import '../css/cards.css';
 import '../css/animacion.css';
@@ -9,31 +9,31 @@ import '../css/animacion.css';
 function Precios(){
 
   const cards_mensual = [
-    { id:1, nivel:'Principiante', precio:'S/ 45.00', tiempo:'+IGV / Mensual', iconx:'fas fa-times', docs:'300 Documentos/mes'},
-    { id:2, nivel:'Microempresa', precio:'S/ 55.00', tiempo:'+IGV / Mensual', iconx:'fas fa-check', docs:'500 Documentos/mes'},
-    { id:3, nivel:'Emprendedor', precio:'S/ 69.00', tiempo:'+IGV / Mensual', iconx:'fas fa-check', docs:'1000 Documentos/mes'},
-    { id:4, nivel:'Corporativo', precio:'S/ 89.00', tiempo:'+IGV / Mensual', iconx:'fas fa-check', docs:'+1000 Documentos/mes'}
+    { id:1, nivel:'Principiante', precio:'S/ 45.00', tiempo:'Mensual', iconx:'fas fa-times', docs:'300', locales: 1, users: 1, products: 500},
+    { id:2, nivel:'Microempresa', precio:'S/ 55.00', tiempo:'Mensual', iconx:'fas fa-check', docs:'500', locales: 1, users: 2, products: 1000},
+    { id:3, nivel:'Emprendedor', precio:'S/ 69.00', tiempo:'Mensual', iconx:'fas fa-check', docs:'1000', locales: 2, users: 3, products: 5000},
+    { id:4, nivel:'Corporativo', precio:'S/ 89.00', tiempo:'Mensual', iconx:'fas fa-check', docs:'+1000', locales: 3, users: 4, products: 10000}
   ]
 
   const cards_3m = [
-    { id:1, nivel:'Principiante', precio:'S/ 135.00', tiempo:'+IGV / 03 Meses', iconx:'fas fa-times', docs:'300 Documentos/mes'},
-    { id:2, nivel:'Microempresa', precio:'S/ 165.00', tiempo:'+IGV / 03 Meses', iconx:'fas fa-check', docs:'500 Documentos/mes'},
-    { id:3, nivel:'Emprendedor', precio:'S/ 207.00', tiempo:'+IGV / 03 Meses', iconx:'fas fa-check', docs:'1000 Documentos/mes'},
-    { id:4, nivel:'Corporativo', precio:'S/ 267.00', tiempo:'+IGV / 03 Meses', iconx:'fas fa-check', docs:'+1000 Documentos/mes'}
+    { id:1, nivel:'Principiante', precio:'S/ 135.00', tiempo:'03 Meses', iconx:'fas fa-times', docs:'300', locales: 1, users: 1, products: 500},
+    { id:2, nivel:'Microempresa', precio:'S/ 165.00', tiempo:'03 Meses', iconx:'fas fa-check', docs:'500', locales: 1, users: 2, products: 1000},
+    { id:3, nivel:'Emprendedor', precio:'S/ 207.00', tiempo:'03 Meses', iconx:'fas fa-check', docs:'1000', locales: 2, users: 3, products: 5000},
+    { id:4, nivel:'Corporativo', precio:'S/ 267.00', tiempo:'03 Meses', iconx:'fas fa-check', docs:'+1000', locales: 3, users: 4, products: 10000}
   ]
 
   const cards_6m = [
-    { id:1, nivel:'Principiante', precio:'S/ 270.00', tiempo:'+IGV / 06 Meses', iconx:'fas fa-times', docs:'300 Documentos/mes'},
-    { id:2, nivel:'Microempresa', precio:'S/ 330.00', tiempo:'+IGV / 06 Meses', iconx:'fas fa-check', docs:'500 Documentos/mes'},
-    { id:3, nivel:'Emprendedor', precio:'S/ 414.00', tiempo:'+IGV / 06 Meses', iconx:'fas fa-check', docs:'1000 Documentos/mes'},
-    { id:4, nivel:'Corporativo', precio:'S/ 534.00', tiempo:'+IGV / 06 Meses', iconx:'fas fa-check', docs:'+1000 Documentos/mes'}
+    { id:1, nivel:'Principiante', precio:'S/ 270.00', tiempo:'06 Meses', iconx:'fas fa-times', docs:'300', locales: 1, users: 1, products: 500},
+    { id:2, nivel:'Microempresa', precio:'S/ 330.00', tiempo:'06 Meses', iconx:'fas fa-check', docs:'500', locales: 1, users: 2, products: 1000},
+    { id:3, nivel:'Emprendedor', precio:'S/ 414.00', tiempo:'06 Meses', iconx:'fas fa-check', docs:'1000', locales: 2, users: 3, products: 5000},
+    { id:4, nivel:'Corporativo', precio:'S/ 534.00', tiempo:'06 Meses', iconx:'fas fa-check', docs:'+1000', locales: 3, users: 4, products: 10000}
   ]
 
   const cards_12m = [
-    { id:1, nivel:'Principiante', precio:'S/ 495.00', tiempo:'+IGV / 12 Meses', iconx:'fas fa-times', docs:'300 Documentos/mes'},
-    { id:2, nivel:'Microempresa', precio:'S/ 605.00', tiempo:'+IGV / 12 Meses', iconx:'fas fa-check', docs:'500 Documentos/mes'},
-    { id:3, nivel:'Emprendedor', precio:'S/ 759.00', tiempo:'+IGV / 12 Meses', iconx:'fas fa-check', docs:'1000 Documentos/mes'},
-    { id:4, nivel:'Corporativo', precio:'S/ 979.00', tiempo:'+IGV / 12 Meses', iconx:'fas fa-check', docs:'+1000 Documentos/mes'}
+    { id:1, nivel:'Principiante', precio:'S/ 495.00', tiempo:'12 Meses', iconx:'fas fa-times', docs:'300', locales: 1, users: 1, products: 500},
+    { id:2, nivel:'Microempresa', precio:'S/ 605.00', tiempo:'12 Meses', iconx:'fas fa-check', docs:'500', locales: 1, users: 2, products: 1000},
+    { id:3, nivel:'Emprendedor', precio:'S/ 759.00', tiempo:'12 Meses', iconx:'fas fa-check', docs:'1000', locales: 2, users: 3, products: 5000},
+    { id:4, nivel:'Corporativo', precio:'S/ 979.00', tiempo:'12 Meses', iconx:'fas fa-check', docs:'+1000', locales: 3, users: 4, products: 10000}
   ]
 
   
@@ -71,7 +71,7 @@ function Precios(){
                     <div className='precios_contents mostrar4s'>
                       {  cards_mensual.map(card => (
                           <div className='precios_cards' key={card.id}>
-                            <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} docs={card.docs} />
+                            <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} docs={card.docs} locales={card.locales} users={card.users} products={card.products}/>
                           </div>
                           ))
                       } 
@@ -81,7 +81,7 @@ function Precios(){
                     <div className='precios_contents'>
                       {  cards_3m.map(card => (
                           <div className='precios_cards' key={card.id}>
-                            <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} docs={card.docs} />
+                            <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} docs={card.docs} locales={card.locales} users={card.users} products={card.products}/>
                           </div>
                           ))
                       } 
@@ -91,7 +91,7 @@ function Precios(){
                     <div className='precios_contents'>
                       {  cards_6m.map(card => (
                           <div className='precios_cards' key={card.id}>
-                            <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} docs={card.docs} />
+                            <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} docs={card.docs} locales={card.locales} users={card.users} products={card.products}/>
                           </div>
                           ))
                       } 
@@ -101,7 +101,7 @@ function Precios(){
                     <div className='precios_contents'>
                       {  cards_12m.map(card => (
                           <div className='precios_cards' key={card.id}>
-                            <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} docs={card.docs} />
+                            <Cards nivel={card.nivel} precio={card.precio} tiempo={card.tiempo} iconx={card.iconx} docs={card.docs} locales={card.locales} users={card.users} products={card.products}/>
                           </div>
                           ))
                       } 
