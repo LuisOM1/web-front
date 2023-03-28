@@ -90,7 +90,7 @@ function Footer() {
 
                     <div className='footer_f'>
                         <div className="footer_derechos">
-                            <p className="footer_copyright">© 2022 GPS SKIES. All rights reserved.</p>
+                            <p className="footer_copyright">© 2023 GPS SKIES. All rights reserved.</p>
                         </div>
                     </div>
 

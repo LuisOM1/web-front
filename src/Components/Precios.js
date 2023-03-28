@@ -58,7 +58,7 @@ function Precios(){
                   </div>
                 </div>
                 <div className='precios_options'>
-                  <div className='precios_buttons arriba'> 
+                  <div className='precios_buttons'> 
                     <button className={(activetab == "1" ? "activetab button": "button")} onClick={()=>cambiartab("1")} >MENSUAL</button> 
                     <button className={(activetab == "2" ? "activetab button": "button")} onClick={()=>cambiartab("2")} >03 MESES </button> 
                     <button className={(activetab == "3" ? "activetab button": "button")} onClick={()=>cambiartab("3")} >06 MESES </button> 

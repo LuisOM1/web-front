@@ -43,7 +43,7 @@ export default function AnimationScroll() {
 
         for(i = 0; i < fadeArriba.length; i++) {
             let fAr = fadeArriba[i];
-            if(fAr.getBoundingClientRect().top < screenSize) {
+            if(fAr.getBoundingClientRect().top < screenSize -170) {
             fadeArriba[i].classList.add('fadeArriba');
             } 
         }
